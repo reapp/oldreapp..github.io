@@ -2,6 +2,11 @@ div, span {
   box-sizing: border-box;
 }
 
+h2 span, h3 span, h4 span {
+  opacity: 0.5;
+  font-size: 80%;
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   box-sizing: border-box;
