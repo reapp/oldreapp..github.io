@@ -140,26 +140,6 @@ body::before {
   margin: 3rem 0 -1rem;
 }
 
-.feature {
-  margin: -1.5rem;
-  padding: 1.5rem;
-  background: rgba(96,255,0,0.2);
-}
-
-.feature.alt1 {
-  margin-top: -2.4rem;
-  background: rgba(255,240,0,0.2);
-}
-
-.feature.alt2 {
-  margin-top: -1.6rem;
-  background: rgba(0,192,255,0.2);
-}
-
-.feature.alt3 {
-  background: rgba(255,0,120,0.2);
-}
-
 .info {
   background: #fff;
   color: #111;
