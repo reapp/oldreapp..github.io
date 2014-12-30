@@ -22,6 +22,7 @@ body {
 }
 
 .header {
+  border-top: 2px solid #111;
   min-width: 468px;
   padding: 1rem 0;
   color: #111;
@@ -52,9 +53,11 @@ body {
 
 .header nav {
   font-weight: bold;
-  margin: auto 3rem;
+  margin: auto;
+  margin-right: 0;
   flex-flow: row;
-  flex-grow: 4;
+  flex-grow: 1;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -62,9 +65,9 @@ body {
 
 .header nav a {
   margin: auto 0;
-  font-size: .9rem;
+  font-size: 1rem;
   padding: .4rem 1rem;
-  color: #555;
+  color: #111;
   transition: opacity .2s ease-in;
 }
 
@@ -73,14 +76,17 @@ body {
 }
 
 .install {
+  background: #111;
+  color: #fff;
+  padding: 3rem 0;
   text-align: right;
-  margin: auto;
-  flex-grow: 2;
   font-weight: bold;
+  text-align: center;
 }
 
 .install p {
-  font-size: 1rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
   margin: auto 0;
 }
 
