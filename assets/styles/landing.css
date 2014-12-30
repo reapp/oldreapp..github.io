@@ -241,18 +241,22 @@ blockquote footer {
 }
 
 .body {
-  background: #ffe6d7;
   color: #111;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  position: relative;
   z-index: 2;
 }
 
-.body::before {
+.row-highlight {
+  background: #ffe6d7;
+  position: relative;
+}
+
+.row-highlight::before {
   content: ' ';
   display: block;
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -261,6 +265,11 @@ blockquote footer {
   opacity: .5;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
+}
+
+.row-highlight * {
+  position: relative;
+  z-index: 1;
 }
 
 .body .row {
@@ -274,6 +283,7 @@ blockquote footer {
 
 .demo-row {
   flex-wrap: nowrap;
+  display: flex;
 }
 
 .demo, .demo-description {
