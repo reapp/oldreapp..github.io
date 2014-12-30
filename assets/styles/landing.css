@@ -43,15 +43,15 @@ body {
 }
 
 .header h1 a {
-  margin: 0 0 -14px;
+  margin: 0 0 -8px;
   display: block;
   color: #111;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   width: 140px;
-  height: 54px;
-  background: url(/assets/images/reapp-logo3-black.png) no-repeat top left;
+  height: 59px;
+  background: url(/assets/images/reapp-logo4-black.png) no-repeat top left;
 }
 
 .header nav {
