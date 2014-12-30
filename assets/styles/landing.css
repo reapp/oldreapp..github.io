@@ -36,8 +36,10 @@ body::before {
   position: relative;
 }
 
-.header, .body, .install {
-  border-top: 1px solid #111;
+.section {
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .header {
@@ -97,7 +99,6 @@ body::before {
 
 
 .hero {
-  padding: .5rem 0 3rem;
   background: none;
   border: none;
   color: #111;
@@ -173,6 +174,44 @@ body::before {
 
 .hero-headline {
   font-size: 3rem;
+}
+
+blockquote {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  opacity: 0.8;
+  font-style: italic;
+  padding: 3rem;
+  margin: 0;
+}
+
+blockquote::before {
+  content: '“ ';
+}
+
+blockquote::after {
+  content: '”';
+  display: block;
+  text-align: right;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 4rem;
+  opacity: 0.3;
+  padding: 1rem;
+  line-height: 0.5rem;
+}
+
+blockquote footer {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+  display: block;
+  padding: 0 3rem 0 0;
+  margin: 0 0 -4rem 0;
 }
 
 .install {
@@ -266,4 +305,8 @@ code {
 .features h3 {
   text-align: center;
   margin-top: 0;
+}
+
+.feature {
+  padding: 0 2rem;
 }
