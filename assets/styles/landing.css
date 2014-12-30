@@ -1,0 +1,220 @@
+div, span {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  background: #fff;
+  color: #111;
+  line-height: 1.4rem;
+}
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.header {
+  min-width: 468px;
+  padding: 1rem 0;
+  color: #111;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.header .row {
+  height: 60px;
+}
+
+.header h1 {
+  display: block;
+  margin: auto 0;
+}
+
+.header h1 a {
+  margin: 10px 0 0;
+  display: block;
+  color: #111;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 190px;
+  height: 56px;
+  background: url(/assets/images/reapp-logo2-black.png) no-repeat top left;
+}
+
+.header nav {
+  font-weight: bold;
+  margin: auto 3rem;
+  flex-flow: row;
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.header nav a {
+  margin: auto 0;
+  font-size: .9rem;
+  padding: .4rem 1rem;
+  color: #555;
+  transition: opacity .2s ease-in;
+}
+
+.header nav a:hover {
+  opacity: 1;
+}
+
+.install {
+  text-align: right;
+  margin: auto;
+  flex-grow: 2;
+  font-weight: bold;
+}
+
+.install p {
+  font-size: 1rem;
+  margin: auto 0;
+}
+
+.install span {
+  display: block;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 2rem 0 3rem;
+  background: none;
+  border: none;
+  color: #111;
+  z-index: 3;
+}
+
+.hero h2 {
+  font-size: 2.6rem;
+  margin: 0 0 1.8rem 0 ;
+  font-weight: normal;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  line-height: 1.7em;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.hero p.first {
+  font-size: 1.5rem;
+}
+
+.hero-second, .hero-first {
+  position: relative;
+  z-index: 3;
+  padding: 2rem 0;
+}
+
+.info {
+  background: rgba(0,0,0,0.8);
+  color: #111;
+  font-weight: bold;
+  padding: 5px 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  position: absolute;
+  font-size: .7rem;
+  line-height: .7rem;
+}
+
+.info-one {
+  top: 100px;
+  right: 200px;
+}
+
+.info-two {
+  top: 160px;
+  right: 150px;
+}
+
+.info-three {
+  top: 200px;
+  right: 50px;
+}
+
+.hero h2 {
+  color: #111;
+}
+
+.hero-headline {
+  font-size: 3rem;
+}
+
+.body {
+  background: #f3f4e4;
+  color: #111;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.body::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/assets/lines.svg);
+  opacity: .05;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+#phone {
+  display: none;
+  background: url(/assets/images/phone.jpg) no-repeat bottom right;
+  width: 620px;
+  height: 671px;
+  position: absolute;
+  top: -429px;
+  right: -100px;
+  z-index: 1;
+}
+
+.body div {
+  position: relative;
+  z-index: 2;
+}
+
+.screenshot {
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+code {
+  margin: 1em 0;
+  font-size: 14px;
+  display: block;
+  background: #111;
+}
+
+.features {
+  margin: 0 auto 4rem;
+}
+
+.features div {
+  padding: 0 1rem;
+}
+
+.features h3 {
+  text-align: center;
+  margin-top: 0;
+}

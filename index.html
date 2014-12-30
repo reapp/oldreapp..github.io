@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/prism.css" />
+</head>
+<body>
+  <div id="grid"><div></div></div>
+  <div id="bg"></div>
+  <div class="layout">
+    <div class="header">
+      <div class="row">
+        <h1><a href="/">reapp</a></h1>
+        <nav>
+          <a href="/docs">Get Started</a>
+          <a href="/docs">Docs</a>
+          <a href="/docs">Showcase</a>
+          <a href="/docs">Blog</a>
+          <a href="https://github.com/reapp/reapp">Github</a>
+        </nav>
+        <div class="install">
+          <p>npm install -g reapp <span>reapp new myproject</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="row center-xs start-sm">
+        <div class="hero-first col-xs-12 col-sm-5 col-md-6">
+          <h2 class="hero-headline">An easy way to build apps</h2>
+          <p class="first">
+            Reapp is a set of modules built on node and JavaScript
+            that lets you build cross-platform mobile apps in harmony.
+          </p>
+          <p>Sign up to the mailing list to get early updates and information
+          on development:</p>
+
+          <form class="description" style="padding: 3px; text-align: center; border: 0px none; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; color: rgba(0, 0, 0, 0);" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
+            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;">
+            <input type="hidden" name="js_id" id="js_id" value="1ur1p" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;">
+            <input type="hidden" name="req_hid" id="req_hid" value="" style="font-size: 13px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            <input type="text" name="email" id="email" value="" style="padding: 8px; width: 160px;">
+            <button class="button editable " type="submit" data-editfield="subscribe" contenteditable="true" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); display: inline-block; white-space: nowrap; min-height: 30px; margin: 0px 5px 0px 0px; padding: 0px 10px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 12px; cursor: pointer; border: 0px; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%; background: rgb(5, 5, 5);">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="hero-second hide-xs col-sm-7 col-md-6">
+          <span class="info info-one" class="info">Interactive, additive animations</span>
+          <span class="info info-two" class="info">UI Framework</span>
+          <span class="info info-three" class="info">CLI with build tools</span>
+        </div>
+
+        <div id="glow"></div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="row features">
+        <div id="phone"></div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>React</h3>
+          <p>It's all Javascript, all the way down. From html, to style, to logic, everything is based
+          on small, composable components.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>UI Kit</h3>
+          <p>Built on a UI kit that's lightweight, but supports themes, custom animations, and all the
+          elements you've come to expect.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Structured</h3>
+          <p>Includes a completely customizable stack to start you off. With immutable data, caching,
+          routing, and the build system all figured out.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Composable</h3>
+          <p>The entire stack is optional. Pick and choose pieces you want, and realize smaller bundles
+          and build times when you do.</p>
+        </div>
+      </div>
+
+      <div class="row center-xs">
+        <div class="col-sm-4">
+          <img class="screenshot" src="/assets/images/screenshot.jpg" />
+        </div>
+
+        <div class="col-sm-8">
+          <h3>Hello</h3>
+          <p>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <pre><code class="language-javascript">
+&lt;DottedViewList {...props}&gt;
+  &lt;View title="Hot Articles"&gt;
+    &lt;List nowrap&gt;
+      {hasArticles &amp;&amp;
+        articles.map((article, i) =&gt;
+          &lt;ArticleItem article={article} key={i} /&gt;
+        ).concat(
+          &lt;ListItem onClick={this.handleLoadMore}&gt;
+            Load More
+          &lt;/ListItem&gt;
+      )}
+      {!hasArticles &amp;&amp;
+        &lt;ListItem&gt;Loading...&lt;/ListItem&gt;
+      }
+      &lt;/List&gt;
+  &lt;/View&gt;
+  &lt;View title="Saved Articles"&gt;
+    {hasSavedArticles &amp;&amp;
+      savedArticles.map((article, i) =&gt;
+        &lt;ArticleItem article={article} key={i} /&gt;
+    )}
+    {!hasSavedArticles &amp;&amp;
+      &lt;p&gt;My saved articles. Try swiping an articles to the right to add it here.&lt;/p&gt;
+    }
+  &lt;/View&gt;
+&lt;/DottedViewList&gt;
+          </code></pre>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/prism.js"></script>
+</body>
+</html>
