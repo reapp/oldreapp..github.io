@@ -12,6 +12,21 @@ body {
   background: #fff;
   color: #111;
   line-height: 1.4rem;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 1200px;
+  top: 0;
+  right: 0;
+  opacity: 0.1;
+  background: url(/assets/images/spirograph.svg) no-repeat;
+  background-size: 100% 100%;
+  background-position: 500px -500px;
 }
 
 .row {
@@ -22,7 +37,7 @@ body {
 }
 
 .header, .body, .install {
-  border-top: 2px solid #111;
+  border-top: 1px solid #111;
 }
 
 .header {
@@ -43,7 +58,7 @@ body {
 }
 
 .header h1 a {
-  margin: 0 0 -8px;
+  margin: 0 0 -4px;
   display: block;
   color: #111;
   text-indent: 100%;
@@ -51,7 +66,8 @@ body {
   overflow: hidden;
   width: 140px;
   height: 59px;
-  background: url(/assets/images/reapp-logo4-black.png) no-repeat top left;
+  background: url(/assets/images/logo.svg) no-repeat top left;
+  background-size: 100% 100%;
 }
 
 .header nav {
@@ -78,33 +94,23 @@ body {
   opacity: 1;
 }
 
-.install {
-  background: #fff;
-  color: #111;
-  padding: 3rem 0;
-  text-align: right;
-  font-weight: bold;
-  text-align: center;
-}
 
-.install p {
-  font-size: 2rem;
-  line-height: 3.5rem;
-  margin: auto 0;
-}
-
-.install span {
-  display: block;
-  font-weight: normal;
-  opacity: 0.8;
-}
 
 .hero {
-  padding: 1rem 0 3rem;
+  padding: .5rem 0 3rem;
   background: none;
   border: none;
   color: #111;
   z-index: 3;
+}
+
+.signup {
+  display: flex;
+}
+
+#email {
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
 .hook h2 {
@@ -134,8 +140,28 @@ body {
   margin: 3rem 0 -1rem;
 }
 
+.feature {
+  margin: -1.5rem;
+  padding: 1.5rem;
+  background: rgba(96,255,0,0.2);
+}
+
+.feature.alt1 {
+  margin-top: -2.4rem;
+  background: rgba(255,240,0,0.2);
+}
+
+.feature.alt2 {
+  margin-top: -1.6rem;
+  background: rgba(0,192,255,0.2);
+}
+
+.feature.alt3 {
+  background: rgba(255,0,120,0.2);
+}
+
 .info {
-  background: rgba(0,0,0,0.8);
+  background: #fff;
   color: #111;
   font-weight: bold;
   padding: 5px 6px;
@@ -167,6 +193,27 @@ body {
 
 .hero-headline {
   font-size: 3rem;
+}
+
+.install {
+  background: #fff;
+  color: #111;
+  padding: 3rem 0;
+  text-align: right;
+  font-weight: bold;
+  text-align: center;
+}
+
+.install p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin: auto 0;
+}
+
+.install span {
+  display: block;
+  font-weight: normal;
+  opacity: 0.8;
 }
 
 .body {
@@ -234,10 +281,6 @@ code {
 
 .features {
   margin: 0 auto 4rem;
-}
-
-.features div {
-  padding: 0 1rem;
 }
 
 .features h3 {
