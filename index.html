@@ -24,11 +24,11 @@
     </div>
 
     <div class="hero">
-      <div class="row center-xs start-sm">
+      <div class="hook row center-xs start-sm">
         <div class="hero-first col-xs-12 col-sm-5 col-md-6">
           <h2 class="hero-headline">An easy way to build apps</h2>
           <p class="first">
-            Reapp is a set of modules built on node and JavaScript
+            re/app is a set of modules built on node and JavaScript
             that lets you build cross-platform mobile apps in harmony.
           </p>
           <p>Sign up to the mailing list to get early updates and information
@@ -48,8 +48,26 @@
           <span class="info info-two" class="info">UI Framework</span>
           <span class="info info-three" class="info">CLI with build tools</span>
         </div>
+      </div>
 
-        <div id="glow"></div>
+      <div class="row features">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Standard</h3>
+          <p>Powered by React and fully component-ized. Everything is JavaScript, even the styles.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Powerful</h3>
+          <p>Our UI kit is lightweight and modular, supports themes, interactive animations.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Helpful</h3>
+          <p>A CLI that generates a well-designed React app.
+          Immutable data, caching, routing, and the build system.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <h3>Composable</h3>
+          <p>Pick and choose pieces you want, realize smaller bundles and build times when you do.</p>
+        </div>
       </div>
     </div>
 
@@ -58,79 +76,99 @@
     </div>
 
     <div class="body">
-      <div class="row features">
-        <div id="phone"></div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <h3>React</h3>
-          <p>It's all Javascript, all the way down. From html, to style, to logic, everything is based
-          on small, composable components.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <h3>UI Kit</h3>
-          <p>Built on a UI kit that's lightweight, but supports themes, custom animations, and all the
-          elements you've come to expect.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <h3>Structured</h3>
-          <p>Includes a completely customizable stack to start you off. With immutable data, caching,
-          routing, and the build system all figured out.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <h3>Composable</h3>
-          <p>The entire stack is optional. Pick and choose pieces you want, and realize smaller bundles
-          and build times when you do.</p>
-        </div>
-      </div>
-
-      <div class="row center-xs">
-        <div class="col-sm-4">
+      <div class="demo-row row center-xs">
+        <div class="demo">
           <img class="screenshot" src="/assets/images/screenshot.jpg" />
         </div>
 
-        <div class="col-sm-8">
-          <h3>Hello</h3>
-          <p>
-          </p>
+        <div class="demo-description">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <h4>Additive Animations</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus adipisci saepe ratione atque totam quasi dolor sit odit numquam a nihil nulla, fugit suscipit commodi doloribus amet. Earum facere, explicabo.</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row">
+        <div class="col-xs-12">
+          <h3>Examples</h3>
+        </div>
+
         <div class="col-xs-12 col-sm-6">
           <pre><code class="language-javascript">
-&lt;DottedViewList {...props}&gt;
+&lt;DottedViewList&gt;
   &lt;View title="Hot Articles"&gt;
-    &lt;List nowrap&gt;
-      {hasArticles &amp;&amp;
-        articles.map((article, i) =&gt;
-          &lt;ArticleItem article={article} key={i} /&gt;
-        ).concat(
-          &lt;ListItem onClick={this.handleLoadMore}&gt;
-            Load More
-          &lt;/ListItem&gt;
+    &lt;List&gt;
+      {hotArticles.map((article, i) =&gt;
+        {article.title}
       )}
-      {!hasArticles &amp;&amp;
-        &lt;ListItem&gt;Loading...&lt;/ListItem&gt;
-      }
-      &lt;/List&gt;
+    &lt;/List&gt;
   &lt;/View&gt;
-  &lt;View title="Saved Articles"&gt;
-    {hasSavedArticles &amp;&amp;
-      savedArticles.map((article, i) =&gt;
-        &lt;ArticleItem article={article} key={i} /&gt;
+  &lt;View title="New Articles"&gt;
+    {newArticles.map((article, i) =&gt;
+      {article.title}
     )}
-    {!hasSavedArticles &amp;&amp;
-      &lt;p&gt;My saved articles. Try swiping an articles to the right to add it here.&lt;/p&gt;
-    }
   &lt;/View&gt;
 &lt;/DottedViewList&gt;
           </code></pre>
         </div>
         <div class="col-xs-12 col-sm-6">
+          <h4>Rendering a View List</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas nostrum ipsam, blanditiis, mollitia, dolorem nobis a, repellat placeat quaerat nam ex tenetur est veniam. Magni, quas, sunt? Harum, incidunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas nostrum ipsam, blanditiis, mollitia, dolorem nobis a, repellat placeat quaerat nam ex tenetur est veniam. Magni, quas, sunt? Harum, incidunt.</p>
+        </div>
 
+        <div class="col-xs-12 col-sm-6">
+          <h4>Rendering a View List</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas nostrum ipsam, blanditiis, mollitia, dolorem nobis a, repellat placeat quaerat nam ex tenetur est veniam. Magni, quas, sunt? Harum, incidunt.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas nostrum ipsam, blanditiis, mollitia, dolorem nobis a, repellat placeat quaerat nam ex tenetur est veniam. Magni, quas, sunt? Harum, incidunt.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <pre><code class="language-javascript">
+&lt;DottedViewList&gt;
+  &lt;View title="Hot Articles"&gt;
+    &lt;List&gt;
+      {hotArticles.map((article, i) =&gt;
+        {article.title}
+      )}
+    &lt;/List&gt;
+  &lt;/View&gt;
+  &lt;View title="New Articles"&gt;
+    {newArticles.map((article, i) =&gt;
+      {article.title}
+    )}
+  &lt;/View&gt;
+&lt;/DottedViewList&gt;
+          </code></pre>
         </div>
       </div>
-    </div>
   </div>
 
   <script src="/assets/js/prism.js"></script>

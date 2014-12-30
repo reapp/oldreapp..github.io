@@ -21,8 +21,11 @@ body {
   position: relative;
 }
 
-.header {
+.header, .body, .install {
   border-top: 2px solid #111;
+}
+
+.header {
   min-width: 468px;
   padding: 1rem 0;
   color: #111;
@@ -40,15 +43,15 @@ body {
 }
 
 .header h1 a {
-  margin: 10px 0 0;
+  margin: 0 0 -14px;
   display: block;
   color: #111;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 190px;
-  height: 56px;
-  background: url(/assets/images/reapp-logo2-black.png) no-repeat top left;
+  width: 140px;
+  height: 54px;
+  background: url(/assets/images/reapp-logo3-black.png) no-repeat top left;
 }
 
 .header nav {
@@ -57,7 +60,7 @@ body {
   margin-right: 0;
   flex-flow: row;
   flex-grow: 1;
-  max-width: 600px;
+  max-width: 550px;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -65,7 +68,7 @@ body {
 
 .header nav a {
   margin: auto 0;
-  font-size: 1rem;
+  font-size: 15px;
   padding: .4rem 1rem;
   color: #111;
   transition: opacity .2s ease-in;
@@ -76,8 +79,8 @@ body {
 }
 
 .install {
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #111;
   padding: 3rem 0;
   text-align: right;
   font-weight: bold;
@@ -97,27 +100,27 @@ body {
 }
 
 .hero {
-  padding: 2rem 0 3rem;
+  padding: 1rem 0 3rem;
   background: none;
   border: none;
   color: #111;
   z-index: 3;
 }
 
-.hero h2 {
+.hook h2 {
   font-size: 2.6rem;
   margin: 0 0 1.8rem 0 ;
   font-weight: normal;
 }
 
-.hero p {
+.hook p {
   font-size: 1.3rem;
   line-height: 1.7em;
   margin-bottom: 1rem;
   color: #111;
 }
 
-.hero p.first {
+.hook p.first {
   font-size: 1.5rem;
 }
 
@@ -125,6 +128,10 @@ body {
   position: relative;
   z-index: 3;
   padding: 2rem 0;
+}
+
+.hero .features {
+  margin: 3rem 0 -1rem;
 }
 
 .info {
@@ -185,15 +192,8 @@ body {
   -webkit-transform: translateZ(0);
 }
 
-#phone {
-  display: none;
-  background: url(/assets/images/phone.jpg) no-repeat bottom right;
-  width: 620px;
-  height: 671px;
-  position: absolute;
-  top: -429px;
-  right: -100px;
-  z-index: 1;
+.body .row {
+  margin: 0 0 2rem 0;
 }
 
 .body div {
@@ -201,7 +201,27 @@ body {
   z-index: 2;
 }
 
+.demo-row {
+  flex-wrap: nowrap;
+}
+
+.demo, .demo-description {
+  display: flex;
+}
+
+.demo {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.demo-description {
+  flex-grow: 1;
+  text-align: left;
+}
+
 .screenshot {
+  display: block;
+  max-width: 360px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
