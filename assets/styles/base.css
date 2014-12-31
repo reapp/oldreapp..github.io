@@ -1,26 +1,77 @@
+div, span {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-weight: normal;
+  background: #fff;
+  color: #111;
+  overflow-x: hidden;
+}
+
+.large-text {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+body::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 1200px;
+  top: 0;
+  right: 0;
+  opacity: 0.15;
+  background: url(/assets/images/spirograph.svg) no-repeat;
+  background-size: 100% 100%;
+  background-position: 500px -600px;
+}
+
+
 h1, h2, h3, h4, h5 {
-  line-height: .8em;
+  line-height: 1em;
 }
 
 h2 {
   font-size: 2rem;
   margin: 1rem 0;
 }
+
+h2 span, h3 span, h4 span {
+  opacity: 0.5;
+  font-size: 80%;
+}
+
 :focus {
   outline-color: transparent;
   outline-style: none;
 }
+
 h2 + p {
   margin: 0 0 2rem 0;
 }
+
 a {
   text-decoration: none;
   color: #007FFF;
   padding: 0 0 0.2rem 0;
 }
+
+p {
+  margin: 0 0 2rem 0;
+}
+
 a:hover {
   color: #007FFF;
 }
+
 pre {
   overflow-x: auto;
   padding: 1.25em;
@@ -30,11 +81,13 @@ pre {
   white-space: pre;
   word-wrap: normal;
 }
+
 .layout {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 .page-nav {
   box-sizing: border-box;
   position: fixed;
@@ -42,6 +95,7 @@ pre {
   width: 100%;
   background: transparent;
 }
+
 .button {
   position: relative;
   display: inline-block;
@@ -57,38 +111,18 @@ pre {
   font-size: 1.25rem;
   transition: background-color, 0.15s;
 }
+
 .button:hover {
   background: #3399FF;
   border-color: #3399FF;
   color: #FFF;
   text-shadow: 0 1px #007FFF;
 }
+
 .button:active {
   background: #007FFF;
   color: #FFF;
   border-top: 2px solid #0066CC;
-}
-@media only screen and (min-width: 48rem) {
-  body {
-    font-size: 16px;
-  }
-  .page {
-    width: 75%;
-  }
-  .slide-menu {
-    width: 25%;
-  }
-  .open {
-    transform: translate3d(0, 0, 0);
-  }
-  .hero-headline {
-    font-size: 6rem;
-    margin-bottom: 2rem;
-  }
-  .hero-copy {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
 }
 
 
