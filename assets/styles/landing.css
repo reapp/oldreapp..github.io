@@ -44,10 +44,6 @@
   z-index: 2;
 }
 
-.header .row {
-  height: 60px;
-}
-
 .header h1 {
   display: block;
   margin: auto 0;
@@ -60,9 +56,9 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 125px;
-  height: 50px;
-  background: url(/assets/images/reapp-logo1.png) no-repeat top left;
+  width: 185px;
+  height: 79px;
+  background: url(/assets/images/logo-sharp.png) no-repeat top left;
 }
 
 .header nav {
