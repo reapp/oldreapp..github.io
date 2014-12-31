@@ -42,9 +42,34 @@ body::before {
 }
 
 .section {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.highlight {
+  background: #eee;
+  position: relative;
+}
+
+.highlight::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/assets/lines.svg);
+  opacity: .6;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.highlight * {
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -71,10 +96,9 @@ body::before {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 140px;
-  height: 60px;
-  background: url(/assets/images/logo2.svg) no-repeat top left;
-  background-size: 100% 100%;
+  width: 125px;
+  height: 50px;
+  background: url(/assets/images/reapp-logo1.png) no-repeat top left;
 }
 
 .header nav {
@@ -220,7 +244,6 @@ blockquote footer {
 }
 
 .install {
-  background: #fff;
   color: #111;
   padding: 3rem 0;
   text-align: right;
@@ -245,31 +268,6 @@ blockquote footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   z-index: 2;
-}
-
-.row-highlight {
-  background: #ffe6d7;
-  position: relative;
-}
-
-.row-highlight::before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(/assets/lines.svg);
-  opacity: .5;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-}
-
-.row-highlight * {
-  position: relative;
-  z-index: 1;
 }
 
 .body .row {
@@ -324,4 +322,12 @@ code {
 
 .feature {
   padding: 0 2rem;
+}
+
+.pad {
+  padding: 2rem;
+}
+
+.examples .row div {
+  margin-bottom: 4rem;
 }
