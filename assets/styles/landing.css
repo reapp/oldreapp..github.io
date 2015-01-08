@@ -56,9 +56,9 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 185px;
-  height: 79px;
-  background: url(/assets/images/logo-sharp.png) no-repeat top left;
+  width: 145px;
+  height: 80px;
+  background: url(/assets/images/logo-sharp2.png) no-repeat top left;
 }
 
 .header nav {
