@@ -12,7 +12,7 @@
 }
 
 .highlight {
-  background: #eee;
+  background: #fff;
   position: relative;
 }
 
@@ -291,10 +291,6 @@ code {
   font-size: 14px;
   display: block;
   background: #111;
-}
-
-.features {
-  margin: 0 auto 4rem;
 }
 
 .features h3 {
