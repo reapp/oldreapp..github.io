@@ -348,3 +348,23 @@ code {
   font-size: 120%;
   line-height: 2rem;
 }
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+footer .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer nav a {
+  display: block;
+}
+
+footer span {
+  font-size: 80%;
+  opacity: 0.5;
+}
