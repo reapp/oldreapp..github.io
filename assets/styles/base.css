@@ -20,21 +20,6 @@ body {
   line-height: 2rem;
 }
 
-body::before {
-  content: ' ';
-  position: absolute;
-  display: block;
-  width: 1200px;
-  height: 1200px;
-  top: 0;
-  right: 0;
-  opacity: 0.15;
-  background: url(/assets/images/spirograph.svg) no-repeat;
-  background-size: 100% 100%;
-  background-position: 500px -600px;
-}
-
-
 h1, h2, h3, h4, h5 {
   line-height: 1.2em;
 }

@@ -1,3 +1,18 @@
+body::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 1200px;
+  top: 0;
+  right: 0;
+  opacity: 0.15;
+  background: url(/assets/images/spirograph.svg) no-repeat;
+  background-size: 100% 100%;
+  background-position: 500px -600px;
+  z-index: 2;
+}
+
 .row {
   max-width: 1280px;
   margin: 0 auto;
