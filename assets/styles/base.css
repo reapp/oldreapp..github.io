@@ -2,19 +2,6 @@ div, span {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.8rem;
-  font-weight: normal;
-  background: #fdfff4;
-  color: #111;
-  overflow-x: hidden;
-}
-
 .large-text {
   font-size: 20px;
   line-height: 2rem;
