@@ -144,14 +144,15 @@
 }
 
 .screen:nth-child(2) {
-  margin-bottom: -330px;
+  margin-bottom: -320px;
 }
 
 .screen:nth-child(3) {
-  margin-bottom: -360px;
+  margin-bottom: -340px;
 }
 
 .info {
+  display: none;
   background: #000;
   color: #fff;
   font-weight: bold;
@@ -184,6 +185,7 @@
 }
 
 .hero-headline {
+  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -280,6 +282,10 @@ blockquote footer {
   text-align: left;
 }
 
+.demo-description .row div {
+  padding: 0 1rem;
+}
+
 .screenshot {
   display: block;
   max-width: 360px;
@@ -303,7 +309,7 @@ code {
 }
 
 .pad {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .examples .row div {
@@ -311,7 +317,7 @@ code {
 }
 
 .feature img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 160px;
+  max-height: 160px;
   margin: auto;
 }
