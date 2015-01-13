@@ -1,5 +1,8 @@
-body {
+body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -129,7 +132,8 @@ body::before {
 }
 
 .signup input {
-  padding: 1rem;
+  font-size: 20px;
+  padding: .8rem;
   border: 1px solid #ccc;
 }
 
@@ -139,6 +143,7 @@ body::before {
   color: #fff;
   font-size: 1rem;
   border-radius: 5px;
+  padding: 0 1rem;
 }
 
 #email {
@@ -278,7 +283,7 @@ blockquote footer {
 .install p {
   font-size: 1.8rem;
   line-height: 3rem;
-  margin: -1rem 0;
+  margin: -1.5rem 0;
 }
 
 .install span {
@@ -353,12 +358,6 @@ code {
   padding: 0 2rem;
 }
 
-.feature img {
-  max-width: 180px;
-  max-height: 180px;
-  margin: auto;
-}
-
 .emphasize {
   font-size: 120%;
   line-height: 2rem;
@@ -384,12 +383,21 @@ code {
   opacity: 0.5;
 }
 
+#made-with h4 {
+  text-align: center;
+  opacity: 0.9;
+  margin: 1rem 0 -.5rem;
+}
+
 #made-with img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: auto;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
 #made-with:hover img {
-  filter: grayscale(0%) !important;
-  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
