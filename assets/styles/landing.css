@@ -34,7 +34,7 @@ body::before {
 }
 
 .section {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #d9dacc;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -46,7 +46,7 @@ body::before {
   margin: 0;
   background: #fff;
   padding: .8rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #d9dacc;
 }
 
 .highlight {
@@ -110,7 +110,7 @@ body::before {
   margin: auto 0;
   font-size: 15px;
   padding: .4rem 1rem;
-  color: #111;
+  color: #44443e;
   transition: opacity .2s ease-in;
 }
 
@@ -118,13 +118,8 @@ body::before {
   opacity: 1;
 }
 
-
-
 .hero {
-  background: none;
   border: none;
-  color: #111;
-  z-index: 3;
 }
 
 .signup {
@@ -155,7 +150,7 @@ body::before {
 
 .hero-second, .hero-first {
   position: relative;
-  padding: 1rem 0;
+  padding: 0;
   z-index: 3;
 }
 
@@ -171,7 +166,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -150px -320px -300px 20px;
+  margin: -120px -320px -300px 20px;
   transform: scale(0.75) perspective(50em) rotateX(10deg) rotateY(20deg) rotateZ(-10deg);
   box-shadow: 0 0 90px rgba(0,0,0,0.3);
 }
