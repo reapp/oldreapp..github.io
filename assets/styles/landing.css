@@ -401,3 +401,9 @@ code {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
+
+#made-with li {
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
