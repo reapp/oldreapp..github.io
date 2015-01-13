@@ -7,8 +7,18 @@
 
 .section {
   border-top: 1px solid #ddd;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.section-title {
+  position: absolute;
+  top: -4rem;
+  left: 2rem;
+  margin: 0;
+  background: #fff;
+  padding: .8rem 1rem;
+  border: 1px solid #ddd;
 }
 
 .highlight {
@@ -29,11 +39,6 @@
   opacity: .6;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-}
-
-.highlight * {
-  position: relative;
-  z-index: 1;
 }
 
 .header {
@@ -310,10 +315,6 @@ code {
 
 .pad {
   padding: 0 2rem;
-}
-
-.examples .row div {
-  margin-bottom: 4rem;
 }
 
 .feature img {
