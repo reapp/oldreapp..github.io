@@ -180,6 +180,13 @@
 .last-xs {
   order: 1;
 }
+
+@media only screen and (max-width: 48em) {
+  .hide-xs {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 48em) {
   .col-sm,
   .col-sm-1,
