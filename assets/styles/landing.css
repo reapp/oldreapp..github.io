@@ -249,22 +249,25 @@ blockquote footer {
 
 .install {
   color: #111;
-  padding: 2rem 0;
+  padding: 0;
   text-align: right;
   font-weight: bold;
   text-align: center;
 }
 
 .install p {
+  border: 1px solid #ddd;
+  padding: 1rem 4rem;
   font-size: 1.8rem;
   line-height: 3rem;
-  margin: auto 0;
+  margin: -2rem auto -1px;
 }
 
 .install span {
   display: block;
   font-weight: normal;
   opacity: 0.8;
+  font-size: 1.6rem;
 }
 
 .body {
@@ -333,7 +336,7 @@ code {
 }
 
 .feature img {
-  max-width: 160px;
-  max-height: 160px;
+  max-width: 180px;
+  max-height: 180px;
   margin: auto;
 }
