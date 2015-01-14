@@ -163,14 +163,18 @@ body::before {
 }
 
 .hook p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.7em;
   margin-bottom: 1rem;
   color: #111;
 }
 
 .hook p.first {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.unemphasize {
+  opacity: 0.75;
 }
 
 .hero-second, .hero-first {
@@ -281,17 +285,20 @@ blockquote footer {
 }
 
 .install {
+  background: rgba(0,0,0,0.02);
   font-weight: bold;
   text-align: center;
 }
 
 .install p {
   font-size: 1.8rem;
-  line-height: 3rem;
-  margin: -.5rem 0;
+  line-height: 2.75rem;
+  margin: -1.5rem 0;
+  color: #9d213b;
 }
 
 .install span {
+  color: #666;
   display: block;
   font-weight: normal;
   opacity: 0.8;
