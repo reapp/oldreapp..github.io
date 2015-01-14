@@ -40,8 +40,8 @@ body::before {
 
 .section {
   border-top: 1px solid #d9dacc;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-title {
@@ -284,7 +284,7 @@ blockquote footer {
 .install p {
   font-size: 1.8rem;
   line-height: 3rem;
-  margin: -1.5rem 0;
+  margin: -.5rem 0;
 }
 
 .install span {
@@ -387,7 +387,7 @@ code {
 #made-with h4 {
   text-align: center;
   opacity: 0.9;
-  margin: 1rem 0 -.5rem;
+  margin: 1rem 0 0;
 }
 
 #made-with img {
