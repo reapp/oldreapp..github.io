@@ -27,7 +27,8 @@ body::before {
   background: url(/assets/images/spirograph.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 800px -900px;
-  z-index: 2;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
 }
 
 .row {
