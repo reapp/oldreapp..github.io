@@ -363,7 +363,7 @@ code {
   padding: 0 2rem;
 }
 
-.emphasize {
+.emphasize p {
   font-size: 120%;
   line-height: 2rem;
 }
