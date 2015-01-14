@@ -44,14 +44,18 @@ body::before {
   padding-bottom: 3rem;
 }
 
+.has-title {
+  padding-top: 4rem;
+}
+
 .section-title {
   position: absolute;
   top: -4rem;
   left: 2rem;
-  margin: 0;
-  background: #fff;
+  margin: 0 0 2rem;
   padding: .8rem 1rem;
   border: 1px solid #d9dacc;
+  border-top: 0;
 }
 
 .highlight {
