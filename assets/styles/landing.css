@@ -191,7 +191,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -120px -320px -300px 20px;
+  margin: -120px -300px -300px 20px;
   transform: scale(0.75) perspective(50em) rotateX(10deg) rotateY(20deg) rotateZ(-10deg);
   box-shadow: 0 0 90px rgba(0,0,0,0.3);
 }
