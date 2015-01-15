@@ -188,24 +188,48 @@ body::before {
 }
 
 .screens {
-  flex-flow: row;
-  flex-wrap: nowrap;
+  margin-left: -20px;
 }
 
 .screen {
   width: 377px;
   height: 667px;
-  margin: -120px -300px -300px 20px;
+  margin: -120px -300px -300px 40px;
   transform: scale(0.75) perspective(50em) rotateX(10deg) rotateY(20deg) rotateZ(-10deg);
   box-shadow: 0 0 60px rgba(0,0,0,0.2);
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.screen:nth-child(1):before,
+.screen:nth-child(2):before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.1;
+  transition: opacity 400ms linear;
+}
+
+.screen:nth-child(1):before {
+  opacity: 0.2;
 }
 
 .screen:nth-child(2) {
-  margin-bottom: -320px;
+  margin-top: -100px;
+}
+
+.screen:hover:before {
+  opacity: 0 !important;
 }
 
 .screen:nth-child(3) {
-  margin-bottom: -340px;
+  margin-top: -80px;
 }
 
 .info {
