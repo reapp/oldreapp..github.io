@@ -443,3 +443,37 @@ code {
   font-size: 1rem;
   line-height: 1.4rem;
 }
+
+@media only screen and (min-width: 48em) {
+  .content-nav {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    min-width: 300px;
+    z-index: 10;
+    padding: 0 0 100px 0;
+  }
+}
+
+.content-nav {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.content-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-nav li strong {
+  line-height: 2rem;
+}
+
+.content-nav li ul li {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
