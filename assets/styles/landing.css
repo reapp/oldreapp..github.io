@@ -17,7 +17,7 @@ body {
 body::before {
   pointer-events: none;
   content: ' ';
-  position: absolute;
+  position: fixed;
   display: block;
   width: 1800px;
   height: 1800px;
@@ -476,4 +476,13 @@ code {
 .content-nav li ul li {
   font-size: 1rem;
   line-height: 1.3rem;
+}
+
+.warn {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  font-style: normal;
+  padding: .5rem 1rem;
+  font-size: 1rem;
 }
