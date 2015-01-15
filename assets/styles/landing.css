@@ -40,22 +40,18 @@ body::before {
 
 .section {
   border-top: 1px solid #d9dacc;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.has-title {
-  padding-top: 4.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .section-title {
   position: absolute;
-  top: -4.5rem;
+  top: -4rem;
   left: 2rem;
   margin: 0 0 2rem;
   padding: .75rem 1rem;
-  border: 1px solid #d9dacc;
-  border-top: 0;
+  opacity: 0.8;
+  font-weight: normal;
 }
 
 .highlight {
@@ -129,7 +125,7 @@ body::before {
 
 .hero {
   border: none;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 
 .signup {
@@ -158,23 +154,21 @@ body::before {
 
 .hook h2 {
   font-size: 2.6rem;
-  margin: 0 0 1rem 0 ;
+  margin: 0 0 2rem 0 ;
   font-weight: normal;
 }
 
 .hook p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.7em;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #111;
 }
 
-.hook p.first {
-  font-size: 1.6rem;
-}
-
-.unemphasize {
+.hook .signup-text {
+  font-size: 1.3rem;
   opacity: 0.75;
+  margin-bottom: 1rem;
 }
 
 .hero-second, .hero-first {
@@ -202,30 +196,8 @@ body::before {
   float: left;
 }
 
-.screen:nth-child(1):before,
-.screen:nth-child(2):before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  opacity: 0.1;
-  transition: opacity 400ms linear;
-}
-
-.screen:nth-child(1):before {
-  opacity: 0.2;
-}
-
 .screen:nth-child(2) {
   margin-top: -100px;
-}
-
-.screen:hover:before {
-  opacity: 0 !important;
 }
 
 .screen:nth-child(3) {
@@ -308,26 +280,49 @@ blockquote footer {
   margin: 0 0 -4rem 0;
 }
 
-.install {
-  background: rgba(0,0,0,0.02);
-  font-weight: bold;
-  text-align: center;
+.fake-install {
+  height: 75px;
 }
 
-.install p {
-  font-size: 1.8rem;
-  line-height: 2.75rem;
-  margin: -1.5rem 0;
+.install {
+  border-bottom: 1px solid #d9dacc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 1rem 0;
+  background: #f3f3ea;
+  font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
+}
+
+.install-code {
+  font-size: 24px;
+  line-height: 2.5rem;
+  margin-left: 2rem;
   color: #9d213b;
+  font-weight: bold;
 }
 
 .install span {
-  color: #666;
-  display: block;
   font-weight: normal;
-  opacity: 0.8;
-  font-size: 1.6rem;
+  opacity: 0.5;
 }
+
+.install .extra-line {
+  color: #666;
+  font-weight: normal;
+  font-size: 80%;
+  height: 1px;
+  opacity: 0;
+  transition: all 100ms ease-in;
+}
+
+.install:active .extra-line {
+  height: 2rem;
+  opacity: 1;
+  margin: .25rem 0 .5rem;
+}
+
 
 .body {
   color: #111;
@@ -419,6 +414,10 @@ code {
   opacity: 0.5;
 }
 
+#made-with {
+  border: none;
+}
+
 #made-with h4 {
   text-align: center;
   opacity: 0.9;
@@ -429,11 +428,14 @@ code {
   max-width: 150px;
   max-height: 150px;
   margin: auto;
+  transition: all 200ms ease-in;
+  opacity: 0.5;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
 #made-with:hover img {
+  opacity: 1;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
