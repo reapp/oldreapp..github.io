@@ -317,7 +317,8 @@ blockquote footer {
   transition: all 100ms ease-in;
 }
 
-.install:active .extra-line {
+.install-code:active .extra-line,
+.install-code:focus .extra-line {
   height: 2rem;
   opacity: 1;
   margin: .25rem 0 .5rem;
