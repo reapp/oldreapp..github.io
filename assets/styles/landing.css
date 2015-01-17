@@ -126,6 +126,7 @@ body::before {
 .hero {
   border: none;
   padding-top: 3rem;
+  margin-bottom: -2rem;
 }
 
 .signup {
@@ -161,7 +162,7 @@ body::before {
 
 .hook h2 {
   font-size: 2.6rem;
-  margin: 0 0 2rem 0 ;
+  margin: 0 0 1.5rem 0 ;
   font-weight: normal;
 }
 
@@ -189,17 +190,16 @@ body::before {
 }
 
 .screens {
-  margin-left: -20px;
+  display: flex;
 }
 
 .screen {
   width: 377px;
   height: 667px;
-  margin: -120px -300px -300px 40px;
-  transform: scale(0.75) perspective(50em) rotateX(10deg) rotateY(20deg) rotateZ(-10deg);
+  margin: -20px auto -300px;
   box-shadow: -5px 20px 60px rgba(0,0,0,0.2);
   position: relative;
-  display: block;
+  display: flex;
   float: left;
 }
 
