@@ -23,10 +23,10 @@ body::before {
   height: 1800px;
   top: 0;
   right: 0;
-  opacity: 0.15;
-  background: url(/assets/images/spirograph.svg) no-repeat;
+  opacity: 0.4;
+  background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
-  background-position: 800px -1100px;
+  background-position: 500px -1000px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
