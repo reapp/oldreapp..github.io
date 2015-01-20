@@ -380,6 +380,9 @@
     padding-right: var( --half-gutter-width, 0.5rem );
     padding-left: var( --half-gutter-width, 0.5rem );
   }
+  .show-md {
+    display: block;
+  }
   .col-md {
     flex-grow: 1;
     flex-basis: 0;
