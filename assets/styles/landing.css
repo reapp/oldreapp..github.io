@@ -23,7 +23,7 @@ body::before {
   height: 1800px;
   top: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.4;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 800px -1000px;
@@ -81,7 +81,6 @@ body::before {
   min-width: 468px;
   padding: 1.5rem 0;
   color: #111;
-  justify-content: space-between;
   z-index: 2;
 }
 
@@ -97,24 +96,30 @@ body::before {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 120px;
+  width: 220px;
   height: 46px;
   background: url(/assets/images/logo3.png) no-repeat top left;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .header nav {
   font-weight: bold;
-  margin: auto;
   margin-right: 0;
   flex-flow: row;
   flex-grow: 1;
-  max-width: 550px;
+  min-width: 350px;
   display: flex;
-  justify-content: center;
+  align-self: flex-end;
   justify-content: space-between;
 }
 
 .header nav a {
+  display: flex;
+  flex-grow: 1;
   margin: auto 0;
   font-size: 15px;
   padding: .4rem 1rem;
@@ -199,7 +204,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -20px auto -350px;
+  margin: -40px auto -350px;
   box-shadow: -5px 20px 60px rgba(0,0,0,0.2);
   position: relative;
   display: flex;
@@ -291,7 +296,7 @@ blockquote footer {
 }
 
 .fake-install {
-  height: 40px;
+  height: 240px;
 }
 
 .install {
@@ -352,35 +357,6 @@ blockquote footer {
   z-index: 2;
 }
 
-.demo-row {
-  flex-wrap: nowrap;
-  display: flex;
-}
-
-.demo, .demo-description {
-  display: flex;
-}
-
-.demo {
-  width: 360px;
-  flex-shrink: 0;
-}
-
-.demo-description {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.demo-description .row div {
-  padding: 0 1rem;
-}
-
-.screenshot {
-  display: block;
-  max-width: 360px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
 code {
   margin: 1em 0;
   font-size: 14px;
@@ -401,8 +377,11 @@ code {
   padding: 0 2rem;
 }
 
-.powered-by h4 {
-  opacity: 0.2;
+h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .widget {
@@ -435,36 +414,23 @@ code {
   opacity: 0.5;
 }
 
-#made-with {
-  border: none;
-}
-
-#made-with h4 {
-  text-align: center;
-  opacity: 0.9;
-  margin: 2rem 0 1rem 0;
-}
-
 .widget {
+  margin: auto;
   max-width: 150px;
   max-height: 150px;
-  margin: auto;
+}
+
+.gray {
   transition: all 200ms ease-in;
-  opacity: 0.5;
+  opacity: 0.3;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
-.widget:hover {
+.gray:hover {
   opacity: 1;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-}
-
-#made-with li {
-  opacity: 0.8;
-  font-size: 1rem;
-  line-height: 1.4rem;
 }
 
 @media only screen and (min-width: 48em) {

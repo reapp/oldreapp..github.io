@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+
   <link rel="stylesheet" type="text/css" href="/assets/styles/base.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
@@ -11,21 +16,23 @@
   <div class="layout">
     <div class="header">
       <div class="row">
-        <h1><a href="/">reapp</a></h1>
-        <nav>
-          <a href="/#install">Install</a>
-          <a href="/#demo">Demo</a>
-          <a href="/docs.html">Docs</a>
-          <a href="https://github.com/reapp/reapp">Github</a>
-          <a href="https://twitter.com/reapp">Twitter</a>
-        </nav>
+        <div class="col-xs-12 col-sm-4">
+          <h1><a href="/">reapp</a></h1>
+        </div>
+        <div class="nav-container col-xs-12 col-sm-8">
+          <nav>
+            <a href="/docs.html">Docs</a>
+            <a href="https://github.com/reapp/reapp">Github</a>
+            <a href="https://twitter.com/reapp">Twitter</a>
+          </nav>
+        </div>
       </div>
     </div>
 
     <div class="section hero">
       <div class="hook row center-xs start-sm">
         <div class="hero-first col-xs-12 col-sm-5 col-md-6">
-          <h2 class="hero-headline">Make amazing mobile apps</h2>
+          <h2 class="hero-headline">Build amazing mobile apps</h2>
           <p class="first">
             Build full-featured hybrid mobile apps using the power of React and Node.
           </p>
@@ -74,28 +81,6 @@
 
     <div class="fake-install"></div>
 
-    <div class="section powered-by">
-      <div class="row">
-        <div class="col-xs-12">
-          <h4>Powered by...</h4>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6 col-sm-2">
-          <img class="widget" src="/assets/images/react-logo.svg" />
-        </div>
-
-        <div class="col-xs-6 col-sm-2">
-          <img class="widget" src="/assets/images/webpack.svg" />
-        </div>
-
-        <div class="col-xs-6 col-sm-2">
-          <img class="widget" src="/assets/images/spiro.svg" />
-        </div>
-      </div>
-    </div>
-
     <div id="examples" class="section highlight has-title emphasize">
       <div class="row">
         <h2 class="section-title">Reapp UI</h2>
@@ -135,19 +120,25 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Features</h3>
+        </div>
+      </div>
+
       <div id="made-with" class="row">
         <div class="pad col-xs-12 col-md-6 col-lg-4">
           <h4>Animations</h4>
           <p>
-            Animations handled through React props. Composable, consistent, and JS powered.
-            Compose multiple animations per component, all within React.
+            Composable, consistent, and JS powered.
+            Compose multiple animations per component, all through React props.
           </p>
         </div>
 
         <div class="pad col-xs-12 col-md-6 col-lg-4">
           <h4>Themes</h4>
           <p>
-            Powerful theming system. Themes are composed of three layers: constants, styles, animations.
+            Themes are composed of three layers: constants, styles, animations.
             Mix and match each layer to make your own themes.
           </p>
         </div>
@@ -155,7 +146,7 @@
         <div class="pad col-xs-12 col-md-6 col-lg-4">
           <h4>Styles</h4>
           <p>
-            Styling system powered by react-style, with a declarative and pure way of adding styles.
+            Powered by react-style, declarative and pure.
             Use the power of JS, along with our easy interface to style components.
           </p>
         </div>
@@ -163,7 +154,7 @@
         <div class="pad col-xs-12 col-md-6 col-lg-4">
           <h4>Icons</h4>
           <p>
-            We've imported a huge set of SVG icons to use with the Icon component.
+            A huge set of SVG icons to use with the Icon component.
             Or load your favorite pack of icon fonts.
           </p>
         </div>
@@ -171,16 +162,15 @@
         <div class="pad col-xs-12 col-md-6 col-lg-4">
           <h4>View Lists</h4>
           <p>
-            Build custom views lists with our ViewListMixin,
+            Custom views lists with our ViewListMixin,
             nest views within each other, and all animations are handled for you.
           </p>
         </div>
 
         <div class="pad col-xs-12 col-md-6 col-lg-4">
-          <h4>View Lists</h4>
+          <h4>Components</h4>
           <p>
-            Heavy work went into building the view system. Build custom views with our ViewListMixin,
-            nest views within each other, and all animations are handled for you.
+            All the components and helper mixins to create complete UI's.
           </p>
         </div>
       </div>
@@ -236,6 +226,29 @@
           </p>
         </div>
         <div class="col-xs-0 col-sm-2 col-md-3"></div>
+      </div>
+    </div>
+
+
+    <div class="section powered-by gray">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Powered By</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">
+          <img class="widget" src="/assets/images/node.svg" />
+        </div>
+
+        <div class="col-xs-4">
+          <img class="widget" src="/assets/images/react-logo.svg" />
+        </div>
+
+        <div class="col-xs-4">
+          <img class="widget" src="/assets/images/webpack.svg" />
+        </div>
       </div>
     </div>
 
