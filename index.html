@@ -89,6 +89,8 @@
           <pre><code class="language-javascript">
 export default React.createClass({
   render() {
+    var { hotArticles, newArticles } = this.props;
+
     return (
       &lt;DottedViewList&gt;
         &lt;View title="Hot Articles"&gt;
@@ -133,33 +135,33 @@ export default React.createClass({
 
     <div class="section has-title">
       <div id="made-with" class="row">
-        <h2 class="section-title">Features</h2>
+        <h2 class="section-title">UI Features</h2>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>Animations</h4>
           <p>
-            Composable, consistent, and JS powered.
-            Compose multiple animations per component, all through React props.
+            Composable, interactive, JS powered.
+            Use multiple animations per component, dynamically changeable
+            through React props.
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>Themes</h4>
           <p>
             Themes are composed of three layers: constants, styles, animations.
-            Mix and match each layer to make your own themes.
+            Mix and match all of them to make your own themes.
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>Styles</h4>
           <p>
-            Powered by react-style, declarative and pure.
-            Use the power of JS, along with our easy interface to style components.
+            Powered by JS and react-style, our styles interface is consistent and pure.
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>Icons</h4>
           <p>
             A huge set of SVG icons to use with the Icon component.
@@ -167,7 +169,7 @@ export default React.createClass({
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>View Lists</h4>
           <p>
             Custom views lists with our ViewListMixin,
@@ -175,7 +177,7 @@ export default React.createClass({
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-2">
+        <div class="pad col-xs-6 col-md-6 col-lg-2">
           <h4>Components</h4>
           <p>
             All the components and helper mixins to create complete UI's.
@@ -184,7 +186,82 @@ export default React.createClass({
       </div>
     </div>
 
-    <div class="section highlight">
+    <div class="section highlight has-title">
+      <div id="made-with" class="row">
+        <h2 class="section-title">What else?</h2>
+
+        <div class="pad col-xs-12 emphasize">
+          <p>
+            The reapp CLI bootstraps you with these modules.
+            Most are &lt;100 lines, and easily replaceable.
+            From there you can mix and match them as you like.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-component</h4>
+          <p>
+            Easily decorate react classes, and inject variables to your whole stack.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-pack</h4>
+          <p>
+            A generator of webpack configs, takes options and builds configs
+            for reapp apps.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-platform</h4>
+          <p>
+            Init's touch events, and gives a small set of mixins and helpers
+            common to React apps.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-reducer</h4>
+          <p>
+            A tiny reducer for use with flux apps.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-request</h4>
+          <p>
+            Superagent + bluebird + promises + caching.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-routes</h4>
+          <p>
+            Simple DSL for routes.
+            We have a pre-built one for react-router.
+            DRY route to directory requires.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-server</h4>
+          <p>
+            An express and webpack server that take a variety of options,
+            to bootstrap building reapp apps.
+          </p>
+        </div>
+
+        <div class="pad col-xs-6 col-md-3">
+          <h4>reapp-ui</h4>
+          <p>
+            All the components and helper mixins to create complete UI's.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
       <div class="row">
 
         <div class="col-xs-12 col-md-6">
