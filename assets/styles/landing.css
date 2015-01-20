@@ -9,7 +9,7 @@ body {
   font-size: 18px;
   line-height: 1.8rem;
   font-weight: normal;
-  background: #f3f3ea;
+  background: #f2f3e5;
   color: #111;
   overflow-x: hidden;
 }
@@ -39,6 +39,7 @@ body::before {
 }
 
 .section {
+  border-top: 1px solid #f2f3e5;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -101,34 +102,23 @@ body::before {
   background: url(/assets/images/logo3.png) no-repeat top left;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header nav {
+.nav-container nav {
+  opacity: 0.2;
+  padding: 0;
   font-weight: bold;
   margin-right: 0;
-  flex-flow: row;
-  flex-grow: 1;
-  min-width: 350px;
   display: flex;
-  align-self: flex-end;
-  justify-content: space-between;
+  flex-flow: row;
 }
 
-.header nav a {
+.nav-container a {
   display: flex;
   flex-grow: 1;
   margin: auto 0;
-  font-size: 15px;
+  font-size: 18px;
   padding: .4rem 1rem;
   color: #44443e;
-  transition: opacity .2s ease-in;
-}
-
-.header nav a:hover {
-  opacity: 1;
+  text-align: center;
 }
 
 .hero {
@@ -204,7 +194,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -40px auto -350px;
+  margin: -100px auto -350px;
   box-shadow: -5px 20px 60px rgba(0,0,0,0.2);
   position: relative;
   display: flex;
@@ -296,7 +286,11 @@ blockquote footer {
 }
 
 .fake-install {
-  height: 240px;
+  height: 180px;
+}
+
+.fake-install, .install {
+  margin-top: 2rem;
 }
 
 .install {
@@ -339,7 +333,6 @@ blockquote footer {
   opacity: 1;
   margin: .25rem 0 .5rem;
 }
-
 
 .body {
   color: #111;
