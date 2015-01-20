@@ -43,9 +43,13 @@ body::before {
   padding-bottom: 4rem;
 }
 
+.has-title {
+  padding-top: 8rem;
+}
+
 .section-title {
   position: absolute;
-  top: -4rem;
+  top: -5rem;
   left: 2rem;
   margin: 0 0 2rem;
   padding: .75rem 1rem;
@@ -195,7 +199,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -20px auto -300px;
+  margin: -20px auto -350px;
   box-shadow: -5px 20px 60px rgba(0,0,0,0.2);
   position: relative;
   display: flex;
@@ -287,16 +291,18 @@ blockquote footer {
 }
 
 .fake-install {
-  height: 197px;
+  height: 40px;
 }
 
 .install {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-left: none;
+  border-right: none;
   position: absolute;
   left: 0;
   right: 0;
   z-index: 1;
   padding: 1rem 0;
-  background: rgba(255,255,255,0.5);
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
 }
 
@@ -395,12 +401,21 @@ code {
   padding: 0 2rem;
 }
 
+.powered-by h4 {
+  opacity: 0.2;
+}
+
+.widget {
+  width: 110px;
+}
+
 .emphasize p {
   font-size: 120%;
   line-height: 2rem;
 }
 
 .footer {
+  position: relative;
   background: #111;
   color: #fff;
   text-align: center;
@@ -430,7 +445,7 @@ code {
   margin: 2rem 0 1rem 0;
 }
 
-#made-with img {
+.widget {
   max-width: 150px;
   max-height: 150px;
   margin: auto;
@@ -440,7 +455,7 @@ code {
   -webkit-filter: grayscale(100%);
 }
 
-#made-with:hover img {
+.widget:hover {
   opacity: 1;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);

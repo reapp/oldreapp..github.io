@@ -30,15 +30,11 @@
             Build full-featured hybrid mobile apps using the power of React and Node.
           </p>
 
-          <p class="signup-text">
-            Sign up to our low-annoyance list for early updates:
-          </p>
-
           <form class="signup description" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
             <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
             <input type="hidden" name="js_id" id="js_id" value="1ur1p">
             <input type="hidden" name="req_hid" id="req_hid" value="">
-            <input type="text" name="email" id="email" value="" placeholder="you@email.com">
+            <input type="text" name="email" id="email" value="" placeholder="Sign up for early updates">
             <button type="submit" data-editfield="subscribe">Subscribe</button>
           </form>
         </div>
@@ -78,66 +74,31 @@
 
     <div class="fake-install"></div>
 
-    <div class="section highlight">
-      <div id="made-with" class="row center-xs start-sm">
+    <div class="section powered-by">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Powered by...</h4>
+        </div>
+      </div>
 
-        <div class="row">
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <img src="/assets/images/react-logo.svg" />
-            <h4>UI Kit</h4>
-            <p>
-              <em>reapp-ui</em> composes the bulk of reapp. It's a UI kit that gives you the
-              pieces you need to build beautiful app UI's.
-            </p>
-          </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-2">
+          <img class="widget" src="/assets/images/react-logo.svg" />
+        </div>
 
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <img src="/assets/images/webpack.svg" />
-            <h4>Themeing</h4>
-            <p>
-              Powerful themeing system. Themes are composed of three layers: constants, styles, animations.
-              Mix and match each layer to make your own themes.
-            </p>
-          </div>
+        <div class="col-xs-6 col-sm-2">
+          <img class="widget" src="/assets/images/webpack.svg" />
+        </div>
 
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <img src="/assets/images/spiro.svg" />
-            <h4>Styling</h4>
-            <p>
-              Styling system powered by react-style, with a declarative and pure way of adding styles.
-              Use the power of JS, along with our easy interface to style components.
-            </p>
-          </div>
-
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <h4>Animations</h4>
-            <p>
-              Animations handled through React props. Composable, consistent, and JS powered.
-              Compose multiple animations per component, all within React.
-            </p>
-          </div>
-
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <h4>Icons</h4>
-            <p>
-              We've imported a huge set of SVG icons to use with the Icon component.
-              Or load your favorite pack of icon fonts.
-            </p>
-          </div>
-
-          <div class="pad col-xs-12 col-md-6 col-lg-4">
-            <h4>View Lists</h4>
-            <p>
-              Heavy work went into building the view system. Build custom views with our ViewListMixin,
-              nest views within each other, and all animations are handled for you.
-            </p>
-          </div>
+        <div class="col-xs-6 col-sm-2">
+          <img class="widget" src="/assets/images/spiro.svg" />
         </div>
       </div>
     </div>
 
-    <div id="examples" class="section  highlight emphasize">
+    <div id="examples" class="section highlight has-title emphasize">
       <div class="row">
+        <h2 class="section-title">Reapp UI</h2>
 
         <div class="col-xs-12 col-sm-6">
           <pre><code class="language-javascript">&lt;DottedViewList&gt;
@@ -173,87 +134,139 @@
           </p>
         </div>
       </div>
+
+      <div id="made-with" class="row">
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>Animations</h4>
+          <p>
+            Animations handled through React props. Composable, consistent, and JS powered.
+            Compose multiple animations per component, all within React.
+          </p>
+        </div>
+
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>Themes</h4>
+          <p>
+            Powerful theming system. Themes are composed of three layers: constants, styles, animations.
+            Mix and match each layer to make your own themes.
+          </p>
+        </div>
+
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>Styles</h4>
+          <p>
+            Styling system powered by react-style, with a declarative and pure way of adding styles.
+            Use the power of JS, along with our easy interface to style components.
+          </p>
+        </div>
+
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>Icons</h4>
+          <p>
+            We've imported a huge set of SVG icons to use with the Icon component.
+            Or load your favorite pack of icon fonts.
+          </p>
+        </div>
+
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>View Lists</h4>
+          <p>
+            Build custom views lists with our ViewListMixin,
+            nest views within each other, and all animations are handled for you.
+          </p>
+        </div>
+
+        <div class="pad col-xs-12 col-md-6 col-lg-4">
+          <h4>View Lists</h4>
+          <p>
+            Heavy work went into building the view system. Build custom views with our ViewListMixin,
+            nest views within each other, and all animations are handled for you.
+          </p>
+        </div>
+      </div>
     </div>
 
-  <div class="section ">
-    <div class="row">
+    <div class="section ">
+      <div class="row">
 
-      <div class="col-xs-12 col-md-6">
-        <blockquote>
-          A new stack, designed for software instead of documents, is needed.
+        <div class="col-xs-12 col-md-6">
+          <blockquote>
+            A new stack, designed for software instead of documents, is needed.
 
-          <footer><a href="https://news.ycombinator.com/item?id=8815465">@lkrubner</a></footer>
-        </blockquote>
+            <footer><a href="https://news.ycombinator.com/item?id=8815465">@lkrubner</a></footer>
+          </blockquote>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <blockquote>
+            having everybody in need of transportation buy the necessary spareparts to build a car is insane.
+
+            <footer><a href="https://news.ycombinator.com/item?id=4407567">@jballanc</a></footer>
+          </blockquote>
+        </div>
       </div>
 
-      <div class="col-xs-12 col-md-6">
-        <blockquote>
-          having everybody in need of transportation buy the necessary spareparts to build a car is insane.
+      <div class="row">
+        <div class="col-xs-0 col-sm-2 col-md-3"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6 emphasize">
+          <p>
+            After years of spaghetti, jQuery, Backbone, and the MV Stars, we find ourselves
+            in 2015 with slow frameworks that give you the kitchen sink with a steep learning curve.
+          </p>
 
-          <footer><a href="https://news.ycombinator.com/item?id=4407567">@jballanc</a></footer>
-        </blockquote>
+          <p>
+            But we have new things. Amazing build tools have evolved. From Grunt to Gulp to Brocolli
+            to Webpack. Our npm has matured nicely, the largest package repository of any language,
+            and we no longer need Bower or anything else.
+          </p>
+
+          <p>
+            The Virtual DOM was invented by React, we realized huge performance gains. But just as
+            importantly, we gained composable components, with lifecycles.
+          </p>
+
+          <p>
+            We fight about modularity.  We want the flexibility of the bazaar with the
+            comfort and ease of a cathedral. We want initial renders from the server. We want
+            to build cross platform apps, without dealing with all the ugly of JavaScript.
+          </p>
+
+          <p>
+            reapp is an early exploration into making all of this reality.
+          </p>
+        </div>
+        <div class="col-xs-0 col-sm-2 col-md-3"></div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-0 col-sm-2 col-md-3"></div>
-      <div class="col-xs-12 col-sm-8 col-md-6 emphasize">
-        <p>
-          After years of spaghetti, jQuery, Backbone, and the MV Stars, we find ourselves
-          in 2015 with slow frameworks that give you the kitchen sink with a steep learning curve.
-        </p>
+    <footer class="footer section">
+      <div class="row">
+        <div class="hide-xs col-sm-2"></div>
+        <div class="col-xs-12 col-sm-4">
+          <nav>
+            <a href="#">Install</a>
+            <a href="#">Demo</a>
+            <a href="#">Docs</a>
+          </nav>
+        </div>
 
-        <p>
-          But we have new things. Amazing build tools have evolved. From Grunt to Gulp to Brocolli
-          to Webpack. Our npm has matured nicely, the largest package repository of any language,
-          and we no longer need Bower or anything else.
-        </p>
-
-        <p>
-          The Virtual DOM was invented by React, we realized huge performance gains. But just as
-          importantly, we gained composable components, with lifecycles.
-        </p>
-
-        <p>
-          We fight about modularity.  We want the flexibility of the bazaar with the
-          comfort and ease of a cathedral. We want initial renders from the server. We want
-          to build cross platform apps, without dealing with all the ugly of JavaScript.
-        </p>
-
-        <p>
-          reapp is an early exploration into making all of this reality.
-        </p>
+        <div class="col-xs-12 col-sm-4">
+          <nav>
+            <a href="#">Github</a>
+            <a href="#">Twitter</a>
+          </nav>
+        </div>
+        <div class="hide-xs col-sm-2"></div>
       </div>
-      <div class="col-xs-0 col-sm-2 col-md-3"></div>
-    </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <span>Copyright 2015 reapp.</span>
+        </div>
+      </div>
+    </footer>
+
   </div>
-
-  <footer class="footer section">
-    <div class="row">
-      <div class="hide-xs col-sm-2"></div>
-      <div class="col-xs-12 col-sm-4">
-        <nav>
-          <a href="#">Install</a>
-          <a href="#">Demo</a>
-          <a href="#">Docs</a>
-        </nav>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <nav>
-          <a href="#">Github</a>
-          <a href="#">Twitter</a>
-        </nav>
-      </div>
-      <div class="hide-xs col-sm-2"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <span>Copyright 2015 reapp.</span>
-      </div>
-    </div>
-  </footer>
 
   <script src="/assets/js/prism.js"></script>
 </body>
