@@ -86,30 +86,38 @@
         <h2 class="section-title">Example</h2>
 
         <div class="col-xs-12 col-sm-6">
-          <pre><code class="language-javascript">&lt;DottedViewList&gt;
-  &lt;View title="Hot Articles"&gt;
-    &lt;List&gt;
-      {hotArticles.map(article =&gt; article.title)}
-    &lt;/List&gt;
-  &lt;/View&gt;
-  &lt;View title="New Articles"&gt;
-    &lt;List&gt;
-      {newArticles.map(article =&gt; article.title)}
-    &lt;/List&gt;
-  &lt;/View&gt;
-&lt;/DottedViewList&gt;</code></pre>
+          <pre><code class="language-javascript">
+export default React.createClass({
+  render() {
+    return (
+      &lt;DottedViewList&gt;
+        &lt;View title="Hot Articles"&gt;
+          &lt;List&gt;
+            {hotArticles.map(article =&gt; article.title)}
+          &lt;/List&gt;
+        &lt;/View&gt;
+
+        &lt;View title="New Articles"&gt;
+          &lt;List&gt;
+            {newArticles.map(article =&gt; article.title)}
+          &lt;/List&gt;
+        &lt;/View&gt;
+      &lt;/DottedViewList&gt;
+    );
+  }
+});</code></pre>
         </div>
 
         <div class="col-xs-12 col-sm-6 pad">
+          <h4>View Lists</h4>
           <p>
-            A ViewList can be used to handle multiple Views.
+            A &lt;ViewList&gt; can be used to handle &lt;Views&gt;.
             For now, reapp has <em>NestedViewList</em> and <em>DottedViewList</em>
             but you can create custom ones with <em>ViewListMixin</em>.
           </p>
 
           <p>
-            A <em>View</em> takes children, and an optional a title property.
-            This will insert <em>TitleBar</em> for you automatically.
+            A <em>View</em> takes children and an optional a title property.
           </p>
 
           <p>
@@ -117,6 +125,8 @@
             Use <em>ListItem</em> for children, or if you pass an array it will
             wrap them for you automatically.
           </p>
+
+          <a class="button" href="">View this example live</a>
         </div>
       </div>
     </div>
@@ -125,7 +135,7 @@
       <div id="made-with" class="row">
         <h2 class="section-title">Features</h2>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>Animations</h4>
           <p>
             Composable, consistent, and JS powered.
@@ -133,7 +143,7 @@
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>Themes</h4>
           <p>
             Themes are composed of three layers: constants, styles, animations.
@@ -141,7 +151,7 @@
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>Styles</h4>
           <p>
             Powered by react-style, declarative and pure.
@@ -149,7 +159,7 @@
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>Icons</h4>
           <p>
             A huge set of SVG icons to use with the Icon component.
@@ -157,7 +167,7 @@
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>View Lists</h4>
           <p>
             Custom views lists with our ViewListMixin,
@@ -165,7 +175,7 @@
           </p>
         </div>
 
-        <div class="pad col-xs-12 col-md-6 col-lg-4">
+        <div class="pad col-xs-12 col-md-6 col-lg-2">
           <h4>Components</h4>
           <p>
             All the components and helper mixins to create complete UI's.

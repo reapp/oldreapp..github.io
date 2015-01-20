@@ -82,6 +82,7 @@ pre {
   color: #007FFF;
   font-size: 1.25rem;
   transition: background-color, 0.15s;
+  text-align: center;
 }
 
 .button:hover {
