@@ -14,68 +14,74 @@
 </head>
 <body>
   <div class="layout">
-    <div class="header">
-      <div class="row">
-        <div class="col-xs-12 col-sm-2">
-          <h1><a href="/">reapp</a></h1>
-        </div>
-        <div class="nav-container col-xs-12 col-sm-4 col-md-5">
-          <nav>
-            <a href="/docs.html">Docs</a>
-            <a href="https://github.com/reapp/reapp">Github</a>
-            <a href="https://twitter.com/reapp">Twitter</a>
-          </nav>
+    <div id="step-1">
+      <div class="header">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <h1><a href="/">reapp</a></h1>
+          </div>
+          <div class="nav-container col-xs-12 col-sm-4 col-md-5">
+            <nav>
+              <a href="/docs.html">Docs</a>
+              <a href="https://github.com/reapp/reapp">Github</a>
+              <a href="https://twitter.com/reapp">Twitter</a>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section hero">
-      <div class="hook row center-xs start-sm">
-        <div class="hero-first col-xs-12 col-sm-6 col-md-7">
-          <h2 class="hero-headline">Build amazing mobile apps</h2>
-          <p class="first">
-            Build full-featured hybrid mobile apps using the power of React and Node.
-          </p>
+      <div class="section hero">
+        <div class="hook row center-xs start-sm">
+          <div class="hero-first col-xs-12 col-sm-6">
+            <h2 class="hero-headline">Build amazing mobile apps</h2>
+            <p class="first">
+              Build full-featured hybrid mobile apps using the power of React and Node.
+            </p>
 
-          <form class="signup description" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
-            <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
-            <input type="hidden" name="js_id" id="js_id" value="1ur1p">
-            <input type="hidden" name="req_hid" id="req_hid" value="">
-            <input type="text" name="email" id="email" value="" placeholder="Sign up for early updates">
-            <button type="submit" data-editfield="subscribe">Subscribe</button>
-          </form>
+            <div class="col-xs-12 col-sm-10">
+              <form class="signup description" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
+                <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+                <input type="hidden" name="js_id" id="js_id" value="1ur1p">
+                <input type="hidden" name="req_hid" id="req_hid" value="">
+                <input type="text" name="email" id="email" value="" placeholder="Sign up for early updates">
+                <button type="submit" data-editfield="subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="hero-second hide-xs col-sm-6">
+            <div class="screens">
+              <div class="screen"><img src="/assets/images/screen1.jpg" /></div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="hero-second hide-xs col-sm-6 col-md-5">
-          <div class="screens">
-            <div class="screen"><img src="/assets/images/screen1.jpg" /></div>
+      <div id="install" class="install section">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div contentEditable="true" class="install-code code">
+              <div>
+                npm install -g reapp <span class="hide-sm show-md">Try it live &raquo;</span>
+              </div>
+              <div class="extra-line">
+                reapp new myproject
+              </div>
+              <div class="extra-line">
+                cd myproject
+              </div>
+              <div class="extra-line">
+                reapp run
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="install" class="install section">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-7">
-          <div contentEditable="true" class="install-code code">
-            <div>
-              npm install -g reapp <span class="hide-sm show-md">Try it live &raquo;</span>
-            </div>
-            <div class="extra-line">
-              reapp new myproject
-            </div>
-            <div class="extra-line">
-              cd myproject
-            </div>
-            <div class="extra-line">
-              reapp run
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fake-install"></div>
+    <script>
+      document.getElementById('step-1').style.height = window.innerHeight + 'px';
+    </script>
 
     <div id="examples" class="section highlight has-title emphasize">
       <div class="row">

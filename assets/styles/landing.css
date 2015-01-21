@@ -9,7 +9,7 @@ body {
   font-size: 18px;
   line-height: 1.8rem;
   font-weight: normal;
-  background: #f2f3e5;
+  background: #edeee4;
   color: #111;
   overflow-x: hidden;
 }
@@ -128,9 +128,13 @@ body::before {
   text-align: center;
 }
 
+#step-1 {
+  min-height: 650px;
+  max-height: 720px;
+}
+
 .hero {
   border: none;
-  padding-top: 2rem;
   margin-bottom: -2rem;
 }
 
@@ -201,7 +205,7 @@ body::before {
 .screen {
   width: 377px;
   height: 667px;
-  margin: -90px auto -360px;
+  margin: -100px auto -300px;
   box-shadow: -5px 20px 60px rgba(0,0,0,0.2);
   position: relative;
   display: flex;
