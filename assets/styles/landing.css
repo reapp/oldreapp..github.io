@@ -186,10 +186,6 @@ h2 {
   text-align: right;
 }
 
-.hero .features {
-  margin: 3rem 0 -1rem;
-}
-
 .phone {
   display: flex;
   position: relative;
@@ -417,14 +413,14 @@ code {
   display: block;
 }
 
-.features h3 {
-  text-align: center;
-  margin-top: 0;
-}
-
 .feature {
   padding: 0 2rem;
 }
+
+.feature a h4 {
+  color: #37a2ff;
+}
+
 
 .pad-right, .pad {
   padding-right: 2rem;
