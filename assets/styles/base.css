@@ -32,16 +32,17 @@ h2 + p {
 
 a {
   text-decoration: none;
-  color: #007FFF;
+  color: #37a2ff;
   padding: 0 0 0.2rem 0;
 }
 
 p {
   margin: 0 0 2rem 0;
+  color: #555;
 }
 
 a:hover {
-  color: #007FFF;
+  color: #37a2ff;
 }
 
 pre {
@@ -76,9 +77,9 @@ pre {
   padding: 0 4rem;
   height: 3rem;
   line-height: 3rem;
-  border: 1px solid #007FFF;
+  border: 1px solid #37a2ff;
   border-radius: 2px;
-  color: #007FFF;
+  color: #37a2ff;
   font-size: 1.25rem;
   transition: background-color, 0.15s;
   text-align: center;
@@ -88,11 +89,11 @@ pre {
   background: #3399FF;
   border-color: #3399FF;
   color: #FFF;
-  text-shadow: 0 1px #007FFF;
+  text-shadow: 0 1px #37a2ff;
 }
 
 .button:active {
-  background: #007FFF;
+  background: #37a2ff;
   color: #FFF;
   border-top: 2px solid #0066CC;
 }

@@ -9,14 +9,14 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #eee;
+  background: #ebeee2;
   color: #111;
   overflow-x: hidden;
 }
 
 #hero-bg {
   position: absolute;
-  background: #141924;
+  background: #1c2434;
   top: 0;
   left: 0;
   right: 0;
@@ -27,7 +27,7 @@ body {
 #spiro {
   pointer-events: none;
   content: ' ';
-  position: fixed;
+  position: absolute;
   display: block;
   width: 4000px;
   height: 2800px;
@@ -232,7 +232,8 @@ body {
   font-size: 1.8rem;
   line-height: 1.7em;
   margin-bottom: 2rem;
-  opacity: 0.8;
+  opacity: 0.75;
+  color: #fff;
 }
 
 .hook .signup-text {
