@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
   <link rel="stylesheet" type="text/css" href="/assets/styles/prism.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/iphone.css" />
   <title>reapp - Rethink apps</title>
 </head>
 <body>
@@ -19,13 +20,6 @@
         <div class="row">
           <div class="col-xs-12 col-sm-6">
             <h1><a href="/">reapp</a></h1>
-          </div>
-          <div class="nav-container col-xs-12 col-sm-6">
-            <nav>
-              <a href="/docs.html">Docs</a>
-              <a href="https://github.com/reapp/reapp">Github</a>
-              <a href="https://twitter.com/reapp">Twitter</a>
-            </nav>
           </div>
         </div>
       </div>
@@ -38,31 +32,24 @@
               Build full-featured hybrid mobile apps using the power of React and Node.
             </p>
 
-            <div class="col-xs-12 col-sm-10">
-              <form class="signup description" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
-                <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
-                <input type="hidden" name="js_id" id="js_id" value="1ur1p">
-                <input type="hidden" name="req_hid" id="req_hid" value="">
-                <input type="text" name="email" id="email" value="" placeholder="Sign up for early updates">
-                <button type="submit" data-editfield="subscribe">Subscribe</button>
-              </form>
-            </div>
-          </div>
+            <div class="row">
+              <div class="buttons col-xs-6">
+                <a class="button" href="/docs.html">Docs</a>
+                <a class="button" href="/docs.html">Github</a>
 
-          <div class="hero-second hide-xs col-sm-6">
-            <div class="screens">
-              <div class="screen"><img src="/assets/images/screen1.jpg" /></div>
+                <form class="signup description" action="http://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
+                  <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+                  <input type="hidden" name="js_id" id="js_id" value="1ur1p">
+                  <input type="hidden" name="req_hid" id="req_hid" value="">
+                  <input type="text" name="email" id="email" value="" placeholder="Sign up for early updates">
+                  <button type="submit" data-editfield="subscribe">Subscribe</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="install" class="install section">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <div contentEditable="true" class="install-code code">
+            <div contentEditable="true" class="install install-code code">
               <div>
-                npm install -g reapp <span class="hide-sm show-md">Try it live &raquo;</span>
+                npm install -g reapp
               </div>
               <div class="extra-line">
                 reapp new myproject
@@ -75,6 +62,13 @@
               </div>
             </div>
           </div>
+
+          <div class="hero-second hide-xs col-sm-6">
+            <div class="phone">
+              <div class="screen"><img src="/assets/images/screen1.jpg" /></div>
+              <div class="home-button"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -85,7 +79,7 @@
 
         <div class="col-xs-12 col-sm-6">
           <pre><code class="language-javascript">
-export default React.createClass({
+  export default React.createClass({
   render() {
     var { hotArticles, newArticles } = this.props;
 
