@@ -14,9 +14,6 @@
   <title>reapp - Rethink apps</title>
 </head>
 <body>
-  <div class="warn">
-    Note: This isn't actually released yet, just iterating on the site publicly :) Soon!
-  </div>
   <div id="hero-bg"></div>
   <div class="spiro"></div>
   <div class="layout">
@@ -41,7 +38,7 @@
           <div class="hero-first center-xs start-md col-sm-12 col-md-6">
             <h2 class="hero-headline">Next generation apps</h2>
             <p class="first">
-              Make full-featured hybrid apps using the power of
+              Build full-featured hybrid apps using the power of
               React, ES6, and Node.
               <img class="widget" src="/assets/images/react-logo.svg" />
               <img class="widget" src="/assets/images/node.svg" />
@@ -80,31 +77,63 @@
       </div>
     </div>
 
-    <div class="motto section highlight emphasize">
+    <div class="motto section highlight">
       <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <h2>What is it?</h2>
+        <div class="col-xs-12 col-sm-6 emphasize pad-right">
           <p>
             Reapp started as an mobile UI kit for React.
           </p>
           <p>
-            Then, came the <a href="#">Hacker News app</a>.<br />
-            But, building that took <em>way too long</em>.
+            Then, we built a <a href="#">Hacker News app</a>.<br />
+            Building that took <em>way too long</em>.
           </p>
           <p>
-            Not just learning React, JSX, Flux and Webpack. But finding and testing dozens
-            of modules for routing, data, styles, requests, promises, etc.
+            From learning React, JSX, Flux and Webpack to finding &amp; integrating
+            routing, data, styles, requests, promises&hellip;
           </p>
           <p>
-            In time, the core of that app was extracted to modules. Then, an example repo.
-            Finally, a CLI, just to get you going quickly.
+            Here, extracted into a generator and several modules, is the result.
           </p>
           <p>
-            <strong>The result?</strong> Not a framework.
+            Not a framework. Just a UI kit, modules, and CLI.
           </p>
-          <p>
-            Reapp is a UI kit, modules, and a CLI.
-          </p>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="pad col-xs-12 col-md-6">
+              <h4>Animations</h4>
+              <p>
+                Composable, interactive, JS powered.
+                Use multiple animations per component, dynamically changeable
+                through React props.
+              </p>
+            </div>
+
+            <div class="pad col-xs-12 col-md-6">
+              <h4>Themes</h4>
+              <p>
+                Themes are composed of three layers: constants, styles, animations.
+                Mix and match all of them to make your own themes.
+              </p>
+            </div>
+
+            <div class="pad col-xs-12 col-md-6">
+              <h4>Styles</h4>
+              <p>
+                Powered by JS and react-style, our styles interface is consistent, pure,
+                and performant, and dynamically changeable at runtime.
+              </p>
+            </div>
+
+            <div class="pad col-xs-12 col-md-6">
+              <h4>Views</h4>
+              <p>
+                Display lists of views with custom styles and animations using
+                the ViewListMixin, mix, match and nest them.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -113,7 +142,7 @@
       <div class="row">
         <h2 class="section-title">Example</h2>
 
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-6">
           <pre><code class="language-javascript">
   export default React.createClass({
   render() {
@@ -138,12 +167,7 @@
 });</code></pre>
         </div>
 
-        <div class="col-xs-12 col-sm-4 pad">
-          <img src="/assets/images/screen1.jpg" />
-        </div>
-
-        <div class="col-xs-12 col-sm-4 pad">
-          <h4>View Lists</h4>
+        <div class="col-xs-12 col-sm-6 pad">
           <p>
             A &lt;ViewList&gt; can be used to handle &lt;Views&gt;.
             For now, reapp has <em>NestedViewList</em> and <em>DottedViewList</em>
@@ -159,55 +183,16 @@
             Use <em>ListItem</em> for children, or if you pass an array it will
             wrap them for you automatically.
           </p>
+
+          <a class="button" href="#">View more examples in the docs</a>
         </div>
       </div>
     </div>
 
-    <div class="section highlight has-title">
+    <div class="section highlight">
       <div id="made-with" class="row">
-        <h2 class="section-title">UI Features</h2>
-
-        <div class="pad col-xs-6 col-md-3">
-          <h4>Animations</h4>
-          <p>
-            Composable, interactive, JS powered.
-            Use multiple animations per component, dynamically changeable
-            through React props.
-          </p>
-        </div>
-
-        <div class="pad col-xs-6 col-md-3">
-          <h4>Themes</h4>
-          <p>
-            Themes are composed of three layers: constants, styles, animations.
-            Mix and match all of them to make your own themes.
-          </p>
-        </div>
-
-        <div class="pad col-xs-6 col-md-3">
-          <h4>Styles</h4>
-          <p>
-            Powered by JS and react-style, our styles interface is consistent, pure,
-            and performant, and dynamically changeable at runtime.
-          </p>
-        </div>
-
-        <div class="pad col-xs-6 col-md-3">
-          <h4>Views</h4>
-          <p>
-            Display lists of views with custom styles and animations using
-            the ViewListMixin, mix, match and nest them.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section highlight has-title">
-      <div id="made-with" class="row">
-        <h2 class="section-title">What else?</h2>
-
         <div class="row">
-          <div class="pad col-xs-12 emphasize">
+          <div class="pad col-xs-12 col-sm-8 col-sm-offset-2 emphasize">
             <p>
               We've built a set of small, optional modules that help
               you build apps quickly. Once generated, you can mix and match them as you like.
@@ -216,64 +201,75 @@
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-component</h4>
-          <p>
-            Easily decorate react classes, and inject variables to your whole stack.
-          </p>
+          <a href="https://github.com/reapp/reapp-component">
+            <h4>reapp-component</h4>
+            <p>
+              Easily decorate react classes, and inject variables to your whole stack.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-pack</h4>
-          <p>
-            A generator of webpack configs, takes options and builds configs
-            for reapp apps.
-          </p>
+          <a href="https://github.com/reapp/reapp-ui">
+            <h4>reapp-pack</h4>
+            <p>
+              Generates webpack configs &amp; run a webpack dev server with
+              hot reloading.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-platform</h4>
-          <p>
-            Init's touch events, and gives a small set of mixins and helpers
-            common to React apps.
-          </p>
+          <a href="https://github.com/reapp/reapp-platform">
+            <h4>reapp-platform</h4>
+            <p>
+              Init's touch events, and gives a small set of mixins and helpers
+              common to React apps.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-reducer</h4>
-          <p>
-            A tiny reducer for use with flux apps.
-          </p>
+          <a href="https://github.com/reapp/reapp-reducer">
+            <h4>reapp-reducer</h4>
+            <p>
+              A tiny reducer for use with flux apps.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-request</h4>
-          <p>
-            Superagent + bluebird + promises + caching.
-          </p>
+          <a href="https://github.com/reapp/reapp-request">
+            <h4>reapp-request</h4>
+            <p>
+              Superagent + bluebird + promises + caching.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-routes</h4>
-          <p>
-            Simple DSL for routes.
-            We have a pre-built one for react-router.
-            DRY route to directory requires.
-          </p>
+          <a href="https://github.com/reapp/reapp-routes">
+            <h4>reapp-routes</h4>
+            <p>
+              Simple DSL for routes.
+              We have a pre-built one for react-router.
+              DRY route to directory requires.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-server</h4>
-          <p>
-            An express and webpack server that take a variety of options,
-            to bootstrap building reapp apps.
-          </p>
+          <a href="https://github.com/reapp/reapp-server">
+            <h4>reapp-server</h4>
+            <p>
+              An express and webpack server that take a variety of options,
+              to bootstrap building reapp apps.
+            </p>
+          </a>
         </div>
 
         <div class="pad col-xs-6 col-md-3">
-          <h4>reapp-ui</h4>
-          <p>
-            All the components and helper mixins to create complete UI's.
-          </p>
+          ...
         </div>
       </div>
     </div>
