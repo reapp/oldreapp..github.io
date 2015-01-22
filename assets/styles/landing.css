@@ -9,7 +9,7 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #ebeee2;
+  background: #ebeee2 url(/assets/images/grid.svg);
   color: #111;
   overflow-x: hidden;
 }
