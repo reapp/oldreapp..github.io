@@ -14,9 +14,12 @@ body {
   overflow-x: hidden;
 }
 
+#hero-bg, .footer {
+  background: #222c41;
+}
+
 #hero-bg {
   position: absolute;
-  background: #222c41;
   top: 0;
   left: 0;
   right: 0;
@@ -24,7 +27,7 @@ body {
   z-index: 0;
 }
 
-#spiro {
+.spiro {
   pointer-events: none;
   content: ' ';
   position: absolute;
@@ -438,7 +441,6 @@ h4 {
 
 .footer {
   position: relative;
-  background: #111;
   color: #fff;
   text-align: center;
 }
