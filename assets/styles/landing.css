@@ -565,9 +565,9 @@ h4 {
 }
 
 .warn {
-  background: yellow;
+  background: #fff;
   color: black;
-  padding: .5rem;
+  padding: .2rem;
   text-align: center;
   position: relative;
   z-index: 10;
