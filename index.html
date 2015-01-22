@@ -144,25 +144,23 @@
 
         <div class="col-xs-12 col-sm-6">
           <pre><code class="language-javascript">
-  export default React.createClass({
+export default React.createClass({
   render() {
-    var { hotArticles, newArticles } = this.props;
-
     return (
       &lt;DottedViewList&gt;
         &lt;View title="Hot Articles"&gt;
           &lt;List&gt;
-            {hotArticles.map(article =&gt; article.title)}
+            {HotArticles.map(a =&gt; a.title)}
           &lt;/List&gt;
         &lt;/View&gt;
 
         &lt;View title="New Articles"&gt;
           &lt;List&gt;
-            {newArticles.map(article =&gt; article.title)}
+            {NewArticles.map(a =&gt; a.title)}
           &lt;/List&gt;
         &lt;/View&gt;
       &lt;/DottedViewList&gt;
-    );
+    )
   }
 });</code></pre>
         </div>
