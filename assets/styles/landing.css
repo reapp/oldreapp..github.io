@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 720px;
+  height: 820px;
   z-index: 0;
 }
 
@@ -554,4 +554,13 @@ h4 {
 
 .twitter {
   background-image: url(/assets/images/twit.svg);
+}
+
+.warn {
+  background: yellow;
+  color: black;
+  padding: .5rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }
