@@ -6,15 +6,25 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 18px;
-  line-height: 1.8rem;
+  font-size: 20px;
+  line-height: 2rem;
   font-weight: normal;
   background: #eee;
   color: #111;
   overflow-x: hidden;
 }
 
-body::before {
+#hero-bg {
+  position: absolute;
+  background: #141924;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 720px;
+  z-index: 0;
+}
+
+#spiro {
   pointer-events: none;
   content: ' ';
   position: fixed;
@@ -23,7 +33,7 @@ body::before {
   height: 2800px;
   top: 0;
   right: 0;
-  opacity: 0.05;
+  opacity: .1;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
@@ -128,12 +138,6 @@ body::before {
   padding: .4rem 1.5rem;
   color: #20201d;
   text-align: center;
-}
-
-#step-1 {
-  height: 710px;
-  background: #141924;
-  color: #fff;
 }
 
 .hero {
@@ -508,8 +512,43 @@ h4 {
   font-size: 1rem;
 }
 
+#step-1 {
+  position: relative;
+  height: 710px;
+  color: #fff;
+}
+
 .connect {
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0;
+  bottom: 0;
+  display: flex;
+  right: 3rem;
+  z-index: 10;
+}
+
+.connect .inner {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+.connect a {
+  display: flex;
+  margin: 1rem;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color:
+}
+
+.github {
+  background-image: url(/assets/images/github.svg);
+}
+
+.twitter {
+  background-image: url(/assets/images/twit.svg);
 }
