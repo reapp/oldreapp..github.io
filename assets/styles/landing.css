@@ -183,7 +183,7 @@ h2 {
 }
 
 .hero-first {
-  padding-right: 2rem;
+  text-align: right;
 }
 
 .hero .features {
@@ -275,10 +275,10 @@ h2 {
 }
 
 .buttons {
-  text-align: left;
+  align-self: flex-end;
   display: flex;
   flex-flow: row;
-  margin: 0 0 2rem;
+  margin: 0 4rem 2rem auto;
 }
 
 .buttons .button {
@@ -512,15 +512,6 @@ h4 {
 .content-nav li ul li {
   font-size: 1rem;
   line-height: 1.3rem;
-}
-
-.warn {
-  background: #fff;
-  color: #000;
-  font-weight: bold;
-  font-style: normal;
-  padding: .5rem 1rem;
-  font-size: 1rem;
 }
 
 #step-1 {
