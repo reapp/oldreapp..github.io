@@ -23,7 +23,7 @@ body::before {
   height: 2800px;
   top: 0;
   right: 0;
-  opacity: 0.02;
+  opacity: 0.05;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
@@ -40,12 +40,12 @@ body::before {
 
 .section {
   border-top: 1px solid #f2f3e5;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .has-title {
-  padding-top: 7.5rem;
+  padding-top: 8.5rem;
 }
 
 .section-title {
@@ -100,7 +100,7 @@ body::before {
   overflow: hidden;
   width: 150px;
   height: 57px;
-  background: url(/assets/images/logo4.png) no-repeat top left;
+  background: url(/assets/images/logo5.png) no-repeat top left;
 }
 
 .nav-container nav {
@@ -131,6 +131,8 @@ body::before {
 
 #step-1 {
   height: 710px;
+  background: #11151e;
+  color: #fff;
 }
 
 .hero {
@@ -146,11 +148,11 @@ body::before {
 .phone {
   display: flex;
   position: relative;
-  background: #1e1e1e;
+  background: #000;
   height: 760px;
   padding: 0 10px;
   border-radius: 25px;
-  margin: 0 auto -330px;
+  margin: 0 auto -330px 3rem;
   box-shadow: 0 0 80px rgba(0,0,0,0.2);
   z-index: 3;
 }
@@ -225,6 +227,7 @@ body::before {
   font-size: 1.8rem;
   line-height: 1.7em;
   margin-bottom: 2rem;
+  opacity: 0.8;
 }
 
 .hook .signup-text {
