@@ -9,7 +9,7 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #ebeee2 url(/assets/images/grid.svg);
+  background: #eee url(/assets/images/grid.svg);
   color: #111;
   overflow-x: hidden;
 }
@@ -61,15 +61,17 @@ body {
   padding-top: 8.5rem;
 }
 
+h2 {
+  font-weight: normal;
+  opacity: 0.7;
+  margin: 0 0 2rem;
+}
+
 .section-title {
   position: absolute;
   top: -5.5rem;
   left: 2rem;
-  margin: 0 0 2rem;
   padding: .75rem 1rem;
-  opacity: 0.8;
-  font-weight: normal;
-  opacity: 0.7;
 }
 
 .highlight {
@@ -153,6 +155,41 @@ body {
   margin-top: -160px;
 }
 
+.hook h2 {
+  font-size: 2.8rem;
+  margin: 0 0 1.5rem 0 ;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.hook p {
+  font-size: 1.8rem;
+  line-height: 1.7em;
+  margin-bottom: 2rem;
+  opacity: 0.75;
+  color: #fff;
+}
+
+.hook .signup-text {
+  font-size: 1.3rem;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+.hero-second, .hero-first {
+  position: relative;
+  padding: 0;
+  z-index: 3;
+}
+
+.hero-first {
+  padding-right: 2rem;
+}
+
+.hero .features {
+  margin: 3rem 0 -1rem;
+}
+
 .phone {
   display: flex;
   position: relative;
@@ -223,40 +260,6 @@ body {
 #email {
   flex-grow: 1;
   margin-right: 10px;
-}
-
-.hook h2 {
-  font-size: 2.8rem;
-  margin: 0 0 1.5rem 0 ;
-  font-weight: normal;
-}
-
-.hook p {
-  font-size: 1.8rem;
-  line-height: 1.7em;
-  margin-bottom: 2rem;
-  opacity: 0.75;
-  color: #fff;
-}
-
-.hook .signup-text {
-  font-size: 1.3rem;
-  opacity: 0.75;
-  margin-bottom: 1rem;
-}
-
-.hero-second, .hero-first {
-  position: relative;
-  padding: 0;
-  z-index: 3;
-}
-
-.hero-first {
-  padding-right: 2rem;
-}
-
-.hero .features {
-  margin: 3rem 0 -1rem;
 }
 
 .row .row {
@@ -436,18 +439,23 @@ h4 {
 
 .emphasize p {
   font-size: 120%;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .footer {
   position: relative;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .footer .row {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 8rem;
 }
 
 .footer nav a {
