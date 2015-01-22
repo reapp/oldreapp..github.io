@@ -19,14 +19,14 @@ body::before {
   content: ' ';
   position: fixed;
   display: block;
-  width: 1800px;
-  height: 1800px;
+  width: 4000px;
+  height: 2800px;
   top: 0;
   right: 0;
-  opacity: 0.15;
+  opacity: 0.02;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
-  background-position: 500px -1000px;
+  background-position: 1800px -1800px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
@@ -130,7 +130,7 @@ body::before {
 }
 
 #step-1 {
-  height: 680px;
+  height: 710px;
 }
 
 .hero {
@@ -138,14 +138,39 @@ body::before {
   margin-bottom: -2rem;
 }
 
+.hero-second {
+  flex-flow: row;
+  margin-top: -160px;
+}
+
 .phone {
   display: flex;
   position: relative;
   background: #1e1e1e;
-  height: 800px;
-  width: 400px;
-  border-radius: 35px;
-  margin: -150px auto -330px;
+  height: 760px;
+  padding: 0 10px;
+  border-radius: 25px;
+  margin: 0 auto -330px;
+  box-shadow: 0 0 80px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.phone.two, .phone.three {
+  margin-left: -520px;
+}
+
+.phone.two {
+  z-index: 2;
+  margin-top: 20px;
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.phone.three {
+  z-index: 1;
+  margin-top: 40px;
+  transform: scale(0.8);
+  opacity: 0.6;
 }
 
 .screen {
@@ -214,6 +239,10 @@ body::before {
   z-index: 3;
 }
 
+.hero-first {
+  padding-right: 2rem;
+}
+
 .hero .features {
   margin: 3rem 0 -1rem;
 }
@@ -222,7 +251,12 @@ body::before {
   width: 100%;
   padding: 0;
   margin: 0;
+}
 
+.widget {
+  margin: .1rem 0 -.1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .buttons {
@@ -336,8 +370,7 @@ blockquote footer {
   transition: all 100ms ease-in;
 }
 
-.install-code:active .extra-line,
-.install-code:focus .extra-line {
+.install-code .extra-line {
   height: 2rem;
   opacity: 1;
   margin: .25rem 0 .5rem;
@@ -390,10 +423,6 @@ h4 {
   text-align: center;
 }
 
-.widget {
-  width: 110px;
-}
-
 .emphasize p {
   font-size: 120%;
   line-height: 2rem;
@@ -418,12 +447,6 @@ h4 {
 .footer span {
   font-size: 80%;
   opacity: 0.5;
-}
-
-.widget {
-  margin: auto;
-  max-width: 150px;
-  max-height: 150px;
 }
 
 .gray {
@@ -480,4 +503,10 @@ h4 {
   font-style: normal;
   padding: .5rem 1rem;
   font-size: 1rem;
+}
+
+.connect {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
