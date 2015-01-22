@@ -88,7 +88,8 @@ body::before {
 
 .header h1 {
   display: block;
-  margin: auto 0;
+  margin: auto 0 -2.2rem;
+  padding: 1rem 0;
 }
 
 .header h1 a {
@@ -131,7 +132,7 @@ body::before {
 
 #step-1 {
   height: 710px;
-  background: #11151e;
+  background: #141924;
   color: #fff;
 }
 
@@ -218,7 +219,7 @@ body::before {
 }
 
 .hook h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin: 0 0 1.5rem 0 ;
   font-weight: normal;
 }
@@ -346,14 +347,14 @@ blockquote footer {
 }
 
 .install {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
 }
 
 .install-code {
   font-size: 22px;
   line-height: 2.5rem;
-  color: #9d213b;
+  color: red;
   font-weight: bold;
 }
 
@@ -365,7 +366,7 @@ blockquote footer {
 }
 
 .install .extra-line {
-  color: #666;
+  color: #fff;
   font-weight: normal;
   font-size: 80%;
   height: 1px;
@@ -374,9 +375,8 @@ blockquote footer {
 }
 
 .install-code .extra-line {
-  height: 2rem;
-  opacity: 1;
-  margin: .25rem 0 .5rem;
+  height: 2.2rem;
+  opacity: 0.4;
 }
 
 .body {
