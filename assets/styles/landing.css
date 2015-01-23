@@ -76,7 +76,6 @@ h2 {
 
 .highlight {
   background: #fff;
-  box-shadow: 0 0 150px rgba(0,0,0,0.2);
   position: relative;
 }
 
@@ -577,4 +576,9 @@ h4 {
 
 .row.lifted {
   margin-top: -2rem;
+}
+
+.motto {
+  margin: 0 -400px;
+  box-shadow: 0 -100px 200px rgba(0,0,0,0.1);
 }
