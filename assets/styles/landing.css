@@ -491,19 +491,6 @@ h4 {
   -webkit-filter: grayscale(0%);
 }
 
-@media only screen and (min-width: 48em) {
-  .content-nav {
-    position: fixed;
-    top: 100px;
-    right: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    min-width: 300px;
-    z-index: 10;
-    padding: 0 0 100px 0;
-  }
-}
-
 .content-nav {
   margin: 0;
   padding: 0;
@@ -577,4 +564,14 @@ h4 {
 
 .intro {
   text-align: right;
+}
+
+@media only screen and (min-width: 48em) {
+  .intro {
+    padding-left: 4rem;
+  }
+
+  .hero-first {
+    padding-left: 3%;
+  }
 }
