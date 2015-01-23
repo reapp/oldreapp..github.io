@@ -1,3 +1,15 @@
+.blue { color: #56d4f4; }
+.green { color: #6ef7a0; }
+.yellow { color: #f8e027; }
+.orange { color: #e12837; }
+.red { color: #e12837; }
+
+.blue-bg { background-color: #56d4f4; color: #fff; }
+.green-bg { background-color: #6ef7a0; color: #fff; }
+.yellow-bg { background-color: #f8e027; color: #fff; }
+.orange-bg { background-color: #e12837; color: #fff; }
+.red-bg { background-color: #e12837; color: #fff; }
+
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -14,7 +26,7 @@ body {
   overflow-x: hidden;
 }
 
-#hero-bg, .footer {
+#hero-bg {
   background: #222c41;
 }
 
@@ -464,6 +476,7 @@ h4 {
 }
 
 .footer {
+  background: #1e1e1e;
   position: relative;
   color: #fff;
   text-align: center;
