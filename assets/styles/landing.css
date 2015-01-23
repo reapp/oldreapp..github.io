@@ -191,11 +191,17 @@ h2 {
   text-align: right;
 }
 
+#step-1 {
+  position: relative;
+  height: 680px;
+  color: #fff;
+}
+
 .phone {
   display: flex;
   position: relative;
   background: #000;
-  height: 760px;
+  height: 730px;
   padding: 0 10px;
   border-radius: 25px;
   margin: 0 auto -330px 2rem;
@@ -225,8 +231,8 @@ h2 {
   margin: auto;
   overflow: hidden;
   background: #fff;
-  height: 667px;
-  width: 377px;
+  height: 625px;
+  width: 365px;
   border: none;
   background: #eee;
 }
@@ -514,12 +520,6 @@ h4 {
 .content-nav li ul li {
   font-size: 1rem;
   line-height: 1.3rem;
-}
-
-#step-1 {
-  position: relative;
-  height: 710px;
-  color: #fff;
 }
 
 .connect {
