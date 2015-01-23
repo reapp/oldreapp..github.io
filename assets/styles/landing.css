@@ -190,7 +190,7 @@ h2 {
 #step-1 {
   padding: 0;
   position: relative;
-  height: 660px;
+  height: 655px;
   color: #fff;
 }
 
@@ -198,10 +198,9 @@ h2 {
   display: flex;
   position: relative;
   background: #000;
-  height: 700px;
-  padding: 0 10px;
-  border-radius: 25px;
-  margin: -20px auto 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin: -10px auto 0 0;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
   z-index: 0;
 }
@@ -229,7 +228,7 @@ h2 {
   overflow: hidden;
   background: #fff;
   height: 625px;
-  width: 365px;
+  width: 355px;
   border: none;
   background: #eee;
 }
@@ -378,7 +377,7 @@ blockquote footer {
 .install {
   font-size: 22px;
   line-height: 2.5rem;
-  color: #fff;
+  color: yellow;
   font-weight: bold;
 }
 
