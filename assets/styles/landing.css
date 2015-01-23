@@ -50,7 +50,7 @@ body {
 }
 
 .row {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
@@ -106,13 +106,13 @@ h2 {
   z-index: 2;
 }
 
-.header h1 {
+#logo {
   display: block;
-  margin: auto 0 -2.2rem 1rem;
+  margin: 0 0 2rem 0;
   padding: 1rem 0;
 }
 
-.header h1 a {
+#logo a {
   margin: 0 0 -15px;
   display: block;
   color: #111;
@@ -151,31 +151,31 @@ h2 {
 }
 
 .hero {
+  padding: 2rem 0 0;
   border: none;
-  margin-bottom: -2rem;
 }
 
 .hero-second {
   flex-flow: row;
-  margin-top: -160px;
 }
 
-.hook h2 {
+.hero h2 {
   font-size: 2.8rem;
   margin: 0 0 1.5rem 0 ;
   font-weight: normal;
   opacity: 1;
 }
 
-.hook p {
-  font-size: 1.8rem;
+.hero p {
+  font-size: 1.7rem;
   line-height: 1.7em;
   margin-bottom: 2rem;
+  padding-right: 2rem;
   opacity: 0.75;
   color: #fff;
 }
 
-.hook .signup-text {
+.hero .signup-text {
   font-size: 1.3rem;
   opacity: 0.75;
   margin-bottom: 1rem;
@@ -188,12 +188,13 @@ h2 {
 }
 
 .hero-first {
-  text-align: right;
+  text-align: left;
 }
 
 #step-1 {
+  padding: 0;
   position: relative;
-  height: 680px;
+  height: 660px;
   color: #fff;
 }
 
@@ -204,7 +205,7 @@ h2 {
   height: 730px;
   padding: 0 10px;
   border-radius: 25px;
-  margin: 0 auto -330px 2rem;
+  margin: -50px auto -330px 0;
   box-shadow: 0 0 80px rgba(0,0,0,0.2);
   z-index: 3;
 }
@@ -290,7 +291,7 @@ h2 {
 .buttons {
   display: flex;
   flex-flow: row;
-  margin: 0 0 0 auto;
+  margin: 0;
 }
 
 .buttons .button {
@@ -378,18 +379,11 @@ blockquote footer {
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
 }
 
-.install-code {
+.install {
   font-size: 22px;
   line-height: 2.5rem;
   color: #fff;
   font-weight: bold;
-}
-
-.install span {
-  font-weight: normal;
-  opacity: 0.5;
-  float: right;
-  font-size: 1rem;
 }
 
 .install .extra-line {
@@ -399,9 +393,6 @@ blockquote footer {
   height: 1px;
   opacity: 0;
   transition: all 100ms ease-in;
-}
-
-.install-code .extra-line {
   height: 2.2rem;
   opacity: 0.4;
 }
@@ -527,7 +518,7 @@ h4 {
   top: 0;
   bottom: 0;
   display: flex;
-  right: 3rem;
+  right: 5%;
   z-index: 10;
 }
 
@@ -567,12 +558,10 @@ h4 {
 }
 
 .intro {
-  text-align: right;
 }
 
 @media only screen and (min-width: 48em) {
   .intro {
-    padding-left: 4rem;
   }
 
   .hero-first {

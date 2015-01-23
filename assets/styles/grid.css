@@ -379,7 +379,7 @@
     padding-left: var( --half-gutter-width, 0.5rem );
   }
   .show-md {
-    display: block;
+    display: flex;
   }
   .col-md {
     flex-grow: 1;
