@@ -526,10 +526,10 @@ h4 {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 420px;
   display: flex;
-  right: 5%;
   z-index: 10;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: opacity 300ms ease-in;
 }
 
@@ -545,7 +545,7 @@ h4 {
 
 .connect a {
   display: flex;
-  margin: 1rem;
+  margin: .5rem 0;
   width: 40px;
   height: 40px;
   text-indent: 100%;
@@ -593,4 +593,16 @@ h4 {
 .motto {
   margin: 0 -400px;
   box-shadow: 0 -100px 200px rgba(0,0,0,0.1);
+}
+
+.tryit {
+  width: 136px;
+  height: 29px;
+  background: url(/assets/images/tryit.png);
+  text-indent: 100%;
+  position: absolute;
+  top: 100px;
+  left: 420px;
+  overflow: hidden;
+  transform: rotateZ(10deg);
 }
