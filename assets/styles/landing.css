@@ -272,15 +272,22 @@ h2 {
   width: 1.5rem;
 }
 
+.justify-right {
+  justify-content: right;
+}
+
 .buttons {
-  align-self: flex-end;
   display: flex;
   flex-flow: row;
-  margin: 0 4rem 2rem auto;
+  margin: 0 0 0 auto;
 }
 
 .buttons .button {
   margin: 0 1rem 0 0;
+}
+
+.buttons .button:last-child {
+  margin: 0;
 }
 
 .info {

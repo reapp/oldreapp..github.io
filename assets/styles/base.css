@@ -73,9 +73,7 @@ pre {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  min-width: 11rem;
   padding: 0 4rem;
-  height: 3rem;
   line-height: 3rem;
   border: 1px solid #37a2ff;
   border-radius: 2px;
