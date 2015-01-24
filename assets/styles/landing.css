@@ -464,10 +464,9 @@ code {
 h4 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 300;
   margin: 1rem 0;
   text-align: center;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.8);
 }
 
 .emphasize p {
@@ -618,4 +617,11 @@ h4 {
   left: 420px;
   overflow: hidden;
   transform: rotateZ(10deg);
+}
+
+.icon {
+  max-width: 120px;
+  max-height: 120px;
+  margin: auto;
+  opacity: 0.4;
 }
