@@ -1,14 +1,14 @@
-.blue { color: #56d4f4; }
-.green { color: #6ef7a0; }
-.yellow { color: #f8e027; }
-.orange { color: #e12837; }
-.red { color: #e12837; }
+.color-blue { color: #56d4f4; }
+.color-green { color: #6ef7a0; }
+.color-yellow { color: #f8e027; }
+.color-orange { color: #e12837; }
+.color-red { color: #e12837; }
 
-.blue-bg { background-color: #56d4f4; color: #fff; }
-.green-bg { background-color: #6ef7a0; color: #fff; }
-.yellow-bg { background-color: #f8e027; color: #fff; }
-.orange-bg { background-color: #e12837; color: #fff; }
-.red-bg { background-color: #e12837; color: #fff; }
+.bg-blue { background-color: #40b2d3; color: #fff; }
+.bg-green { background-color: #56db7e; color: #fff; }
+.bg-yellow { background-color: #d6bf1c; color: #fff; }
+.bg-orange { background-color: #cf821d; color: #fff; }
+.bg-red { background-color: #d60f2b; color: #fff; }
 
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
