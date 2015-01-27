@@ -1,4 +1,4 @@
-.color-blue { color: #56d4f4; }
+.color-blue, .install { color: #56d4f4; }
 .color-green { color: #6ef7a0; }
 .color-yellow { color: #f8e027; }
 .color-orange { color: #e12837; }
@@ -405,15 +405,10 @@ blockquote footer {
 .install {
   font-size: 22px;
   line-height: 2.5rem;
-  color: yellow;
-}
-
-.install .first {
-  color: #f1e656;
 }
 
 .install .extra-line {
-  color: #f4ec95;
+  color: #fff;
   font-weight: normal;
   font-size: 80%;
   height: 1px;
