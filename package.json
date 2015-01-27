@@ -7,5 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nate Wienert",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "rimraf": "~2.2.8",
+    "gulp-rimraf": "~0.1.1",
+    "gulp-markdown": "~1.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-wrap": "~0.10.1",
+    "gulp-concat": "~2.4.3"
+  }
 }
