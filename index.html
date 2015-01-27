@@ -93,7 +93,7 @@
     </div>
 
     <div class="col-sm-6">
-      <div class="row lifted">
+      <div class="row">
         <div class="pad col-xs-12 col-md-6">
           <img class="icon logo" src="/assets/images/react-logo.svg" />
           <p>
@@ -131,43 +131,47 @@
     <h2 class="section-title bg-green">Example</h2>
 
     <div class="col-xs-12 col-sm-6">
-      <pre><code class="language-javascript">
-export default React.createClass({
-render() {
-return (
-  &lt;DottedViewList&gt;
-    &lt;View title="Hot Articles"&gt;
-      &lt;List&gt;
-        {HotArticles.map(a =&gt; a.title)}
-      &lt;/List&gt;
-    &lt;/View&gt;
+      <pre><code class="emphasize language-javascript">
+import React from 'react';
+import { DottedViewList, View, List } from 'reapp-ui/all';
 
-    &lt;View title="New Articles"&gt;
-      &lt;List&gt;
-        {NewArticles.map(a =&gt; a.title)}
-      &lt;/List&gt;
-    &lt;/View&gt;
-  &lt;/DottedViewList&gt;
-)
-}
+export default React.createClass({
+  render() {
+    return (
+      &lt;DottedViewList&gt;
+        &lt;View title="Hot Articles"&gt;
+          &lt;List&gt;
+            {HotArticles.map(a =&gt; a.title)}
+          &lt;/List&gt;
+        &lt;/View&gt;
+
+        &lt;View title="Other"&gt;
+          &lt;p&gt;Second view contents&lt;/p&gt;
+        &lt;/View&gt;
+      &lt;/DottedViewList&gt;
+    )
+  }
 });</code></pre>
     </div>
 
     <div class="col-xs-12 col-sm-6 pad">
       <p>
-        A &lt;ViewList&gt; can be used to handle &lt;Views&gt;.
-        For now, reapp has <em>NestedViewList</em> and <em>DottedViewList</em>
-        but you can create custom ones with <em>ViewListMixin</em>.
+        Use a DottedViewList to show views side-by-side, like the
+        Twitter app.
+
+      <p>
+        The ViewListMixin can be used to create custom ViewLists.
+        For now, reapp has NestedViewList and DottedViewList.
       </p>
 
       <p>
-        A <em>View</em> takes children and an optional a title property.
+        Passing a title property to a View automatically inserts a
+        TitleBar.
       </p>
 
       <p>
-        A <em>List</em> is a component used for lists.
-        Use <em>ListItem</em> for children, or if you pass an array it will
-        wrap them for you automatically.
+        A List, when passed an array of items will wrap each in a
+        ListItem for you automatically.
       </p>
 
       <a class="button" href="#">View more examples in the docs</a>

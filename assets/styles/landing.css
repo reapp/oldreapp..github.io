@@ -4,7 +4,6 @@
 .color-orange { color: #e12837; }
 .color-red { color: #e12837; }
 
-
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -43,11 +42,11 @@ body {
   content: ' ';
   position: absolute;
   display: block;
-  width: 4000px;
+  width: 4200px;
   height: 2800px;
   top: 0;
   right: 0;
-  opacity: .1;
+  opacity: .07;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
@@ -72,8 +71,6 @@ body {
 }
 
 .section {
-  margin-bottom: -6px;
-  border-top: 6px solid rgba(0,0,0,0.1);
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -103,6 +100,8 @@ h2 {
 .highlight {
   color: #fff;
   position: relative;
+  box-shadow: 0 0 150px rgba(0,0,0,0.3);
+  margin: 0 -400px;
 }
 
 .highlight p {
@@ -194,7 +193,7 @@ h2 {
   line-height: 1.7em;
   margin-bottom: 2rem;
   padding-right: 2rem;
-  opacity: 0.75;
+  opacity: 0.65;
   color: #fff;
 }
 
@@ -412,10 +411,11 @@ blockquote footer {
 }
 
 .install .first {
+  color: #f1e656;
 }
 
 .install .extra-line {
-  color: #fff;
+  color: #f4ec95;
   font-weight: normal;
   font-size: 80%;
   height: 1px;
@@ -452,6 +452,10 @@ code {
   display: block;
 }
 
+code.emphasize {
+  font-size: 16px;
+}
+
 .feature {
   padding: 0 2rem;
 }
@@ -486,6 +490,7 @@ h4 {
   color: #fff;
   text-align: center;
   overflow: hidden;
+  min-height: 400px !important;
 }
 
 .footer a {
@@ -622,9 +627,9 @@ h4 {
 }
 
 .icon {
-  max-width: 100px;
-  max-height: 100px;
-  opacity: 0.5;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
   margin: auto;
   margin-bottom: 15px;
   filter: grayscale(100%);
@@ -641,4 +646,8 @@ h4 {
   opacity: 1;
   filter: none;
   -webkit-filter: none;
+}
+
+.section:hover .icon {
+  opacity: .8;
 }
