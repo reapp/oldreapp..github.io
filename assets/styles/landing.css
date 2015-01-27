@@ -22,7 +22,7 @@ body {
 }
 
 #hero-bg, .header {
-  background: #1c1e22;
+  background: #1f2228;
 }
 
 #hero-bg {
@@ -44,7 +44,7 @@ body {
   top: 0;
   right: 0;
   opacity: .1;
-  background-image: url(/assets/images/spiro.svg);
+  background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
   -webkit-transform: translateZ(0px);
@@ -65,6 +65,7 @@ body {
 }
 
 .section {
+  border-top: 6px solid rgba(0,0,0,0.1);
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -215,9 +216,6 @@ h2 {
 .phone {
   display: flex;
   position: relative;
-  background: #000;
-  padding: 30px 10px;
-  border-radius: 10px;
   margin: -10px auto 0 1rem;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
   z-index: 0;
@@ -560,8 +558,8 @@ h4 {
 .connect a {
   display: flex;
   margin: .5rem 0;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   text-indent: 100%;
   overflow: hidden;
   background-size: cover;

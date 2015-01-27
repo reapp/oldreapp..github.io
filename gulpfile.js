@@ -7,17 +7,33 @@ var concat = require('gulp-concat');
 
 var buildDir = './gen';
 var outDir = './';
+var packages = [
+  'ui',
+  'pack',
+  'server',
+  'routes',
+  'component',
+  'platform',
+  'request',
+  'reducer',
+  'object-assign',
+  'raf-batching'
+];
+
+var src = {
+  index: './pages/index.html',
+  start: '../reapp/README.md',
+  uiDocs: '../reapp-ui/docs/*',
+  packagePaths: packages.map(function(name) { return '../reapp-'+name+'/README.md' })
+};
 
 gulp.task('clean', function(cb) {
   return rimraf(buildDir, cb);
 });
 
-var packages = ['ui', 'pack', 'server', 'routes', 'component', 'platform', 'request', 'reducer', 'object-assign', 'raf-batching'];
-var packagePaths = packages.map(function(name) { return '../reapp-'+name+'/README.md' });
-
 gulp.task('modules', ['clean'], function() {
   return gulp
-    .src(packagePaths, { base: '../' })
+    .src(src.packagePaths, { base: '../' })
     .pipe(rename(function (path) {
       path.basename = path.dirname;
       path.dirname = '';
@@ -32,7 +48,7 @@ gulp.task('modules', ['clean'], function() {
 
 gulp.task('components', ['clean'], function() {
   return gulp
-    .src('../reapp-ui/docs/*')
+    .src(src.uiDocs)
     .pipe(rename(function (path) {
       path.basename = path.dirname;
       path.dirname = '';
@@ -47,7 +63,7 @@ gulp.task('components', ['clean'], function() {
 
 gulp.task('start', ['clean'], function() {
   return gulp
-    .src('../reapp/README.md')
+    .src(src.start)
     .pipe(rename(function (path) {
       path.basename = path.dirname;
       path.dirname = '';
@@ -62,10 +78,13 @@ gulp.task('start', ['clean'], function() {
 
 gulp.task('index', function() {
   return gulp
-    .src('./pages/index.html')
+    .src(src.index)
     .pipe(concat('index.html'))
     .pipe(wrap({ src: './templates/layout.html' }))
     .pipe(gulp.dest(outDir));
 });
 
+gulp.task('watch', function() {
+  gulp.watch()
+})
 gulp.task('default', ['modules', 'components', 'start', 'index']);
