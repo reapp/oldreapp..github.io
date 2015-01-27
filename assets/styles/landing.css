@@ -1,8 +1,8 @@
-.color-blue, .install { color: #56d4f4; }
+.color-blue { color: #56d4f4; }
 .color-green { color: #6ef7a0; }
 .color-yellow { color: #f8e027; }
 .color-orange { color: #e12837; }
-.color-red { color: #e12837; }
+.color-red, .install { color: #f72d58; }
 
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -15,13 +15,13 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #eee url(/assets/images/grid.svg);
-  color: #111;
+  background: #22242e url(/assets/images/grid.svg);
+  color: #eee;
   overflow-x: hidden;
 }
 
 #hero-bg, .header, .footer {
-  background: #24272c;
+  background: #22242e;
 }
 
 .highlight {
@@ -71,8 +71,11 @@ body {
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  border-bottom: .5rem solid rgba(0,0,0,0.04);
+  border-top: .5rem solid rgba(0,0,0,0.04);
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  margin-top: -.5rem;
   display: flex;
 }
 
@@ -86,7 +89,6 @@ body {
 
 h2 {
   font-weight: normal;
-  opacity: 0.7;
   margin: 0 0 2rem;
 }
 
@@ -103,7 +105,7 @@ h2 {
 }
 
 .highlight p {
-  color: #888;
+  color: rgba(255,255,255,0.6);
 }
 
 .highlight h4 {
@@ -130,6 +132,8 @@ h2 {
   display: block;
   margin: 0 0 2rem 0;
   padding: 1rem 0;
+  width: 158px;
+  height: 52px;
 }
 
 #logo a {
@@ -139,8 +143,8 @@ h2 {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 158px;
-  height: 52px;
+  width: 100%;
+  height: 100%;
   background: url(/assets/images/logo6.png) no-repeat top left;
 }
 
@@ -205,10 +209,6 @@ h2 {
   position: relative;
   padding: 0;
   z-index: 3;
-}
-
-.hero-first {
-  text-align: left;
 }
 
 #step-1 {
@@ -307,11 +307,20 @@ h2 {
   display: flex;
   flex-flow: row;
   margin: 0 0 1rem;
-  opacity: 0.5;
   transition: all 300ms ease-in;
 }
 
-.buttons:hover {
+.buttons .button {
+  opacity: 0.5;
+}
+
+.buttons .button.prefer {
+  opacity: 1;
+  background: #fff;
+  color: #000;
+}
+
+.buttons .button:hover {
   opacity: 1;
 }
 
@@ -403,6 +412,7 @@ blockquote footer {
 }
 
 .install {
+  font-weight: bold;
   font-size: 22px;
   line-height: 2.5rem;
 }
@@ -410,11 +420,10 @@ blockquote footer {
 .install .extra-line {
   color: #fff;
   font-weight: normal;
-  font-size: 80%;
-  height: 1px;
+  font-size: 16px;
   opacity: 0;
   transition: all 100ms ease-in;
-  height: 2.2rem;
+  height: 2rem;
   opacity: 0.4;
 }
 
@@ -467,6 +476,7 @@ code.emphasize {
 
 h4 {
   font-size: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   margin: 1rem 0;
   text-align: center;
@@ -590,20 +600,10 @@ h4 {
 
 .intro {
   padding-left: 1rem;
-  padding-right: 6rem;
-}
-
-@media only screen and (min-width: 48em) {
-  .intro {
-  }
 }
 
 .row.lifted {
   margin-top: -2rem;
-}
-
-.motto {
-  box-shadow: 0 -100px 200px rgba(0,0,0,0.1);
 }
 
 .tryit {
@@ -643,4 +643,17 @@ h4 {
 
 .section:hover .icon {
   opacity: .8;
+}
+
+@media only screen and (min-width: 48em) {
+  .intro {
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .buttons, #logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
