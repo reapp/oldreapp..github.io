@@ -45,4 +45,19 @@ gulp.task('components', ['clean'], function() {
     .pipe(gulp.dest(outDir));
 });
 
-gulp.task('default', ['modules', 'components']);
+gulp.task('start', ['clean'], function() {
+  return gulp
+    .src('../reapp/README.md')
+    .pipe(rename(function (path) {
+      path.basename = path.dirname;
+      path.dirname = '';
+      path.extname = '.md';
+    }))
+    .pipe(markdown())
+    .pipe(concat('start.html'))
+    .pipe(wrap({ src: './templates/page.html' }))
+    .pipe(wrap({ src: './templates/layout.html' }))
+    .pipe(gulp.dest(outDir));
+});
+
+gulp.task('default', ['modules', 'components', 'start']);
