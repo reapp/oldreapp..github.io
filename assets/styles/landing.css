@@ -22,7 +22,7 @@ body {
 }
 
 #hero-bg, .header {
-  background: #1c2432;
+  background: #1c1e22;
 }
 
 #hero-bg {
@@ -44,7 +44,7 @@ body {
   top: 0;
   right: 0;
   opacity: .1;
-  background-image: url(/assets/images/spiro.svg) no-repeat;
+  background-image: url(/assets/images/spiro.svg);
   background-size: 100% 100%;
   background-position: 1800px -1800px;
   -webkit-transform: translateZ(0px);
@@ -65,9 +65,13 @@ body {
 }
 
 .section {
-  border-top: 1px solid #f2f3e5;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  display: flex;
+}
+
+.section > .row {
+  margin: auto;
 }
 
 .has-title {
@@ -82,14 +86,24 @@ h2 {
 
 .section-title {
   position: absolute;
-  top: -5.5rem;
+  top: -5rem;
   left: 2rem;
   padding: .75rem 1rem;
 }
 
 .highlight {
-  background: #fff;
+  background: #1d212b;
+  color: #fff;
   position: relative;
+}
+
+.highlight p {
+  color: #888;
+}
+
+.highlight h4 {
+  opacity: 1;
+  color: #fff;
 }
 
 .highlight::before {
@@ -102,7 +116,7 @@ h2 {
   right: 0;
   bottom: 0;
   background: url(/assets/lines.svg);
-  opacity: .6;
+  opacity: .02;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -195,7 +209,6 @@ h2 {
 #step-1 {
   padding: 0;
   position: relative;
-  height: 680px;
   color: #fff;
 }
 
@@ -458,10 +471,6 @@ h4 {
   color: rgba(0,0,0,0.5);
 }
 
-.highlight-titles h4 {
-  color: #444;
-}
-
 .emphasize p {
   font-size: 115%;
   line-height: 2.5rem;
@@ -617,6 +626,7 @@ h4 {
   max-height: 100px;
   opacity: 0.5;
   margin: auto;
+  margin-bottom: 15px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: all 300ms ease-in;

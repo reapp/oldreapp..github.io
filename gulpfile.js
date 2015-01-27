@@ -6,7 +6,7 @@ var wrap = require('gulp-wrap');
 var concat = require('gulp-concat');
 
 var buildDir = './gen';
-var outDir = './pages';
+var outDir = './';
 
 gulp.task('clean', function(cb) {
   return rimraf(buildDir, cb);
@@ -60,4 +60,12 @@ gulp.task('start', ['clean'], function() {
     .pipe(gulp.dest(outDir));
 });
 
-gulp.task('default', ['modules', 'components', 'start']);
+gulp.task('index', function() {
+  return gulp
+    .src('./pages/index.html')
+    .pipe(concat('index.html'))
+    .pipe(wrap({ src: './templates/layout.html' }))
+    .pipe(gulp.dest(outDir));
+});
+
+gulp.task('default', ['modules', 'components', 'start', 'index']);

@@ -44,6 +44,15 @@
     </div>
   </footer>
 
+  <script type="text/javascript">
+    var els = document.querySelectorAll('.section');
+    [].forEach.call(els, setHeight);
+
+    function setHeight(el) {
+      el.style.minHeight = window.innerHeight + 'px';
+    }
+  </script>
+
   <script src="/assets/js/prism.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
