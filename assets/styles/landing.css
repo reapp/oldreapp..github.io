@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
 }
 
-#hero-bg {
+#hero-bg, .header {
   background: #1c2432;
 }
 
@@ -44,11 +44,17 @@ body {
   top: 0;
   right: 0;
   opacity: .1;
-  background: url(/assets/images/spiro.svg) no-repeat;
+  background-image: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
+}
+
+.header {
+  padding: 1rem 0;
+  overflow: hidden;
+  height: 5rem;
 }
 
 .row {
@@ -99,13 +105,6 @@ h2 {
   opacity: .6;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-}
-
-.header {
-  min-width: 468px;
-  padding: 2rem 0 0;
-  color: #111;
-  z-index: 2;
 }
 
 #logo {
