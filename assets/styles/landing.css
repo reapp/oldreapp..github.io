@@ -316,23 +316,19 @@ h2 {
 
 .buttons .button.prefer {
   opacity: 1;
-  background: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .buttons .button:hover {
   opacity: 1;
+  background: rgba(36,111,245,1);
+  border-color: rgba(36,111,245,1);
 }
 
 .buttons .button {
   margin: 0 1rem 0 0;
   border-color: #fff;
   color: #fff;
-}
-
-.buttons .button:hover {
-  background: #fff;
-  color: #000;
 }
 
 .buttons .button:last-child {
