@@ -92,11 +92,11 @@ gulp.task('apps', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(paths.index, ['index']);
-  gulp.watch(paths.modules, ['modules']);
-  gulp.watch(paths.start, ['start']);
-  gulp.watch(paths.ui, ['ui']);
-  gulp.watch(paths.apps, ['apps']);
+  gulp.watch(src.index, ['index']);
+  gulp.watch(src.modules, ['modules']);
+  gulp.watch(src.start, ['start']);
+  gulp.watch(src.ui, ['ui']);
+  gulp.watch(src.apps, ['apps']);
 })
 
 gulp.task('default', ['modules', 'ui', 'start', 'index']);
