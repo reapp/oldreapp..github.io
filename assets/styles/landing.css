@@ -443,13 +443,6 @@ pre {
   margin: 0 !important;
 }
 
-code {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.4rem;
-  display: block;
-}
-
 code.emphasize {
   font-size: 16px;
 }
@@ -475,8 +468,7 @@ h4 {
   font-weight: normal;
   text-transform: uppercase;
   margin: 1rem 0;
-  text-align: center;
-  color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,0.8);
 }
 
 .emphasize p {

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="/assets/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/prism.css" />
+  <title>Reapp - Next generation apps</title>
+</head>
+<body>
+  <div class="header">
+  <div class="row">
+    <h1 id="logo"><a href="/">reapp</a></h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row">
+    <div class="col-xs-12 col-md-7">
+      <p><em>reapp is just launching in alpha. These docs are far from complete and subject to change!</em></p>
+<h3 id="what-is-it-">What is it?</h3>
+<p>Reapp isn&#39;t a framework, it&#39;s just a collection of packages that work
+well together. On top of that, it&#39;s a CLI that does exactly three things:</p>
+<ul>
+<li><code>reapp new</code>: Creates a new app for you</li>
+<li><code>reapp run</code>: Runs a <a href="#structure">reapp-structured</a> app</li>
+<li><code>reapp build</code>: Builds a reapp-structured app into ./build</li>
+</ul>
+<p>We have another section explaining more of the high level thought
+behind Reapp, you can <a href="#why">skip to it now</a> if you&#39;d like.</p>
+<h3 id="installation">Installation</h3>
+<p>Installation is done through npm, though you can pick and choose any pieces you&#39;d like
+and roll your own stack. To get the reapp CLI:</p>
+<pre><code>npm install -g reapp
+</code></pre><p>Once that&#39;s done you can generate a new base reapp stack with:</p>
+<pre><code>reapp new [name]
+</code></pre><p>Where [name] is the name you&#39;d like to give your new stack.</p>
+<h4 id="what-does-this-give-you-">What does this give you?</h4>
+<p>Reapp new is actually a simple wrapper that clones a bare repository that we&#39;ve set up
+to use the various reapp pieces optimally. We are working on having a few different
+setups, from simple to advanced, that you can choose from when generating your app.</p>
+<h3 id="cli">CLI</h3>
+<p>The CLI has two main functions that it helps you with. The first is creating new apps.
+For now, it simple makes a bare clone of a repo we keep updated with the current best-practice.
+The goal is eventually to have a variety of baseline repo&#39;s to choose from.</p>
+<p>It also lets you run your app, using <a href="https://github.com/reapp/reapp-server">reapp-server</a>,
+a simple express server that works well with the default app structure.</p>
+<p>CLI Usage:</p>
+<pre><code>Usage: reapp [options] [command]
+
+Commands:
+
+  new [name]  creates a directory with a new reapp-starter scaffold
+  run         runs a reapp application with express/webpack-dev-server
+  build       builds a reapp application to a bundle in ./build
+  help [cmd]  display help for [cmd]
+
+Options:
+
+  -h, --help     output usage information
+  -V, --version  output the version number
+</code></pre><h3 id="structure">Structure</h3>
+<p>You can see the exact app that&#39;s generated through the <a href="https://github.com/reapp/reapp-starter">reapp-starter repo</a>.
+Only the <code>/app/app.js</code> entrypoint and <code>/assets</code> folder is &quot;necessary&quot;.
+In the future, we could have a config file to make this completely custom.
+For now, it&#39;s very simple:</p>
+<pre><code>/app
+  /components
+  /theme
+  app.js
+  routes.js
+/assets
+  layout.html
+/config (optional)
+</code></pre><p><code>/app/app.js</code> is your entry point. Everything in the app folder should be pretty
+self-explanatory. <code>/assets</code> contains static assets, with a <code>layout.html</code> that is used
+to serve your app within. In general, you should&#39;t have to touch the layout, even for
+adding styles.</p>
+<p>The <code>/theme</code> folder is <a href="https://github.com/reapp/reapp-ui">reapp-ui</a> specific. You can
+find docs for it in the repo, but it also should be pretty easy to understand.</p>
+<p>If you place a <code>build.webpack.js</code> or <code>run.webpack.js</code> in your <code>/config</code> dir, the reapp CLI
+will use these configs when you run <code>reapp build</code> or <code>reapp run</code>.
+To see some example configs, check out the files in the <code>./config</code> folder of the
+<a href="https://github.com/reapp/reapp-pack">reapp-pack repo</a>.</p>
+<h3 id="packages">Packages</h3>
+<p>If you&#39;d like to explore more deeply into how various pieces of reapp work together,
+you&#39;ll want to check the documentation on the included modules.</p>
+<p>Check out the <a href="https://github.com/reapp">reapp project on Github</a> for more info. Here are some bigger packages,
+in order:</p>
+<ul>
+<li><a href="https://github.com/reapp/reapp-ui">reapp-ui</a> (UI Kit)</li>
+<li><a href="https://github.com/reapp/reapp-ui">reapp</a> (CLI)</li>
+<li><a href="https://github.com/reapp/reapp-routes">reapp-routes</a> (Routes generator)</li>
+<li><a href="https://github.com/reapp/reapp-platform">reapp-platform</a> (Base utils)</li>
+<li><a href="https://github.com/reapp/reapp-component">reapp-component</a> (DI and Factories)</li>
+</ul>
+<h3 id="why">Why</h3>
+<p>Reapp wasn&#39;t built purposefully to be a framework. Instead, it started
+as a UI kit. From that kit, two apps were built. While this isn&#39;t a lot,
+it was enough to see repitition between the two that could be extracted.</p>
+<p>From those two apps, over a peried of months, we extracted a set of
+packages, ensuring to keep each of them completely independent. It was
+an experiment in seeing if a framework was necessary.</p>
+<p>What we found was this: if you can subscribe so a certain file structure,
+you can avoid the framework. With that file structure, we can provide
+helpers via a CLI. Bootstrap your app in one command and you have a mature
+build system built in, without having to do anything.</p>
+<p>Really, Reapp is simple. You could even just use the UI kit and roll your own
+app. We just went through that headache, and decided to make it easier to
+avoid it if you like how we make apps.</p>
+<h3 id="roadmap">Roadmap</h3>
+<p>Our initial goals are simple: focus on completeness, consistency, and performance.
+Also, a theme for Android.</p>
+<p>Down the road we&#39;d like to achieve the following:</p>
+<ul>
+<li><strong>Isomorphic</strong> - Render first on server, pass data over
+to client to continue from there (easily achievable).</li>
+<li><strong>Responsive</strong> - Support for tablet style interfaces
+and JS-powered responsive styling.</li>
+<li><strong>Physics</strong> - A spring based physics library
+into the animation library with an easy syntax.</li>
+<li><strong>Interaction</strong> - A simple, declarative interaction
+library that can be composed well with reapp</li>
+</ul>
+<h3 id="development-environment">Development Environment</h3>
+<p>Sublime users, some helpful plugins for you to install:</p>
+<ul>
+<li>SublimeLinter</li>
+<li>eshint</li>
+<li>JavaScript Next - ES6 Syntax</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+  <footer class="footer section">
+    <div class="row">
+      <div class="hide-xs col-sm-2"></div>
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Install</a>
+          <a href="#">Demo</a>
+          <a href="#">Docs</a>
+        </nav>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Github</a>
+          <a href="#">Twitter</a>
+        </nav>
+      </div>
+      <div class="hide-xs col-sm-2"></div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <span>Copyright 2015 reapp.</span>
+          <span>Icons from <a href="http://www.flaticon.com">flaticon.com</a> under CC 3.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiro"></div>
+  </footer>
+
+  <script type="text/javascript">
+    (function() {
+      var els = document.querySelectorAll('.section');
+      [].forEach.call(els, setHeight);
+
+      function setHeight(el) {
+        el.style.minHeight = window.innerHeight + 'px';
+      }
+    })();
+  </script>
+
+  <script src="/assets/js/prism.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57645827-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
