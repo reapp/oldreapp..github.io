@@ -1,6 +1,6 @@
-.color-blue, .install { color: #246ff5; }
+.color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
-.color-yellow { color: #f8e027; }
+.color-yellow, .install { color: #f8e027; }
 .color-orange { color: #e12837; }
 .color-red { color: #f72d58; }
 
