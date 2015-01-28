@@ -1,8 +1,8 @@
-.color-blue { color: #56d4f4; }
+.color-blue, .install { color: #246ff5; }
 .color-green { color: #6ef7a0; }
 .color-yellow { color: #f8e027; }
 .color-orange { color: #e12837; }
-.color-red, .install { color: #f72d58; }
+.color-red { color: #f72d58; }
 
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -175,7 +175,7 @@ h2 {
 }
 
 .hero {
-  padding: 2rem 0 0;
+  padding: 0;
   border: none;
 }
 
