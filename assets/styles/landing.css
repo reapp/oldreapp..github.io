@@ -1,8 +1,8 @@
 .color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
-.color-yellow, .install { color: #f8e027; }
+.color-yellow { color: #f8e027; }
 .color-orange { color: #e12837; }
-.color-red { color: #f72d58; }
+.color-red, .install { color: #d62746; }
 
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -73,9 +73,8 @@ body {
 .section {
   border-bottom: .5rem solid rgba(0,0,0,0.04);
   border-top: .5rem solid rgba(0,0,0,0.04);
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
-  margin-top: -.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
 }
 
@@ -212,7 +211,6 @@ h2 {
 }
 
 #step-1 {
-  padding: 0;
   position: relative;
   color: #fff;
 }
@@ -441,6 +439,7 @@ blockquote footer {
 
 pre {
   margin: 0 !important;
+  line-height: 1.5rem;
 }
 
 code.emphasize {
