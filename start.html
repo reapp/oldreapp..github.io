@@ -87,15 +87,41 @@ find docs for it in the repo, but it also should be pretty easy to understand.</
 will use these configs when you run <code>reapp build</code> or <code>reapp run</code>.
 To see some example configs, check out the files in the <code>./config</code> folder of the
 <a href="https://github.com/reapp/reapp-pack">reapp-pack repo</a>.</p>
-<h3 id="packages">Packages</h3>
-<p>If you&#39;d like to explore more deeply into how various pieces of reapp work together,
-you&#39;ll want to check the documentation on the included modules.</p>
-<p>Check out the <a href="https://github.com/reapp">reapp project on Github</a> for more info. Here are some bigger packages,
-in order:</p>
+<h3 id="your-first-app">Your First App</h3>
+<p>There are a number of pieces we&#39;ve included in a reapp. Let&#39;s explore a few
+of them in order of when you&#39;ll encounter them in your codebase. Think of this
+as a tour of a reapp app, giving an introduction to packages as we encounter them.</p>
+<p>You can check out the <a href="https://github.com/reapp">reapp project on Github</a> for more info.</p>
+<p>To start, you&#39;ll want to open <code>./package.json</code>. Notice we have the following packages:</p>
 <ul>
+<li><a href="https://github.com/reapp/reapp-routes">reapp-routes</a> (Routes generator)</li>
 <li><a href="https://github.com/reapp/reapp-ui">reapp-ui</a> (UI Kit)</li>
 <li><a href="https://github.com/reapp/reapp-ui">reapp</a> (CLI)</li>
-<li><a href="https://github.com/reapp/reapp-routes">reapp-routes</a> (Routes generator)</li>
+<li><a href="https://github.com/reapp/reapp-platform">reapp-platform</a> (Base utils)</li>
+<li><a href="https://github.com/reapp/reapp-component">reapp-component</a> (DI and Factories)</li>
+</ul>
+<p>You also have an entry point defined as <code>app/app.js</code>. Lets start there.</p>
+<h4 id="-reapp-routes-https-github-com-reapp-reapp-routes-routes-generator-"><a href="https://github.com/reapp/reapp-routes">reapp-routes</a> (Routes generator)</h4>
+<p>reapp-routes is a DRY nested route-to-directory mapping system. As long as
+your routes map to your component file structure, you can save lots of time
+and enforce consistency in your app, a win-win.</p>
+<p>Notice how the import looks for <code>reapp-routes/react-router</code>.
+The first import in app.js is your router. We love react-router, so we included
+a reapp-rotues generator for that by default, but you could write your own.</p>
+<p>You&#39;ll notice that the pre-defined routes all perfectly map to the structure of
+<code>./app/components</code>. To see more about how this works, check out reapp-routes.</p>
+<p>This is the reapp-routes syntax. The key to note here is the <code>require</code> that
+is passed to the routes function at the top level, which is how it dynamically
+requires your components based on the route tree.</p>
+<h4 id="-reapp-ui-https-github-com-reapp-reapp-ui-ui-kit-"><a href="https://github.com/reapp/reapp-ui">reapp-ui</a> (UI Kit)</h4>
+<p>The next theme we require is the <code>./app/theme.js</code> file. reapp-ui has it&#39;s own
+documentation, but themes are the core of reapp-ui. They have three things they
+need: constants, styles, and animations. You can just use the included iOS theme,
+but we&#39;ve included the <code>./app/theme</code> folder as an example of how you can easily
+customize themes.</p>
+<h4 id="other-packages">Other packages</h4>
+<ul>
+<li><a href="https://github.com/reapp/reapp-ui">reapp</a> (CLI)</li>
 <li><a href="https://github.com/reapp/reapp-platform">reapp-platform</a> (Base utils)</li>
 <li><a href="https://github.com/reapp/reapp-component">reapp-component</a> (DI and Factories)</li>
 </ul>
@@ -169,16 +195,6 @@ library that can be composed well with reapp</li>
     <div class="spiro"></div>
   </footer>
 
-  <script type="text/javascript">
-    (function() {
-      var els = document.querySelectorAll('.section');
-      [].forEach.call(els, setHeight);
-
-      function setHeight(el) {
-        el.style.minHeight = window.innerHeight + 'px';
-      }
-    })();
-  </script>
 
   <script src="/assets/js/prism.js"></script>
   <script>
