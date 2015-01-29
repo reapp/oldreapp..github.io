@@ -2,7 +2,7 @@
 .color-green { color: #6ef7a0; }
 .color-yellow { color: #f8e027; }
 .color-orange { color: #e12837; }
-.color-red, .install { color: #d62746; }
+.color-red { color: #d62746; }
 
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
@@ -406,6 +406,7 @@ blockquote footer {
 }
 
 .install {
+  color: #fff;
   font-weight: bold;
   font-size: 22px;
   line-height: 2.5rem;
