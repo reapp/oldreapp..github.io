@@ -24,8 +24,7 @@ var src = {
   index: './pages/index.html',
   start: '../reapp/README.md',
   ui: '../reapp-ui/docs/*',
-  modules: packages.map(function(name) { return '../reapp-'+name+'/README.md' }),
-  apps: ['../reapp-hn/build/public/*', '../reapp-kitchen/build/public/*']
+  modules: packages.map(function(name) { return '../reapp-'+name+'/README.md' })
 };
 
 gulp.task('clean', function(cb) {
@@ -85,18 +84,11 @@ gulp.task('index', function() {
     .pipe(gulp.dest(outDir));
 });
 
-gulp.task('apps', function() {
-  return gulp
-    .src(src.apps)
-    .pipe(gulp.dest(outDir + 'apps'))
-})
-
 gulp.task('watch', function() {
   gulp.watch(src.index, ['index']);
   gulp.watch(src.modules, ['modules']);
   gulp.watch(src.start, ['start']);
   gulp.watch(src.ui, ['ui']);
-  gulp.watch(src.apps, ['apps']);
 })
 
 gulp.task('default', ['modules', 'ui', 'start', 'index']);
