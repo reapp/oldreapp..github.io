@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="/assets/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/prism.css" />
+  <title>Reapp - Next generation apps</title>
+</head>
+<body>
+  <div class="header">
+  <div class="row">
+    <h1 id="logo"><a href="/">reapp</a></h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row">
+    <div class="col-xs-12 col-md-7">
+      <h3 id="badge">Badge</h3>
+<p>A badge is used on lists or over icons and bars, for notifications
+of numbers usually.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  children: React.PropTypes.node
+}
+</code></pre>
+<h3 id="bar">Bar</h3>
+<p>Bars attach to an edge of the screen, as given by position.
+Bars contain icons and text, usually as a header and navigation.
+See TitleBar for a specific usage of a bar designed for View titles.</p>
+<p>A bar will automatically wrap it&#39;s children with BarItem, but you can
+manually use BarItem if you&#39;d like to customize them.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  barItemProps: React.PropTypes.object,
+  position: React.PropTypes.string,
+  activeIndexIndex: React.PropTypes.number,
+  nowrap: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="baritem">BarItem</h3>
+<p>Item on a Bar.</p>
+<ul>
+<li><code>children</code> used for text</li>
+<li><code>icon</code> string or element</li>
+<li><code>display</code>:<ul>
+<li>text: Text only</li>
+<li>icon: Icon only</li>
+<li>icon-text: Icon above text</li>
+<li>icon-text-right: Icon left of text</li>
+</ul>
+</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  icon: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.element
+  ]),
+  iconProps: React.PropTypes.object,
+  children: React.PropTypes.string,
+  display: React.PropTypes.oneOf([
+    &#39;text&#39;, &#39;icon&#39;, &#39;icon-text&#39;, &#39;icon-text-right&#39;
+  ]),
+  active: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="button">Button</h3>
+<p>Buttons are buttons! Can be placed in a ButtonGroup.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  iconProps: React.PropTypes.object,
+  icon: React.PropTypes.element,
+  chromeless: React.PropTypes.bool,
+  rounded: React.PropTypes.bool,
+  active: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="buttongroup">ButtonGroup</h3>
+<p>A button group manages a list of buttons. Places them together.
+It can pass properties down to the children buttons as well to avoid
+code duplication.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  children: React.PropTypes.node,
+  buttonProps: React.PropTypes.object
+}
+</code></pre>
+<h3 id="card">Card</h3>
+<p>Unfinished, will be used for tinder-style swipe cards.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  title: React.PropTypes.string,
+  children: React.PropTypes.node
+}
+</code></pre>
+<h3 id="checkbox">Checkbox</h3>
+<p>Checkbox is used in forms, passes it&#39;s props on to an <code>&lt;input type=&quot;checkbox&quot; /&gt;</code>.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  onChange: React.PropTypes.func,
+  checked: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="dots">Dots</h3>
+<p>Dots are the equivalent as used in the homescreen in iOS.
+Used to track location within a list of views.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  total: React.PropTypes.number.isRequired,
+  active: React.PropTypes.number.isRequired
+}
+</code></pre>
+<h3 id="drawer">Drawer</h3>
+<p>A panel that slides in from the side of the screen, and can be dragged
+back out.</p>
+<ul>
+<li><code>from</code> which side it comes from.</li>
+<li><code>translate</code> pass in an object with { x: (number: 0-100) }</li>
+<li><code>behavior</code> pass in object with translate objects for all the from props</li>
+<li><code>closed</code> toggle open or closed.</li>
+<li><code>touchableProps</code> will be passed down to it&#39;s internal touchableArea
+(useful for disabling or changing the area).</li>
+<li><code>onClose</code> calls a callback when closed by used.</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  behavior: React.PropTypes.object,
+  translate: React.PropTypes.object,
+  from: React.PropTypes.oneOf([
+    &#39;left&#39;, &#39;right&#39;, &#39;top&#39;, &#39;bottom&#39;
+  ]),
+  closed: React.PropTypes.bool,
+  touchableProps: React.PropTypes.object,
+  onClose: React.PropTypes.func
+}
+</code></pre>
+
+<h3 id="icon">Icon</h3>
+<p>We&#39;ve taken the <a href="http://www.flaticon.com/packs/ios7-set-lined-1">flaticon</a>
+set of icons and normalized their names and styling. SVG gives you
+crisp edges in your interface. But, you can also use your own icon set.</p>
+<p>Be sure to include proper CC3 attribution when using these.</p>
+<ul>
+<li><code>size</code> number for width and height.</li>
+<li><code>path</code> path to icon, defaults to the svg kit</li>
+<li><code>isInTitleBar</code> used internally</li>
+<li><code>svgProps</code> to pass to the svg</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  size: React.PropTypes.number,
+  path: React.PropTypes.string,
+  name: React.PropTypes.string,
+  color: React.PropTypes.string,
+  stroke: React.PropTypes.number,
+  isInTitleBar: React.PropTypes.bool,
+  shapeRendering: React.PropTypes.string,
+  svgProps: React.PropTypes.object
+}
+</code></pre>
+<h3 id="label">Label</h3>
+<p>For use in forms.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  title: React.PropTypes.string
+}
+</code></pre>
+<h3 id="list">List</h3>
+<p>Parent of ListItem, will automatically wrap an array with ListItem
+elements. Also accepts title for auto-adding Title components before.</p>
+<ul>
+<li><code>type</code> so far, just &#39;inset&#39; is an option</li>
+<li><code>nowrap</code> don&#39;t wrap ListItem around components automatically</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  type: React.PropTypes.string,
+  liProps: React.PropTypes.object,
+  title: React.PropTypes.node,
+  nowrap: React.PropTypes.bool,
+  nopad: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="listitem">ListItem</h3>
+<p>Takes a variety of properties for constructing lists.</p>
+<ul>
+<li><code>title</code> displayed in bold at the top</li>
+<li><code>titleAfter</code> aligns to the right of title, for badges, time, etc</li>
+<li><code>titleSub</code> lighter sub title</li>
+<li><code>before</code> place an icon or element before the item</li>
+<li><code>after</code> place an icon or element after the item</li>
+<li><code>wrapper</code> wrap a link around the item</li>
+<li><code>underLeft</code> not implemented</li>
+<li><code>underRight</code> not implemented</li>
+<li><code>noicon</code> by default, listitems with links have an arrow (&gt;)</li>
+<li><code>nopad</code> remove default padding</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  title: React.PropTypes.node,
+  titleAfter: React.PropTypes.node,
+  titleSub: React.PropTypes.node,
+  before: React.PropTypes.node,
+  after: React.PropTypes.node,
+  wrapper: React.PropTypes.node,
+  underLeft: React.PropTypes.node,
+  underRight: React.PropTypes.node,
+  noicon: React.PropTypes.bool,
+  nopad: React.PropTypes.bool
+}
+</code></pre>
+<h3 id="menu">Menu</h3>
+<p>An alert that allows user to confirm, or be prompted for options.</p>
+<ul>
+<li><code>type</code> of &#39;alert&#39; (just shows ok), <code>prompt</code> or <code>confirm</code> (ok, cancel).</li>
+<li><code>animationDuration</code> ms for animation to run</li>
+</ul>
+<p>Props:</p>
+<pre><code>propTypes: {
+  type: React.PropTypes.string,
+  animationDuration: React.PropTypes.number,
+  animations: React.PropTypes.object,
+  handleConfirm: React.PropTypes.func,
+  handleCancel: React.PropTypes.func,
+  handleClose: React.PropTypes.func
+}
+</code></pre>
+<h3 id="popover">Popover</h3>
+<p>A menu that appears over content, accepts an array of children to
+be used as the menu items.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  open: React.PropTypes.bool,
+  edgePadding: React.PropTypes.number,
+  arrowSize: React.PropTypes.number,
+  handleClose: React.PropTypes.func,
+  animationDuration: React.PropTypes.number,
+  animations: React.PropTypes.object
+}
+</code></pre>
+<h3 id="popoverlink">PopoverLink</h3>
+<p>Triggers a menu.</p>
+<p>Props:</p>
+<pre><code>
+
+</code></pre>
+<h3 id="radio">Radio</h3>
+<p>A standard form radio</p>
+
+<h3 id="searchbar">SearchBar</h3>
+<p>A bar that will automatically appear under TitleBars when in a view.
+Contains an input that you can pass props to directly.</p>
+<p>Props:</p>
+<pre><code>
+
+</code></pre>
+<h3 id="title">Title</h3>
+<p>Accepts children, renders as a title for groups of content in views.</p>
+
+<h3 id="titlebar">TitleBar</h3>
+<p>A special type of bar that is used within views as the title.
+Handles a variety of use cases for positioning content and animations.</p>
+<ul>
+<li><code>width</code> automatically set to window by default</li>
+<li><code>height</code> adjust height from default</li>
+</ul>
+<p>One of:</p>
+<ul>
+<li><code>left</code> content on the left, handles icon animations for you</li>
+<li><code>right</code> content on the right, handles icon animations for you</li>
+<li><code>children</code> content in the middle.</li>
+</ul>
+<p>or just use <code>children</code> with a three-arity array.</p>
+<p>Props:</p>
+<pre><code>propTypes: {
+  width: React.PropTypes.number,
+  height: React.PropTypes.number,
+  animations: React.PropTypes.object,
+
+  // either this, with children node
+  left: React.PropTypes.node,
+  right: React.PropTypes.node,
+
+  transparent: React.PropTypes.bool
+}
+</code></pre>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer section">
+    <div class="row">
+      <div class="hide-xs col-sm-2"></div>
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Install</a>
+          <a href="#">Demo</a>
+          <a href="#">Docs</a>
+        </nav>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Github</a>
+          <a href="#">Twitter</a>
+        </nav>
+      </div>
+      <div class="hide-xs col-sm-2"></div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <span>Copyright 2015 reapp.</span>
+          <span>Icons from <a href="http://www.flaticon.com">flaticon.com</a> under CC 3.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiro"></div>
+  </footer>
+
+
+  <script src="/assets/js/prism.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57645827-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="/assets/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/landing.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles/prism.css" />
+  <title>Reapp - Next generation apps</title>
+</head>
+<body>
+  <div class="header">
+  <div class="row">
+    <h1 id="logo"><a href="/">reapp</a></h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row">
+    <div class="col-xs-12 col-md-7">
+      <h2 id="reapp-ui">reapp-ui</h2>
+<p><em>This is an alpha release: seeking feedback, expect missing pieces, laughable mistakes, big changes</em></p>
+<p>reapp-ui is a set of React components for building app UI&#39;s. It has a few goals</p>
+<ul>
+<li>Allow pick-and-choose usage</li>
+<li>Work well together</li>
+<li>Lightweight code with few dependencies</li>
+<li>Themeable</li>
+<li>Adaptable to many platforms</li>
+</ul>
+<p>Near-term goals are to finish out all the components in the toolkit,
+get and implement feedback from the community, fix any glaring performance
+and visual issues, and then create an Android theme.</p>
+<p>It includes quite a few things that may end up in their own repo&#39;s, once the code
+has settled out a bit into something more coherent.</p>
+<h3 id="principles">Principles</h3>
+<ul>
+<li>Aim for performance and consistency.</li>
+<li>Keep the repo structure as flat as possible.</li>
+<li>Decouple components. Allow selective usage of these components.</li>
+</ul>
+<h3 id="structure">Structure</h3>
+<pre><code>  /actions
+    Internal: for components to communicate
+  /assets
+    Icons, etc
+  /behaviors
+    (!) Used within components, can be passed in to override
+  /components
+    The UI components
+  /helpers
+    Components which don&#39;t map directly to user-viewable, helper components
+  /lib
+    Internally used functions
+  /mixins
+    All mixins (used internally and externally)
+  /stores
+    Internal: should be removable once parent-based contexts are implemented in React
+  /themes
+    Theme files users can require
+</code></pre><h4 id="index-js">index.js</h4>
+<p>Used to set up reapp-ui.</p>
+<p>reapp-ui uses three different things that must be imported at init. These
+things are imported so they can be mixed and matched for use with adapating
+theme or behavior.</p>
+<p>For now it has three relevant methods:</p>
+<ul>
+<li><p><code>addConstants</code>: constants allow users to customize themes easily. They are used
+in styles (and in the future could be used with animations and more).
+<strong>See /themes/ios/constants/* for examples.</strong></p>
+</li>
+<li><p><code>addStyles</code>: styles objects, keys map to the names of components and values are
+objects that are CSS styles in JS. Values can optionally be a function, that takes
+in the constants as the argument.
+<strong>See /themes/ios/styles/* for examples.</strong></p>
+</li>
+<li><p><code>addAnimations</code>: animations are objects, keys are names, values are functions that
+take an object with <code>index</code>, <code>step</code> as keys, an optionally extra keys with more info.
+<strong>See /themes/ios/animations.js for examples.</strong></p>
+</li>
+</ul>
+<p>To see how you&#39;d make a theme, I&#39;d suggest looking at <code>/themes/ios/theme.js</code>. You
+can require that file to have the entire iOS theme setup for you automatically.</p>
+<h4 id="component-js">component.js</h4>
+<p>component is a decorator that is used internally by reapp-ui to make components. It
+was extracted out and is a nice set of mixins that allow the ui components to avoid
+reptitious code.</p>
+<p>This is an important file to look at before understanding how this library works,
+and from there, the Mixins that are used here make the foundation of the UI kit.</p>
+<h3 id="credits">Credits</h3>
+<p>Original inspiration was thanks to <a href="https://github.com/petehunt">Pete Hunt</a>&#39;s <a href="http://petehunt.github.io/react-touch/">React Mobile Demo</a>.
+The <a href="">Framework7</a> Kitchen Sink was used as reference when building the kitchen sink.</p>
+<p>SVG Icons included in this repo are originally from <a href="http://www.flaticon.com/packs/ios7-set-lined-1">flaticon</a>
+and are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0</a>. If you use them with your project, you must
+include attribution &quot;in any reasonable manner, but not in any way that suggests the licensor endorses you or your use&quot;.</p>
+<p>Help throughout was given in the #reactjs freenode channel, and from various great members
+of the react community including:</p>
+<ul>
+<li><a href="https://github.com/andreypopp">Andrey Popp</a></li>
+<li><a href="https://github.com/rpflorence">Ryan Florence</a></li>
+<li><a href="http://github.com/gaearon">Dan Abramov</a></li>
+</ul>
+<p>and many more.</p>
+
+<h2 id="reapp-pack">reapp-pack</h2>
+<p>A helper for generating webpack configs, along with some small helpers.
+Includes <code>./webpackServer</code> for easy use of webpack-dev-server.</p>
+<p>Based heavily on the official <a href="https://github.com/webpack/react-starter">webpack/react-starter</a> repo.</p>
+<p>Webpack is just an export of the version of webpack used in this repository.</p>
+<h3 id="usage">Usage</h3>
+<p>See required files in <code>./config</code>.</p>
+<pre><code class="lang-js">var config = require(&#39;./config/webpack.run.js&#39;);
+var webpackServer = require(&#39;reapp-pack/webpackServer&#39;);
+
+webpackServer(config, {
+  port: 3011,
+  debug: true,
+  hot: true
+});
+</code></pre>
+<h3 id="options">Options</h3>
+<p>See <code>./index.js</code>.</p>
+
+<h2 id="reapp-server">reapp-server</h2>
+<p>reapp-server provides express and webpack servers that work together to serve
+a reapp app.</p>
+<p>reapp-server takes in options that it uses to build the webpack config. By default
+it runs in development mode and looks for a /config/config.development.js file to
+determine options. It includes default configs for development and production though.</p>
+<p>See <code>./webpack/config.*.js</code> for the default config files.</p>
+<p>See <code>./webpack/make.js</code> for how to builds the webpack config.</p>
+<h3 id="options">Options</h3>
+<pre><code>mode: corresponds to config files, typically &#39;development&#39; or &#39;production&#39;
+port: port to serve on, webpack server port by default is +1 of this
+wport: optional, to specify custom webpack server work
+staticPaths: array of strings, relative paths of where to serve static assets
+dir: dir of where to serve app
+debug: turn on debugging from webpack
+hostname: set hostname to serve from, default &#39;localhost&#39;
+</code></pre><h3 id="todo">TODO</h3>
+<ul>
+<li>Work to be done getting isomorphic working again</li>
+<li>General organization, tests and code docs throughout</li>
+</ul>
+
+<h2 id="reapp-routes">reapp-routes</h2>
+<p>A small library for generating a tree of objects representing routes,
+as well as file paths.</p>
+<p>See the index.js for more in-code documentation.</p>
+<p>Can be used to reduce a lot of require boilerplate when you create
+and app with a consistent route -&gt; directory mapping. Provides some options
+for times when the structure isn&#39;t so well mapped :).</p>
+<p>Needs something like Webpack that can handle dynamic requires.</p>
+<h3 id="todo">Todo</h3>
+<ul>
+<li>Document, tests</li>
+<li>Better separtion for use externally</li>
+<li>Possibly remove <code>routes</code> just use <code>route</code></li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>Using react-router helpers:</p>
+<pre><code class="lang-jsx">var { route, routes } = require(&#39;reapp-routes/react-router/generator&#39;);
+
+module.exports = routes(require,
+  route(&#39;app&#39;, &#39;/&#39;, { dir: &#39;&#39; },
+    route(&#39;kitchen&#39;, &#39;/&#39;,
+      route(&#39;controls&#39;),
+      route(&#39;modals&#39;),
+      route(&#39;popovers&#39;),
+      route(&#39;forms&#39;)
+    ),
+    route(&#39;viewer&#39;)
+  )
+);
+</code></pre>
+<p>Rolling your own:</p>
+<pre><code class="lang-jsx">var React = require(&#39;react&#39;);
+var { Route, DefaultRoute } = require(&#39;react-router&#39;);
+var { route, routes } = require(&#39;react-router-generator&#39;);
+
+module.exports = generate(routes(
+  { dir: &#39;components/&#39; },
+  route({ name: &#39;app&#39;, path: &#39;/&#39;, dir: &#39;&#39; },
+    route(&#39;kitchen&#39;,
+      route(&#39;controls&#39;),
+      route(&#39;modals&#39;),
+      route(&#39;popovers&#39;)
+    )
+  )
+));
+
+function generate(props) {
+  props.children = props.children ? props.children.map(generate) : null;
+  props.handler = require(props.handlerPath);
+
+  return props.defaultRoute ?
+    &lt;DefaultRoute {...props} /&gt; :
+    &lt;Route {...props} /&gt;;
+}
+</code></pre>
+<p>Corresponing file tree, notice how <code>dir</code> affects nesting:</p>
+<pre><code class="lang-text">/components
+  /kitchen
+    Controls.jsx
+    Modals.jsx
+    Popovers.jsx
+  Kitchen.jsx
+  App.jsx
+</code></pre>
+
+<h2 id="reapp-component">reapp-component</h2>
+<p>Component is a tiny, no-dependency library designed for top-down applications.</p>
+<p> It&#39;s essential a factory, that provides two things on it&#39;s factories:</p>
+<ul>
+<li>Decorators through <code>addDecorator</code></li>
+<li>Dependency Injection through <code>addStatics</code></li>
+</ul>
+<p>So essentially Dependency Injection and Decorations.</p>
+<p>In reapp it&#39;s optional, but we found it helpful when creating large apps, for
+times when you want to add a mixin to every class, or have commonly used ones.
+As well as for injecting stuff like stores, etc.</p>
+<p>Because React apps use gradual controller-view -&gt; view trees
+DI is typically very simple and more akin to global variables. Decorators are helpful
+for medium to large scale apps. They can help you have default mixins, and automate
+other tasks you&#39;d normally do all over the place.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-js">var c1 = Component();
+
+c1.addDecorator(spec =&gt; {
+  spec.decorated = true;
+  return spec;
+});
+
+c1.addStatics(&#39;hello&#39;, &#39;world&#39;);
+
+assert(c1.hello === &#39;world&#39;);
+assert(c1({}) === { decorated: true })
+</code></pre>
+
+<h2 id="reapp-platform">reapp-platform</h2>
+<p>This library is for now the &quot;glue&quot; library for a few different pieces of reapp.
+Ideally eventually this library could be phased out all together into smaller
+ones, or moved into the other reapp pieces, respectively.</p>
+<p>When you require this library it does two things:</p>
+<ul>
+<li>Enables touch events for React (this will be not necessary by React 1.0)</li>
+<li>Includes <a href="https://github.com/reapp/reapp-object-assign">reapp-object-assign</a>
+which gives you a polyfill to use Object.assign() in your app.</li>
+</ul>
+<p>It also exports an object with:</p>
+<ul>
+<li>Env: { CLIENT: (true/false), SERVER: (true/false) }</li>
+<li>Helpers:<ul>
+<li>storePromise: pass in a store, and a function that takes in the store data and returns true or false, will resovle the promise when the condition returns true.</li>
+</ul>
+</li>
+<li>Mixins:<ul>
+<li>RoutedViewListMixin: Provides a variety of helpers for use with react-router and ViewLists</li>
+<li>storeRefreshMixin: pass in actions as arguments, will forceRefresh a React component when those actions happen.</li>
+</ul>
+</li>
+</ul>
+
+<h2 id="reapp-request">reapp-request</h2>
+<p>An early stage library (ie. unfinished) that wants to help package together a nice
+isomorphic request module. For now there are a few options including
+Superagent, request, and cujojs/rest.</p>
+<p>Superagent works nicelly but doesn&#39;t have promise support, but there
+is a good library superagent-bluebird-proimise. So for now we just extend
+that.</p>
+<p>The others also either bundle their own promise library or have separate
+modules for them, but are bulky or tied to their promise library.</p>
+<p>The goal here is to take the nice and small surface of Superagent with
+superagent-bluebird-promise, and add on caching and offline support, eventually.</p>
+
+<h2 id="reapp-reducer">reapp-reducer</h2>
+<p>Simple reducer for use with flux. Reduces an array or map into an array of objects with:
+  { id, data, status }</p>
+<p>Status is given first so we can allow currying, ex:</p>
+<pre><code class="lang-js">var loadedReducer = reducer.bind(null, &#39;LOADED&#39;);
+
+fetch(url).then(loadedReducer).then(store);
+</code></pre>
+<p>status is optional, default value is &#39;OK&#39;</p>
+<pre><code class="lang-js">assert(reducer([1]) === [{ id: 0, data: 1, status: &#39;OK&#39; }]
+</code></pre>
+
+<h2 id="reapp-object-assign">reapp-object-assign</h2>
+<p>Injects <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign">Object.assign</a>
+into your apps.</p>
+<p>Polyfill taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign">MDN</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+  <footer class="footer section">
+    <div class="row">
+      <div class="hide-xs col-sm-2"></div>
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Install</a>
+          <a href="#">Demo</a>
+          <a href="#">Docs</a>
+        </nav>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <nav>
+          <a href="#">Github</a>
+          <a href="#">Twitter</a>
+        </nav>
+      </div>
+      <div class="hide-xs col-sm-2"></div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <span>Copyright 2015 reapp.</span>
+          <span>Icons from <a href="http://www.flaticon.com">flaticon.com</a> under CC 3.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spiro"></div>
+  </footer>
+
+
+  <script src="/assets/js/prism.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57645827-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
