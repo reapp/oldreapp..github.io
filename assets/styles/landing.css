@@ -702,6 +702,10 @@ h4 {
 }
 
 .note p {
-  color: yellow;
+  color: white;
   margin: 0;
+}
+
+.note p strong {
+  color: yellow;
 }
