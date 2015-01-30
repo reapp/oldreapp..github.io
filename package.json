@@ -8,7 +8,9 @@
   },
   "author": "Nate Wienert",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "~3.8.10"
+  },
   "devDependencies": {
     "gulp": "~3.8.10",
     "rimraf": "~2.2.8",

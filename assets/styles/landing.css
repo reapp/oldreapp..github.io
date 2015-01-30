@@ -15,17 +15,17 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #22242e url(/assets/images/grid.svg);
+  background: #1d212b url(/assets/images/grid.svg);
   color: #eee;
   overflow-x: hidden;
 }
 
 #hero-bg, .header, .footer {
-  background: #22242e;
+  background: #1d212b;
 }
 
 .highlight {
-  background: #1d212b;
+  background: #22242e;
 }
 
 #hero-bg {
@@ -71,10 +71,8 @@ body {
 }
 
 .section {
-  border-bottom: .5rem solid rgba(0,0,0,0.04);
-  border-top: .5rem solid rgba(0,0,0,0.04);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
 }
 
@@ -225,7 +223,7 @@ h2 {
   display: flex;
   position: relative;
   margin: -10px auto 0 1rem;
-  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
   z-index: 0;
 }
 
@@ -650,4 +648,22 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.center-titles h4 {
+  text-align: center;
+}
+
+.note {
+  color: #fff;
+  background: rgba(50,50,0,0.4);
+  padding: 2rem 0;
+}
+
+.note .row {
+  padding: 0 4rem;
+}
+
+.note p {
+  margin: 0;
 }
