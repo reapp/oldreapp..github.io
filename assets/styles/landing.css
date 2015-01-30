@@ -655,7 +655,6 @@ h4 {
 }
 
 .note {
-  color: #fff;
   background: rgba(50,50,0,0.4);
   padding: 2rem 0;
 }
@@ -665,5 +664,6 @@ h4 {
 }
 
 .note p {
+  color: rgba(255,255,255,0.8);
   margin: 0;
 }
