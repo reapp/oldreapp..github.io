@@ -5,9 +5,8 @@
     <div class="hero-first pad center-xs start-md col-sm-12 col-md-6">
       <h1 id="logo"><a href="/">reapp</a></h1>
       <h2 class="hero-headline">Next gen<span class="hide-xs">eration</span> apps</h2>
-      <p class="first">
-        Native-feeling hybrid apps using the power of
-        React, ES6+, and Node.
+      <p>
+        Write once, run anywhere apps that feel native &amp; work with the web.
       </p>
 
       <div class="row justify-right">
@@ -39,7 +38,7 @@
       </div>
 
       <div class="toggle">
-        <button onclick="setIframe('kitchen');">
+        <button id="kitchenButton" onclick="setIframe('kitchen');">
           Kitchen Sink
         </button>
 
@@ -49,6 +48,8 @@
       </div>
 
       <script type="text/javascript">
+        document.getElementById('kitchenButton').focus();
+
         function setIframe(sub) {
           document.getElementById('iframe').setAttribute('src', 'http://'+sub+'.reapp.io');
         }

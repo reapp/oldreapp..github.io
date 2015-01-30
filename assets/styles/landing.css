@@ -1,6 +1,6 @@
 .color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
-.color-yellow { color: #f8e027; }
+.color-yellow, .install { color: #f8e027; }
 .color-orange { color: #e12837; }
 .color-red { color: #d62746; }
 
@@ -15,7 +15,7 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #1d212b url(/assets/images/grid.svg);
+  background: #1a1b20 url(/assets/images/grid.svg);
   color: #eee;
   overflow-x: hidden;
 }
@@ -182,7 +182,7 @@ h2 {
 
 .hero h2 {
   font-size: 3rem;
-  margin: 0 0 1.5rem 0 ;
+  margin: 0 0 1rem 0;
   font-weight: normal;
   opacity: 1;
 }
@@ -192,7 +192,7 @@ h2 {
   line-height: 1.7em;
   margin-bottom: 2rem;
   padding-right: 2rem;
-  opacity: 0.65;
+  opacity: 0.8;
   color: #fff;
 }
 
@@ -410,7 +410,6 @@ blockquote footer {
 }
 
 .install {
-  color: #fff;
   font-weight: bold;
   font-size: 22px;
   line-height: 2.5rem;
@@ -611,7 +610,7 @@ h4 {
 
 .toggle button {
   background: rgba(0,0,0,0.2);
-  color: #fff;
+  color: rgba(255,255,255,0.5);
   padding: 8px 12px;
   border: none;
   display: block;
