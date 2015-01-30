@@ -50,8 +50,24 @@
 
     <div class="hero-second hide-xs hide-sm col-md-6">
       <div class="phone">
-        <iframe class="screen" src="http://kitchen.reapp.io"></iframe>
+        <iframe id="iframe" class="screen" src="http://kitchen.reapp.io"></iframe>
       </div>
+
+      <div class="toggle">
+        <button onclick="setIframe('kitchen');">
+          Kitchen Sink
+        </button>
+
+        <button onclick="setIframe('hn');">
+          Hacker News
+        </button>
+      </div>
+
+      <script type="text/javascript">
+        function setIframe(sub) {
+          document.getElementById('iframe').setAttribute('src', 'http://'+sub+'.reapp.io');
+        }
+      </script>
 
       <div class="tryit">
         Try it live

@@ -542,23 +542,14 @@ h4 {
 
 .connect {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 420px;
-  display: flex;
-  z-index: 10;
+  left: 410px;
   opacity: 0.5;
   transition: opacity 300ms ease-in;
 }
 
 .connect:hover {
   opacity: 1;
-}
-
-.connect .inner {
-  display: flex;
-  flex-flow: column;
-  margin: auto;
 }
 
 .connect a {
@@ -605,10 +596,32 @@ h4 {
   text-indent: 100%;
   white-space: nowrap;
   position: absolute;
-  top: 100px;
+  top: 40px;
   left: 420px;
   overflow: hidden;
   transform: rotateZ(10deg);
+}
+
+.toggle {
+  position: absolute;
+  top: 180px;
+  left: 380px;
+  z-index: 10;
+}
+
+.toggle button {
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.toggle button:focus {
+  color: yellow;
 }
 
 .icon {
