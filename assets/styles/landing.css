@@ -1,6 +1,6 @@
 .color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
-.color-yellow, .install { color: #f8e027; }
+.color-yellow, .install, h3 { color: #f6e348; }
 .color-orange { color: #e12837; }
 .color-red { color: #d62746; }
 
@@ -52,15 +52,6 @@ body {
   background-position: 1800px -1800px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
-}
-
-.header {
-  padding: 1rem 0;
-  overflow: hidden;
-}
-
-.header #logo {
-  margin: 0;
 }
 
 .row {
@@ -132,7 +123,7 @@ h2 {
 }
 
 #logo a {
-  margin: 0 0 -15px;
+  margin: 0;
   display: block;
   color: #111;
   text-indent: 100%;
@@ -156,8 +147,8 @@ h2 {
   -ms-flex-flow: row;
   flex-flow: row;
   max-width: 330px;
-  -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
+  -webkit-align-self: flex-end;
   align-self: flex-end;
 }
 
@@ -465,7 +456,6 @@ blockquote footer {
 }
 
 pre {
-  margin: 0 !important;
   line-height: 1.5rem;
 }
 
@@ -708,4 +698,26 @@ h4 {
 
 .note p strong {
   color: yellow;
+}
+
+
+/* header */
+.header {
+  padding: 1rem 0;
+  margin: 0 0 2rem 0;
+  background: rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.header #logo {
+  margin-bottom: -12px;
+}
+
+.nav {
+  margin: auto;
+  margin-left: 1rem;
+}
+
+.nav a {
+  padding: 0 2rem;
 }

@@ -26,8 +26,8 @@
 
       <div class="row justify-right">
         <div class="buttons">
-          <a class="button prefer" href="/pages/start.html">Get Started</a>
-          <a class="button" href="/pages/components.html">Docs</a>
+          <a class="button prefer" href="/start.html">Get Started</a>
+          <a class="button" href="https://github.com/reapp/reapp">Github</a>
         </div>
       </div>
 
@@ -63,7 +63,9 @@
       </div>
 
       <script type="text/javascript">
-        document.getElementById('kitchenButton').focus();
+        window.onload = function() {
+          document.getElementById('kitchenButton').focus();
+        }
 
         function setIframe(sub) {
           document.getElementById('iframe').setAttribute('src', 'http://'+sub+'.reapp.io');

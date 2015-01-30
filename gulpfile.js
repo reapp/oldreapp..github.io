@@ -22,6 +22,8 @@ var packages = [
 ];
 
 var src = {
+  css: 'assets/styles/*.css',
+  templates: './templates/*',
   index: './pages/index.html',
   start: '../reapp/README.md',
   ui: '../reapp-ui/docs/*',
@@ -87,7 +89,7 @@ gulp.task('index', function() {
 
 gulp.task('css', function() {
   return gulp
-    .src('assets/styles/*.css')
+    .src(src.css)
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
@@ -97,9 +99,10 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
   gulp.watch(src.index, ['index']);
-  gulp.watch(src.modules, ['modules']);
-  gulp.watch(src.start, ['start']);
-  gulp.watch(src.ui, ['ui']);
+  gulp.watch([src.templates, src.modules], ['modules']);
+  gulp.watch([src.templates, src.start], ['start']);
+  gulp.watch([src.templates, src.ui], ['ui']);
+  gulp.watch(src.css, ['css']);
 })
 
 gulp.task('default', ['modules', 'ui', 'start', 'index']);
