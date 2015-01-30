@@ -4,6 +4,7 @@ var markdown = require('gulp-markdown');
 var rename = require('gulp-rename');
 var wrap = require('gulp-wrap');
 var concat = require('gulp-concat');
+var autoprefixer = require('gulp-autoprefixer');
 
 var buildDir = './gen';
 var outDir = './';
@@ -83,6 +84,16 @@ gulp.task('index', function() {
     .pipe(wrap({ src: './templates/layout.html' }))
     .pipe(gulp.dest(outDir));
 });
+
+gulp.task('css', function() {
+  return gulp
+    .src('assets/styles/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./assets/styles'))
+})
 
 gulp.task('watch', function() {
   gulp.watch(src.index, ['index']);

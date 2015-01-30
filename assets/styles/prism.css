@@ -16,6 +16,8 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-break: normal;
 
+  -moz-tab-size: 2;
+
   tab-size: 2;
 
   -webkit-hyphens: none;

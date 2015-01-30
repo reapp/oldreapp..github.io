@@ -15,13 +15,13 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #1a1b20 url(/assets/images/grid.svg);
+  background: #1b1d23 url(/assets/images/grid.svg);
   color: #eee;
   overflow-x: hidden;
 }
 
 #hero-bg, .header, .footer {
-  background: #1d212b;
+  background: #1b1d23;
 }
 
 .highlight {
@@ -73,6 +73,8 @@ body {
 .section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -151,9 +153,15 @@ h2 {
   padding: 0;
   font-weight: bold;
   margin-right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
   max-width: 330px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -162,7 +170,11 @@ h2 {
 }
 
 .nav-container a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   margin: auto 0;
   font-size: 16px;
@@ -177,6 +189,8 @@ h2 {
 }
 
 .hero-second {
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
 }
 
@@ -220,9 +234,11 @@ h2 {
 }
 
 .phone {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: -10px auto 0 1rem;
+  margin: 0 auto 0 1rem;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   z-index: 0;
 }
@@ -234,6 +250,7 @@ h2 {
 .phone.two {
   z-index: 2;
   margin-top: 20px;
+  -webkit-transform: scale(0.9);
   transform: scale(0.9);
   opacity: 0.8;
 }
@@ -241,6 +258,7 @@ h2 {
 .phone.three {
   z-index: 1;
   margin-top: 40px;
+  -webkit-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 0.6;
 }
@@ -285,6 +303,8 @@ h2 {
 }
 
 #email {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   margin-right: 10px;
 }
@@ -302,11 +322,17 @@ h2 {
 }
 
 .justify-right {
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
   justify-content: right;
 }
 
 .buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
   margin: 0 0 1rem;
   transition: all 300ms ease-in;
@@ -347,6 +373,7 @@ h2 {
   position: absolute;
   font-size: .7rem;
   line-height: .7rem;
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 100;
 }
@@ -552,6 +579,8 @@ h4 {
 }
 
 .connect a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin: .5rem 0;
   width: 32px;
@@ -598,6 +627,7 @@ h4 {
   top: 40px;
   left: 420px;
   overflow: hidden;
+  -webkit-transform: rotateZ(10deg);
   transform: rotateZ(10deg);
 }
 
