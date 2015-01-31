@@ -15,13 +15,13 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background: #1b1d23;
+  background-image: url(/assets/images/grid.svg);
   color: #eee;
   overflow-x: hidden;
 }
 
-#hero-bg, .header, .footer {
-  background: #1b1d23;
+body, #hero-bg, .header, .footer, #step-1 {
+  background-color: #1b1d23;
 }
 
 .highlight {
