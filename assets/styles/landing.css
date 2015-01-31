@@ -1,6 +1,6 @@
 .color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
-.color-yellow, .install, h3 { color: #f6e348; }
+.color-yellow, .install, h3, .note p strong { color: #f6e348; }
 .color-orange { color: #e12837; }
 .color-red { color: #d62746; }
 
@@ -15,7 +15,6 @@ body {
   font-size: 20px;
   line-height: 2rem;
   font-weight: normal;
-  background-image: url(/assets/images/grid.svg);
   color: #eee;
   overflow-x: hidden;
 }
@@ -685,7 +684,7 @@ h4 {
 
 .note {
   text-align: center;
-  background: rgba(50,50,0,0.2);
+  background: rgba(0,0,0,0.05);
   padding: 2rem 0;
 }
 
@@ -696,10 +695,6 @@ h4 {
 .note p {
   color: white;
   margin: 0;
-}
-
-.note p strong {
-  color: yellow;
 }
 
 
