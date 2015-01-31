@@ -55,6 +55,10 @@ pre {
   word-wrap: normal;
 }
 
+pre code {
+  background: none;
+}
+
 .layout {
   display: -webkit-flex;
   display: -ms-flexbox;
