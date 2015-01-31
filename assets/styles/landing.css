@@ -465,6 +465,7 @@ code.emphasize {
 
 .feature {
   padding: 0 2rem;
+  text-align: center;
 }
 
 .feature a h4 {
@@ -477,6 +478,10 @@ code.emphasize {
 
 .pad-left, .pad {
   padding-left: 2rem;
+}
+
+.pad-top {
+  padding-top: 2rem;
 }
 
 h4 {
