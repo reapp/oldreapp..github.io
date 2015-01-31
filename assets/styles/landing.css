@@ -116,7 +116,7 @@ h2 {
 
 #logo {
   display: block;
-  margin: 0 0 2rem 0;
+  margin: 1rem 0 2rem 0;
   padding: 1rem 0;
   width: 158px;
   height: 52px;
@@ -189,9 +189,9 @@ h2 {
 }
 
 .hero p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   line-height: 1.7em;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-right: 2rem;
   opacity: 0.8;
   color: #fff;
