@@ -107,7 +107,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(/assets/lines.svg);
+  background: url(/assets/images/lines.svg);
   opacity: .02;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
