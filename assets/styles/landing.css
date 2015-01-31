@@ -564,7 +564,7 @@ h4 {
   opacity: 1;
 }
 
-.connect a {
+.icon-mini {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -576,10 +576,6 @@ h4 {
   background-size: cover;
   background-blend-mode: multiply;
   background-color:
-}
-
-.github {
-  background-image: url(/assets/images/github.svg);
 }
 
 .twitter {
@@ -627,11 +623,11 @@ h4 {
 .toggle button {
   background: rgba(0,0,0,0.2);
   color: rgba(255,255,255,0.5);
-  padding: 8px 12px;
+  padding: 1rem 2rem;
   border: none;
   display: block;
   width: 100%;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1px;
 }
 
