@@ -20,7 +20,7 @@ body {
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
-  background-color: #1b1d23;
+  background-color: #2a2b35;
 }
 
 .highlight {
@@ -45,7 +45,7 @@ body, #hero-bg, .header, .footer, #step-1 {
   height: 2800px;
   top: 0;
   right: 0;
-  opacity: .07;
+  opacity: .12;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
   background-position: 1800px -1800px;
@@ -707,6 +707,7 @@ h4 {
 }
 
 .header #logo {
+  margin-top: 0;
   margin-bottom: -12px;
 }
 
@@ -717,4 +718,25 @@ h4 {
 
 .nav a {
   padding: 0 2rem;
+}
+
+#nav li {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+#nav .H2 {
+  font-weight: bold;
+}
+
+#nav .H3 {
+  margin-left: 15px;
+}
+
+#nav.fixed {
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  overflow-y: scroll;
 }
