@@ -679,6 +679,7 @@ h4 {
 }
 
 .note {
+  text-align: center;
   background: rgba(50,50,0,0.2);
   padding: 2rem 0;
 }
