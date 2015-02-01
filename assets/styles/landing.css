@@ -320,7 +320,7 @@ h2 {
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
-  margin: 0 0 1rem -1rem;
+  margin: 0 0 1rem 0;
   transition: all 300ms ease-in;
 }
 
