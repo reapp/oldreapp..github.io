@@ -253,7 +253,7 @@
 
 @media only screen and (max-width: 48em) {
   .hide-xs {
-    display: none;
+    display: none !important;
   }
 
   .col-xs-12 {

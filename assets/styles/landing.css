@@ -320,12 +320,8 @@ h2 {
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
-  margin: 0 0 1rem;
+  margin: 0 0 1rem -1rem;
   transition: all 300ms ease-in;
-}
-
-.buttons .button {
-  opacity: 0.5;
 }
 
 .buttons .button.prefer {
@@ -340,12 +336,13 @@ h2 {
 }
 
 .buttons .button {
-  margin: 0 1rem 0 0;
+  margin: 0 0 0 1rem;
+  opacity: 0.5;
   border-color: #fff;
   color: #fff;
 }
 
-.buttons .button:last-child {
+.buttons .button:first-child {
   margin: 0;
 }
 
@@ -584,6 +581,7 @@ h4 {
 
 .twitter {
   background-image: url(/assets/images/twit.svg);
+  margin-left: 1rem;
 }
 
 .warn {
