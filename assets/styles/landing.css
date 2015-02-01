@@ -738,3 +738,9 @@ h4 {
   bottom: 0;
   overflow-y: scroll;
 }
+
+.row > .button {
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
