@@ -17,6 +17,7 @@ body {
   font-weight: normal;
   color: #eee;
   overflow-x: hidden;
+  background-image: url(/assets/images/grid.png);
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
@@ -61,8 +62,8 @@ body, #hero-bg, .header, .footer, #step-1 {
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +109,7 @@ h2 {
   right: 0;
   bottom: 0;
   background: url(/assets/images/lines.svg);
-  opacity: .02;
+  opacity: .03;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -452,7 +453,12 @@ blockquote footer {
 }
 
 pre {
+  font-size: 1rem;
   line-height: 1.5rem;
+}
+
+pre code {
+  padding: 0;
 }
 
 code.emphasize {
@@ -488,7 +494,7 @@ h4 {
   color: rgba(255,255,255,0.8);
 }
 
-.emphasize p {
+.emphasize {
   font-size: 115%;
   line-height: 2.5rem;
 }
