@@ -154,10 +154,10 @@ import { DottedViewList, View, List } from 'reapp-ui/all';
 
 export default React.createClass({
   render() {
-    return (
+    return
       &lt;DottedViewList&gt;
         &lt;View title="Hot Articles"&gt;
-          &lt;List&gt;
+          &lt;List wrap&gt;
             {HotArticles.map(a =&gt; a.title)}
           &lt;/List&gt;
         &lt;/View&gt;
@@ -166,29 +166,28 @@ export default React.createClass({
           &lt;p&gt;Second view contents&lt;/p&gt;
         &lt;/View&gt;
       &lt;/DottedViewList&gt;
-    )
   }
 });</code></pre>
     </div>
 
     <div class="col-xs-12 col-sm-6 pad">
       <p>
-        DottedViewLists show Views side-by-side, like the
-        Twitter app.
+        DottedViewLists show Views side-by-side with a dot indicator,
+        just like the Twitter app.
 
       <p>
-        The ViewListMixin can be used to create ViewLists.
-        For now, reapp has NestedViewList and DottedViewList.
+        For now, reapp has NestedViewList and DottedViewList, but you
+        can use the ViewListMixin to make your own.
       </p>
 
       <p>
-        Pass a title property to a View to automatically insert a
-        TitleBar.
+        View's will to automatically handle a TitleBar with the title
+        property.
       </p>
 
       <p>
-        Similarly, when passed an array of items, a List will automatically
-        wrap each in a ListItem for you.
+        Pass wrap to a List to have it automatically wrap an array of items
+        with ListItem components.
       </p>
 
       <a class="button" href="/start.html">Read the docs</a>
