@@ -1,7 +1,7 @@
 .color-blue { color: #246ff5; }
 .color-green { color: #6ef7a0; }
 .color-yellow, .install, h3, .note p strong { color: #f6e348; }
-.color-orange { color: #e12837; }
+.color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
 body, input {
@@ -659,7 +659,7 @@ h4 {
   height: 80px;
 }
 
-.section:hover .icon.logo {
+.section:hover .icon {
   opacity: 1;
   filter: none;
   -webkit-filter: none;
