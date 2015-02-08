@@ -1,6 +1,6 @@
 .color-blue { color: #246ff5; }
-.color-green { color: #6ef7a0; }
-.color-yellow, .install, h3, .note p strong { color: #f6e348; }
+.color-green, .install { color: #56be53; }
+.color-yellow, h3, .note p strong { color: #f6e348; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
@@ -33,11 +33,11 @@ body::after {
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
-  background-color: #1c1b29;
+  background-color: #1E262A;
 }
 
 .highlight {
-  background: #1f1f2d;
+  background: #162632;
 }
 
 #hero-bg {
@@ -58,10 +58,10 @@ body, #hero-bg, .header, .footer, #step-1 {
   height: 2800px;
   top: 0;
   right: 0;
-  opacity: .08;
+  opacity: .05;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
-  background-position: 1800px -1800px;
+  background-position: 2000px -1800px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
@@ -121,7 +121,7 @@ h2 {
   right: 0;
   bottom: 0;
   background: url(/assets/images/lines.svg);
-  opacity: .03;
+  opacity: .02;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -344,8 +344,6 @@ h2 {
 
 .buttons .button:hover {
   opacity: 1;
-  background: rgba(36,111,245,1);
-  border-color: rgba(36,111,245,1);
 }
 
 .buttons .button {
@@ -441,7 +439,7 @@ blockquote footer {
 .install .extra-line {
   color: #fff;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0;
   transition: all 100ms ease-in;
   height: 2rem;
@@ -507,7 +505,7 @@ h4 {
 }
 
 .emphasize {
-  font-size: 115%;
+  font-size: 120%;
   line-height: 2.5rem;
 }
 
@@ -701,8 +699,7 @@ h4 {
 .note {
   background: rgba(0,0,0,0.1);
   text-align: center;
-  padding: 2rem 0;
-  margin-top: -3rem;
+  padding: 1rem 0;
   z-index: 10;
   position: relative;
 }

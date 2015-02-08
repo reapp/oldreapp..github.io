@@ -23,7 +23,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #389efa;
+  color: #3399FF;
   padding: 0 0 0.2rem 0;
 }
 
@@ -36,7 +36,7 @@ p, ul {
 }
 
 a:hover {
-  color: #389efa;
+  color: #3399FF;
 }
 
 code {
@@ -85,9 +85,9 @@ pre code {
   padding: 0 2rem;
   white-space: nowrap;
   line-height: 3rem;
-  border: 1px solid #389efa;
+  border: 1px solid #3399FF;
   border-radius: 2px;
-  color: #389efa;
+  color: #3399FF;
   font-size: 1.25rem;
   transition: background-color, 0.15s;
   text-align: center;
@@ -95,12 +95,12 @@ pre code {
 
 .button:hover {
   background: #3399FF;
-  border-color: #3399FF;
+  border-color: #3399FF !important;
   color: #FFF;
 }
 
 .button:active {
-  background: #389efa;
+  background: #3399FF;
   color: #FFF;
   border-top: 2px solid #0066CC;
 }
