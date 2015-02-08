@@ -1,4 +1,4 @@
-.color-blue { color: #246ff5; }
+.color-blue { color: #4abae6; }
 .color-green, .install { color: #56be53; }
 .color-yellow, h3, .note p strong { color: #f6e348; }
 .color-orange { color: #e15914; }
@@ -33,7 +33,7 @@ body::after {
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
-  background-color: #1E262A;
+  background-color: #27353C;
 }
 
 .highlight {
@@ -442,7 +442,6 @@ blockquote footer {
   font-size: 18px;
   opacity: 0;
   transition: all 100ms ease-in;
-  height: 2rem;
   opacity: 0.4;
 }
 
