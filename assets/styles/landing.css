@@ -634,8 +634,9 @@ h4 {
 
 .tryit {
   width: 134px;
-  height: 84px;
+  height: 86px;
   background: url(/assets/images/tryit.png) no-repeat;
+  background-size: 134px 84px;
   text-indent: 100%;
   white-space: nowrap;
   position: absolute;
