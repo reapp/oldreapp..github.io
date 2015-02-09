@@ -1,6 +1,6 @@
 .color-blue { color: #4abae6; }
-.color-green { color: #56be53; }
-.color-yellow, h3, .install { color: #f6e348; }
+.color-green, .install { color: #56be53; }
+.color-yellow, h3 { color: #f6e348; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
@@ -33,7 +33,7 @@ body::after {
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
-  background-color: #192A35;
+  background-color: #1d2a35;
 }
 
 .highlight {
@@ -77,7 +77,7 @@ body, #hero-bg, .header, .footer, #step-1 {
   background: #fff;
   -webkit-filter: blur(100px);
   filter: blur(100px);
-  opacity: 0.1;
+  opacity: 0.06;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
@@ -211,14 +211,14 @@ h2 {
 }
 
 .hero h2 {
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   margin: 0 0 1rem 0;
   font-weight: normal;
   opacity: 1;
 }
 
 .hero p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.7em;
   margin-bottom: 2.5rem;
   padding-right: 2rem;
@@ -361,13 +361,16 @@ h2 {
   color: #fff;
 }
 
-.buttons .button:hover {
+.buttons a {
+  opacity: 0.5;
+}
+
+.buttons a:hover {
   opacity: 1;
 }
 
 .buttons .button {
   margin: 0 0 0 1rem;
-  opacity: 0.5;
   border-color: #fff;
   color: #fff;
 }
@@ -501,6 +504,20 @@ code.emphasize {
   font-weight: bold;
 }
 
+.feature a {
+  padding: .5rem;
+  border-radius: 3px;
+  transition: all .2s ease-in;
+}
+
+.feature a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.feature p {
+  opacity: 0.8;
+}
+
 .pad-right, .pad {
   padding-right: 2rem;
 }
@@ -521,7 +538,7 @@ h4 {
 
 .emphasize {
   font-size: 120%;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
 }
 
 .lighten, .lighten p {
@@ -605,7 +622,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   margin: .5rem 0;
-  width: 32px;
+  width: 36px;
   height: 32px;
   text-indent: 100%;
   overflow: hidden;
@@ -638,14 +655,14 @@ h4 {
 
 .tryit {
   width: 134px;
-  height: 86px;
+  height: 88px;
   background: url(/assets/images/tryit.png) no-repeat;
   background-size: 134px 84px;
   text-indent: 100%;
   white-space: nowrap;
   position: absolute;
   top: 40px;
-  left: 390px;
+  left: 400px;
   overflow: hidden;
   -webkit-transform: rotateZ(10deg);
   transform: rotateZ(10deg);
@@ -654,7 +671,7 @@ h4 {
 .toggle {
   position: absolute;
   top: 180px;
-  left: 380px;
+  left: 370px;
   z-index: 10;
 }
 
@@ -676,7 +693,7 @@ h4 {
 .icon {
   width: 100px;
   height: 100px;
-  opacity: 0.4;
+  opacity: 0.2;
   margin: auto;
   margin-bottom: 15px;
   filter: grayscale(100%);
@@ -685,23 +702,23 @@ h4 {
 }
 
 .icon.logo {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
 }
 
 .section:hover .icon {
-  opacity: 1;
+  opacity: .7;
   filter: none;
   -webkit-filter: none;
-}
-
-.section:hover .icon {
-  opacity: .8;
 }
 
 @media only screen and (min-width: 48em) {
   .intro {
     padding-right: 6rem;
+  }
+
+  .hero-first {
+    padding-right: 3rem;
   }
 }
 
