@@ -72,8 +72,7 @@ body, #hero-bg, .header, .footer, #step-1 {
   position: relative;
   color: #fff;
 
-  background-repeat: repeat-x;
-  background-image: linear-gradient(-45deg, #0a3030, #212d48);
+  background-image: linear-gradient(-45deg, #0a2520, #283149);
 }
 
 .row {
@@ -244,7 +243,7 @@ h2 {
   display: flex;
   position: relative;
   margin: 0 auto 0 1rem;
-  box-shadow: 0 0 50px rgba(0,0,0,0.6);
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
   z-index: 0;
 }
 
