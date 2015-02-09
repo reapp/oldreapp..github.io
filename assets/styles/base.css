@@ -83,6 +83,7 @@ pre code {
   box-sizing: border-box;
   height: 3rem;
   padding: 0 2rem;
+  margin-bottom: 1rem;
   white-space: nowrap;
   line-height: 3rem;
   border: 1px solid #47b5e3;
