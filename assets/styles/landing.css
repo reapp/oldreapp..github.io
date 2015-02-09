@@ -90,8 +90,8 @@ body, #hero-bg, .header, .footer, #step-1 {
 }
 
 .section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -245,6 +245,8 @@ h2 {
 }
 
 #step-1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   position: relative;
   color: #fff;
 }
