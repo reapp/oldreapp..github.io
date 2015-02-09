@@ -1,6 +1,6 @@
 .color-blue { color: #4abae6; }
-.color-green, .install { color: #56be53; }
-.color-yellow, h3, .note p strong { color: #f6e348; }
+.color-green { color: #56be53; }
+.color-yellow, h3, .note p strong, .install { color: #f6e348; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
@@ -33,7 +33,7 @@ body::after {
 }
 
 body, #hero-bg, .header, .footer, #step-1 {
-  background-color: #27353C;
+  background-color: #20313c;
 }
 
 .highlight {
@@ -54,14 +54,30 @@ body, #hero-bg, .header, .footer, #step-1 {
   content: ' ';
   position: absolute;
   display: block;
-  width: 4200px;
+  width: 3200px;
   height: 2800px;
   top: 0;
   right: 0;
   opacity: .05;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
-  background-position: 2000px -1800px;
+  background-position: 1500px -1800px;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+
+#step-1:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: 0;
+  left: 50%;
+  background: #fff;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  opacity: 0.04;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
@@ -74,8 +90,8 @@ body, #hero-bg, .header, .footer, #step-1 {
 }
 
 .section {
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -104,6 +120,7 @@ h2 {
 .highlight {
   color: #fff;
   position: relative;
+  box-shadow: 0 0 120px rgba(0,0,0,0.15);
 }
 
 .highlight h4 {
@@ -128,7 +145,7 @@ h2 {
 
 #logo {
   display: block;
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
   padding: 1rem 0;
   width: 155px;
   height: 60px;
@@ -238,7 +255,7 @@ h2 {
   display: flex;
   position: relative;
   margin: 0 auto 0 1rem;
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.6);
   z-index: 0;
 }
 
@@ -431,7 +448,6 @@ blockquote footer {
 }
 
 .install {
-  font-weight: bold;
   font-size: 22px;
   line-height: 2.5rem;
 }
