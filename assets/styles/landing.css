@@ -77,7 +77,7 @@ body, #hero-bg, .header, .footer, #step-1 {
   background: #fff;
   -webkit-filter: blur(100px);
   filter: blur(100px);
-  opacity: 0.04;
+  opacity: 0.1;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
