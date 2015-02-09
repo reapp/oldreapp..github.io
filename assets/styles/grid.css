@@ -688,6 +688,9 @@
     -ms-flex-order: 1;
     order: 1;
   }
+  .hide-md {
+    display: none;
+  }
 }
 @media only screen and (min-width: 75em) {
   .col-lg,
@@ -897,5 +900,8 @@
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+  }
+  .hide-lg {
+    display: none;
   }
 }
