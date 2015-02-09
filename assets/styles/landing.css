@@ -732,6 +732,10 @@ h4 {
   padding: 0 4rem;
 }
 
+.note a {
+  font-weight: bold;
+}
+
 .note p {
   color: rgba(255,255,255,0.6);
   margin: 0;
