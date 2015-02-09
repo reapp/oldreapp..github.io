@@ -61,25 +61,19 @@ body, #hero-bg, .header, .footer, #step-1 {
   opacity: .05;
   background: url(/assets/images/spiro.svg) no-repeat;
   background-size: 100% 100%;
-  background-position: 1500px -1800px;
+  background-position: 1400px -1800px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
 }
 
-#step-1:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 20%;
-  bottom: 0;
-  left: 50%;
-  background: #fff;
-  -webkit-filter: blur(100px);
-  filter: blur(100px);
-  opacity: 0.06;
-  -webkit-transform: translateZ(0px);
-  transform: translateZ(0px);
+#step-1 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  color: #fff;
+
+  background-repeat: repeat-x;
+  background-image: linear-gradient(-45deg, #1d2329, #1a2f47);
 }
 
 .row {
@@ -242,13 +236,6 @@ h2 {
   position: relative;
   padding: 0;
   z-index: 3;
-}
-
-#step-1 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  position: relative;
-  color: #fff;
 }
 
 .phone {
@@ -495,6 +482,10 @@ code.emphasize {
   font-size: 16px;
 }
 
+.features {
+  margin-top: -1.5rem;
+}
+
 .feature {
   padding: 1.5rem 2rem;
   text-align: center;
@@ -516,6 +507,7 @@ code.emphasize {
 
 .feature p {
   opacity: 0.8;
+  margin-bottom: 0;
 }
 
 .pad-right, .pad {
@@ -707,7 +699,7 @@ h4 {
 }
 
 .section:hover .icon {
-  opacity: .7;
+  opacity: 1;
   filter: none;
   -webkit-filter: none;
 }
