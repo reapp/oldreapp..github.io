@@ -23,7 +23,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #3399FF;
+  color: #47b5e3;
   padding: 0 0 0.2rem 0;
 }
 
@@ -36,7 +36,7 @@ p, ul {
 }
 
 a:hover {
-  color: #3399FF;
+  color: #47b5e3;
 }
 
 code {
@@ -85,22 +85,22 @@ pre code {
   padding: 0 2rem;
   white-space: nowrap;
   line-height: 3rem;
-  border: 1px solid #3399FF;
+  border: 1px solid #47b5e3;
   border-radius: 2px;
-  color: #3399FF;
+  color: #47b5e3;
   font-size: 1.25rem;
   transition: background-color, 0.15s;
   text-align: center;
 }
 
 .button:hover {
-  background: #3399FF;
-  border-color: #3399FF !important;
+  background: #47b5e3;
+  border-color: #47b5e3 !important;
   color: #FFF;
 }
 
 .button:active {
-  background: #3399FF;
+  background: #47b5e3;
   color: #FFF;
   border-top: 2px solid #0066CC;
 }
