@@ -1,6 +1,6 @@
 .color-blue { color: #4abae6; }
-.color-green, .install, h3 { color: #56be53; }
-.color-yellow { color: #f6e348; }
+.color-green, h3 { color: #56be53; }
+.color-yellow, .install { color: #f8ee7b; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
@@ -72,7 +72,7 @@ body, #hero-bg, .header, .footer, #step-1 {
   position: relative;
   color: #fff;
 
-  background-image: linear-gradient(-45deg, #0a2520, #283149);
+  background-image: linear-gradient(-45deg, #061a16, #283149);
 }
 
 .row {
