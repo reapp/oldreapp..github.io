@@ -441,6 +441,7 @@ blockquote footer {
 .install {
   font-size: 22px;
   line-height: 2.5rem;
+  font-weight: bold;
 }
 
 .install .extra-line {
