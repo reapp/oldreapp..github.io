@@ -1,6 +1,6 @@
 .color-blue { color: #4abae6; }
 .color-green, h3 { color: #56be53; }
-.color-yellow, .install { color: #f8ee7b; }
+.color-yellow, .install { color: #f8f062; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
 
@@ -211,7 +211,7 @@ h2 {
 }
 
 .hero p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.7em;
   margin-bottom: 2.5rem;
   padding-right: 2rem;
@@ -626,6 +626,11 @@ h4 {
 .twitter {
   background-image: url(/assets/images/twit.svg);
   margin-left: 1rem;
+}
+
+.github {
+  background-image: url(/assets/images/github.svg);
+  margin-left: 1.5rem;
 }
 
 .warn {
