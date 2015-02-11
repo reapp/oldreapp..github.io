@@ -777,10 +777,6 @@ h4 {
   padding: 0 2rem;
 }
 
-#nav {
-  overflow-y: hidden;
-}
-
 #nav li {
   list-style: none;
   font-size: 1.2rem;
@@ -799,7 +795,7 @@ h4 {
   position: fixed;
   top: 20px;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .row > .button {
