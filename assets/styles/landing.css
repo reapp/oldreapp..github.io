@@ -795,7 +795,7 @@ h4 {
   position: fixed;
   top: 20px;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .row > .button {
