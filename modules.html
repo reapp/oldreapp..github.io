@@ -42,11 +42,8 @@
 <li>Themeable</li>
 <li>Adaptable to many platforms</li>
 </ul>
-<p>Near-term goals are to finish out all the components in the toolkit,
-get and implement feedback from the community, fix any glaring performance
-and visual issues, and then create an Android theme.</p>
-<p>It includes quite a few things that may end up in their own repo&#39;s, once the code
-has settled out a bit into something more coherent.</p>
+<p>Near-term goals are to finish out the component set, finish the most
+accurate themes possible for iOS and Andorid, and nail down performance.</p>
 <h3 id="principles">Principles</h3>
 <ul>
 <li>Aim for performance and consistency.</li>
@@ -54,9 +51,7 @@ has settled out a bit into something more coherent.</p>
 <li>Decouple components. Allow selective usage of these components.</li>
 </ul>
 <h3 id="structure">Structure</h3>
-<pre><code>  /actions
-    Internal: for components to communicate
-  /assets
+<pre><code>  /assets
     Icons, etc
   /behaviors
     (!) Used within components, can be passed in to override
@@ -69,7 +64,7 @@ has settled out a bit into something more coherent.</p>
   /mixins
     All mixins (used internally and externally)
   /stores
-    Internal: should be removable once parent-based contexts are implemented in React
+    Internal: should be removable once parent-based contexts are in React
   /themes
     Theme files users can require
 </code></pre><h4 id="index-js">index.js</h4>
