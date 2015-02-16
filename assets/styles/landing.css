@@ -620,7 +620,7 @@ h4 {
   overflow: hidden;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color:
+  transition: opacity 300ms ease-in;
 }
 
 .twitter {
