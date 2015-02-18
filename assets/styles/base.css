@@ -25,6 +25,7 @@ a {
   text-decoration: none;
   color: #47b5e3;
   padding: 0 0 0.2rem 0;
+  transition: color 200ms ease-in;
 }
 
 p {
