@@ -21,16 +21,8 @@
       <h1 id="logo"><a href="/">reapp</a></h1>
       <h2 class="hero-headline">Hybrid apps, fast</h2>
       <p>
-        Make beautiful apps that feel native with React, Webpack and ES6.
+        React, Webpack, ES6 and our platform help you build powerful apps incredibly fast.
       </p>
-
-      <div class="row justify-right">
-        <div class="buttons">
-          <a class="button prefer" href="/start.html"><span class="hide-xs">Get Started</span><span class="hide-sm">Start</span></a>
-          <a class="github icon-mini" href="https://github.com/reapp/reapp">Github</a>
-          <a class="twitter icon-mini" href="https://twitter.com/reapp">Twitter</a>
-        </div>
-      </div>
 
       <div class="install code">
         <div class="first">
@@ -41,6 +33,14 @@
         </div>
         <div class="extra-line">
           cd app && reapp run
+        </div>
+      </div>
+
+      <div class="row justify-right">
+        <div class="buttons">
+          <a class="button prefer" href="/start.html"><span class="hide-xs">Get Started</span><span class="hide-sm">Start</span></a>
+          <a class="github icon-mini" href="https://github.com/reapp/reapp">Github</a>
+          <a class="twitter icon-mini" href="https://twitter.com/reapp">Twitter</a>
         </div>
       </div>
     </div>
@@ -88,73 +88,150 @@
   </div>
 </div>
 
-<div class="note">
-  <div class="row">
-    <div class="col-xs-12">
+<div class="motto section highlight">
+  <div class="row center-xs features">
+    <div class="feature col-xs-12 col-sm-6 col-md-3">
+      <img class="icon logo" src="/assets/images/react-logo.svg" />
       <p>
-        <strong>Reapp is alpha</strong>, we're still working on making it great.
-        Follow <a href="https://twitter.com/reapp">@reapp</a> (<a href="https://github.com/reapp/reapp">github</a>) for the latest.
+        React UI Kit
+      </p>
+    </div>
+
+    <div class="feature col-xs-12 col-sm-6 col-md-3">
+      <img class="icon logo" src="/assets/images/npm-logo.svg" />
+      <p>
+        npm Modules
+      </p>
+    </div>
+
+    <div class="feature col-xs-12 col-sm-6 col-md-3">
+      <img class="icon logo" src="/assets/images/webpack.svg" />
+      <p>
+        Webpack Build System
+      </p>
+    </div>
+
+    <div class="feature col-xs-12 col-sm-6 col-md-3">
+      <img class="icon logo" src="/assets/images/commandline.svg" />
+      <p>
+        Easy CLI
       </p>
     </div>
   </div>
 </div>
 
-<div class="motto section highlight has-title">
+<div class="motto section has-title highlight">
   <div class="row">
-    <h2 class="section-title bg-blue">What is it?</h2>
-    <div class="col-xs-12 col-sm-6 intro emphasize">
-      <p>
-        Everything you need to make web-based mobile apps.
-        A UI kit, modules, and a simple CLI.
-      </p>
+    <h2 class="section-title bg-blue">Compare</h2>
+    <div class="col-xs-12">
+      <table class="center">
+        <thead>
+          <tr>
+            <th width="20%"></th>
+            <th class="bold" width="20%">Reapp</th>
+            <th width="20%">Ionic</th>
+            <th width="20%">Touchstone</th>
+            <th width="20%">Supersonic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="category">Platform</td>
+            <td>React</td>
+            <td>Angular</td>
+            <td>React</td>
+            <td>Angular</td>
+          </tr>
 
-      <p>
-        We think with innovation, hybrid apps are the future.
-        We're working to make it happen sooner.
-      </p>
+          <tr>
+            <td class="category">Routing</td>
+            <td>react-router</td>
+            <td>Angular</td>
+            <td class="loser">✘</td>
+            <td>Angular</td>
+          </tr>
 
-      <p>
-        Check out our
-        <a href="http://hn.reapp.io" target="_blank">Hacker News app</a>
-        and follow
-        <a href="https://twitter.com/reapp">@reapp</a> for more.
-      </p>
+          <tr>
+            <td class="category">CLI</td>
+            <td class="winner">✓</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="winner">✓</td>
+          </tr>
 
-      <a class="button" href="/start.html">
-        Get started
-      </a>
-    </div>
+          <tr>
+            <td class="category">Docs</td>
+            <td class="winner">✓</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="winner">✓</td>
+          </tr>
 
-    <div class="col-sm-6">
-      <div class="row center-xs features">
-        <div class="feature col-xs-12 col-md-6">
-          <img class="icon logo" src="/assets/images/react-logo.svg" />
-          <p>
-            UI Kit
-          </p>
-        </div>
+          <tr>
+            <td class="category">Animations</td>
+            <td class="winner">Interactive JS</td>
+            <td>CSS</td>
+            <td>CSS</td>
+            <td>CSS</td>
+          </tr>
 
-        <div class="feature col-xs-12 col-md-6">
-          <img class="icon logo" src="/assets/images/npm-logo.svg" />
-          <p>
-            Modules
-          </p>
-        </div>
+          <tr>
+            <td class="category">Build System</td>
+            <td class="winner">Webpack</td>
+            <td>Grunt</td>
+            <td>Gulp</td>
+            <td class="loser">✘</td>
+          </tr>
 
-        <div class="feature col-xs-12 col-md-6">
-          <img class="icon logo" src="/assets/images/webpack.svg" />
-          <p>
-            Build system
-          </p>
-        </div>
+          <tr>
+            <td class="category">Themes</td>
+            <td class="winner">Customizable JS</td>
+            <td class="loser">CSS</td>
+            <td class="loser">CSS</td>
+            <td class="loser">CSS</td>
+          </tr>
 
-        <div class="feature col-xs-12 col-md-6">
-          <img class="icon logo" src="/assets/images/commandline.svg" />
-          <p>
-            CLI
-          </p>
-        </div>
-      </div>
+          <tr>
+            <td class="category">Layout</td>
+            <td class="winner">Flexbox</td>
+            <td>Block</td>
+            <td class="winner">Flexbox</td>
+            <td>Block</td>
+          </tr>
+
+          <tr>
+            <td class="category">Icons</td>
+            <td class="winner">SVG</td>
+            <td>Icon Font</td>
+            <td>Icon Font</td>
+            <td>Icon Font</td>
+          </tr>
+
+          <tr class="sub-category">
+            <td></td>
+            <td>Views</td>
+            <td>Views</td>
+            <td>Views</td>
+            <td>Views</td>
+          </tr>
+
+          <tr>
+            <td class="category">Interactive</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+          </tr>
+
+          <tr>
+            <td class="category">Customizable</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
@@ -162,15 +239,6 @@
 <div class="section has-title center-titles">
   <div class="row">
     <h2 class="section-title bg-yellow">The UI Kit <span><a href="/ui.html">&raquo;</a></span></h2>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 emphasize lighten center-xs">
-        <p>
-          We bring more than just components. A completely interactive, prop-based
-          React animation system replicates mobile experiences like no other.
-        </p>
-      </div>
-    </div>
 
     <div class="row">
       <div class="feature col-xs-12 col-md-4">
@@ -264,13 +332,8 @@ export default React.createClass({
       </p>
 
       <p>
-        View's automatically handle a TitleBar using the title
-        property.
-      </p>
-
-      <p>
         Lists can automatically wrap an array of items
-        with ListItem components.
+        with ListItem components using the wrap property.
       </p>
 
       <a class="button" href="/start.html">Read the docs</a>

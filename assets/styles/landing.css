@@ -1,5 +1,5 @@
 .color-blue { color: #4abae6; }
-.color-green, h3 { color: #56be53; }
+.color-green { color: #56be53; }
 .color-yellow, .install { color: #f8f062; }
 .color-orange { color: #e15914; }
 .color-red { color: #d62746; }
@@ -77,25 +77,20 @@ body, #hero-bg, .header, .footer, #step-1 {
 
 .row {
   max-width: 1300px;
-  margin: 0 auto;
   padding: 0 2rem;
   position: relative;
 }
 
 .section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.section > .row {
-  margin: auto;
-}
-
 .has-title {
-  padding-top: 10rem;
+  padding-top: 9rem;
 }
 
 h2 {
@@ -213,7 +208,7 @@ h2 {
 .hero p {
   font-size: 1.6rem;
   line-height: 1.7em;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   padding-right: 2rem;
   opacity: 0.8;
   color: #fff;
@@ -225,10 +220,20 @@ h2 {
   line-height: 1.2rem;
 }
 
-.hero .signup-text {
-  font-size: 1.3rem;
-  opacity: 0.75;
-  margin-bottom: 1rem;
+.install {
+  padding: 1.5rem 0;
+  margin: 0 0 2rem 0;
+  font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
+  line-height: 2.2rem;
+}
+
+.install .extra-line {
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  opacity: 0;
+  transition: all 100ms ease-in;
+  opacity: 0.4;
 }
 
 .hero-second, .hero-first {
@@ -433,26 +438,6 @@ blockquote footer {
   margin: 0 0 -4rem 0;
 }
 
-.install {
-  padding: 1.5rem 0;
-  font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
-}
-
-.install {
-  font-size: 22px;
-  line-height: 2.5rem;
-  font-weight: bold;
-}
-
-.install .extra-line {
-  color: #fff;
-  font-weight: normal;
-  font-size: 18px;
-  opacity: 0;
-  transition: all 100ms ease-in;
-  opacity: 0.4;
-}
-
 .body {
   color: #111;
   padding-top: 2rem;
@@ -482,12 +467,8 @@ code.emphasize {
   font-size: 16px;
 }
 
-.features {
-  margin-top: -1.5rem;
-}
-
 .feature {
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -690,17 +671,14 @@ h4 {
 .icon {
   width: 100px;
   height: 100px;
-  opacity: 0.2;
   margin: auto;
   margin-bottom: 15px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
   transition: all 300ms ease-in;
 }
 
 .icon.logo {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
 }
 
 .section:hover .icon {

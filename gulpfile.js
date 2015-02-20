@@ -37,49 +37,31 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('modules', ['clean'], function() {
-  return gulp
-    .src(src.modules, { base: '../' })
-    .pipe(rename(function(path) {
-      path.basename = path.dirname;
-      path.dirname = '';
-      path.extname = '.md';
-    }))
-    .pipe(markdown())
-    .pipe(concat('modules.html'))
-    .pipe(wrap({ src: './templates/page.html' }))
-    .pipe(wrap({ src: './templates/layout.html' }))
-    .pipe(gulp.dest(outDir));
+  return makePage('modules');
 });
 
 gulp.task('ui', ['clean'], function() {
-  return gulp
-    .src(src.ui)
-    .pipe(rename(function(path) {
-      path.basename = path.dirname;
-      path.dirname = '';
-      path.extname = '.md';
-    }))
-    .pipe(markdown())
-    .pipe(concat('ui.html'))
-    .pipe(wrap({ src: './templates/page.html' }))
-    .pipe(wrap({ src: './templates/layout.html' }))
-    .pipe(gulp.dest(outDir));
+  return makePage('ui');
 });
 
 gulp.task('start', ['clean'], function() {
+  return makePage('start');
+});
+
+function makePage(name) {
   return gulp
-    .src(src.start)
+    .src(src[name], { base: '../' })
     .pipe(rename(function(path) {
       path.basename = path.dirname;
       path.dirname = '';
       path.extname = '.md';
     }))
     .pipe(markdown())
-    .pipe(concat('start.html'))
+    .pipe(concat(name + '.html'))
     .pipe(wrap({ src: './templates/page.html' }))
     .pipe(wrap({ src: './templates/layout.html' }))
     .pipe(gulp.dest(outDir));
-});
+}
 
 gulp.task('index', function() {
   return gulp
