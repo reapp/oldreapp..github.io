@@ -84,9 +84,6 @@ body, #hero-bg, .header, .footer, #step-1 {
 .section {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .has-title {
@@ -467,8 +464,12 @@ code.emphasize {
   font-size: 16px;
 }
 
+.features {
+  margin: 1rem auto 3rem;
+}
+
 .feature {
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 

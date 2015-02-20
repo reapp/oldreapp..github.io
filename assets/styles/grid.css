@@ -13,6 +13,7 @@
   padding-left: var( --outer-margin, 2rem );
 }
 .row {
+  margin: 0 auto;
   box-sizing: border-box;
   display: -webkit-flex;
   display: -ms-flexbox;
