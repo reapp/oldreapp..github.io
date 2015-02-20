@@ -595,9 +595,9 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: .5rem 0;
-  width: 36px;
-  height: 32px;
+  margin: 0;
+  width: 46px;
+  height: 42px;
   text-indent: 100%;
   overflow: hidden;
   background-size: cover;
