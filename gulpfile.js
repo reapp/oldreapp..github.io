@@ -28,7 +28,7 @@ var src = {
   start: '../reapp/README.md',
   ui: '../reapp-ui/docs/*',
   modules: packages.map(function(name) {
-    return '../reapp-'+name+'/README.md';
+    return '../reapp-' + name + '/README.md';
   })
 };
 
