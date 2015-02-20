@@ -1,24 +1,24 @@
-var gulp = require('gulp');
-var rimraf = require('rimraf');
-var markdown = require('gulp-markdown');
-var rename = require('gulp-rename');
-var wrap = require('gulp-wrap');
-var concat = require('gulp-concat');
-var autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp'),
+    rimraf = require('rimraf'),
+    markdown = require('gulp-markdown'),
+    rename = require('gulp-rename'),
+    wrap = require('gulp-wrap'),
+    concat = require('gulp-concat'),
+    autoprefixer = require('gulp-autoprefixer');
 
-var buildDir = './gen';
-var outDir = './';
-var packages = [
-  'ui',
-  'pack',
-  'server',
-  'routes',
-  'component',
-  'platform',
-  'request',
-  'reducer',
-  'object-assign',
-  'raf-batching'
+var buildDir = './gen',
+    outDir = './',
+    packages = [
+      'ui',
+      'pack',
+      'server',
+      'routes',
+      'component',
+      'platform',
+      'request',
+      'reducer',
+      'object-assign',
+      'raf-batching'
 ];
 
 var src = {
