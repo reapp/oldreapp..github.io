@@ -27,7 +27,9 @@ var src = {
   index: './pages/index.html',
   start: '../reapp/README.md',
   ui: '../reapp-ui/docs/*',
-  modules: packages.map(function(name) { return '../reapp-'+name+'/README.md' })
+  modules: packages.map(function(name) {
+    return '../reapp-'+name+'/README.md';
+  })
 };
 
 gulp.task('clean', function(cb) {
@@ -37,7 +39,7 @@ gulp.task('clean', function(cb) {
 gulp.task('modules', ['clean'], function() {
   return gulp
     .src(src.modules, { base: '../' })
-    .pipe(rename(function (path) {
+    .pipe(rename(function(path) {
       path.basename = path.dirname;
       path.dirname = '';
       path.extname = '.md';
@@ -52,7 +54,7 @@ gulp.task('modules', ['clean'], function() {
 gulp.task('ui', ['clean'], function() {
   return gulp
     .src(src.ui)
-    .pipe(rename(function (path) {
+    .pipe(rename(function(path) {
       path.basename = path.dirname;
       path.dirname = '';
       path.extname = '.md';
@@ -67,7 +69,7 @@ gulp.task('ui', ['clean'], function() {
 gulp.task('start', ['clean'], function() {
   return gulp
     .src(src.start)
-    .pipe(rename(function (path) {
+    .pipe(rename(function(path) {
       path.basename = path.dirname;
       path.dirname = '';
       path.extname = '.md';
@@ -94,8 +96,8 @@ gulp.task('css', function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('./assets/styles'))
-})
+    .pipe(gulp.dest('./assets/styles'));
+});
 
 gulp.task('watch', function() {
   gulp.watch(src.index, ['index']);
@@ -103,6 +105,6 @@ gulp.task('watch', function() {
   gulp.watch([src.templates, src.start], ['start']);
   gulp.watch([src.templates, src.ui], ['ui']);
   gulp.watch(src.css, ['css']);
-})
+});
 
 gulp.task('default', ['modules', 'ui', 'start', 'index']);
