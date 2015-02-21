@@ -35,12 +35,7 @@
       <p><em>reapp is just launching in alpha. These docs are far from complete and subject to change!</em></p>
 <h3 id="what-is-it-">What is it?</h3>
 <p>Reapp isn&#39;t a framework, it&#39;s just a collection of packages that work
-well together. On top of that, it&#39;s a CLI that does exactly three things:</p>
-<ul>
-<li><code>reapp new</code>: Creates a new app for you</li>
-<li><code>reapp run</code>: Runs a <a href="#structure">reapp-structured</a> app</li>
-<li><code>reapp build</code>: Builds a reapp-structured app into ./build</li>
-</ul>
+well together. On top of that, it&#39;s a CLI that bootstraps and runs your app.</p>
 <p>We have another section explaining more of the high level thought
 behind Reapp, you can <a href="#why">skip to it now</a> if you&#39;d like.</p>
 <h3 id="installation">Installation</h3>
@@ -70,7 +65,23 @@ Commands:
   build       builds a reapp application to a bundle in ./build
   debug       use this to for opening issues!
   help [cmd]  display help for [cmd]
-</code></pre><h3 id="structure">Structure</h3>
+</code></pre><h3 id="running-building-reapp">Running &amp; Building Reapp</h3>
+<p>The <code>run</code> command has a few options to help you out. You can do:</p>
+<ul>
+<li><code>reapp run -d</code> (debug) to output information on how it&#39;s running your app</li>
+<li><code>reapp run -e production</code> (env=production) to run your app in production mode, which is much faster</li>
+<li><code>reapp run -t source-map</code> (tool=source-map) to have full sourcemaps rather than the &quot;eval&quot; style sourcemaps we defualt too</li>
+</ul>
+<p>The <code>build</code> command is used once you&#39;re ready to deploy your app (to either the web or to cordova). For now,
+we provide two types of builds:</p>
+<ul>
+<li><code>reapp build</code> targets the web for mobile sites.</li>
+<li><code>reapp build ios</code> targets cordova ios devices.</li>
+</ul>
+<p>You also have the same flags available as the run commands, to adjust tools and envs.</p>
+<p>When you run <code>reapp build</code> you&#39;ll notice a new <code>./build</code> folder where your assets have been copied to. We&#39;re working
+on adding more documentation soon on how to get those assets into a Cordova/Phonegap app.</p>
+<h3 id="structure-of-your-applications">Structure of your applications</h3>
 <p>You can see the exact app that&#39;s generated through the <a href="https://github.com/reapp/reapp-starter">reapp-starter repo</a>.
 Only the <code>/app/app.js</code> entrypoint and <code>/assets/layout.html</code> is &quot;necessary&quot;.
 In the future, we could have a config file to make this completely custom.
@@ -106,7 +117,8 @@ as a tour of a reapp app, giving an introduction to packages as we encounter the
 <li><a href="https://github.com/reapp/reapp-platform">reapp-platform</a> (Base utils)</li>
 <li><a href="https://github.com/reapp/reapp-component">reapp-component</a> (DI and Factories)</li>
 </ul>
-<p>You also have an entry point defined as <code>app/app.js</code>. Lets start there.</p>
+<p>You also have an entry point defined as <code>app/app.js</code>. This starts your app.
+The most important part here is the routing. Lets start there.</p>
 <h4 id="-reapp-routes-https-github-com-reapp-reapp-routes-routes-generator-"><a href="https://github.com/reapp/reapp-routes">reapp-routes</a> (Routes generator)</h4>
 <p>reapp-routes is a DRY nested route-to-directory mapping system. As long as
 your routes map to your component file structure, you can save lots of time
