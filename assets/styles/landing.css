@@ -761,6 +761,10 @@ h4 {
   font-size: 1.2rem;
 }
 
+#nav {
+  margin-top: 2rem;
+}
+
 #nav li {
   list-style: none;
   font-size: 1.2rem;
@@ -790,7 +794,7 @@ h4 {
 
 .page {
   background: #fff;
-  padding: 4rem 0;
+  padding: 2rem 0;
   color: #222;
 }
 
