@@ -736,9 +736,8 @@ h4 {
 
 /* header */
 .header {
-  padding: 1rem 0;
-  margin: 0 0 2rem 0;
-  background: rgba(0,0,0,0.1);
+  padding: .5rem 0;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -749,11 +748,17 @@ h4 {
 
 .nav {
   margin: auto;
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.nav.right {
+  margin-right: 0;
 }
 
 .nav a {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 #nav li {
@@ -781,4 +786,36 @@ h4 {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.page {
+  background: #fff;
+  padding: 4rem 0;
+  color: #222;
+}
+
+.page a {
+  color: #368fc1;
+}
+
+.page a:hover {
+  color: #73bdeb;
+}
+
+.page p, .page ul, .page code {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.page code {
+  font-size: 1rem;
+}
+
+.page p, .page h3, .page h4, .page pre {
+  margin-bottom: 0.5rem;
+}
+
+.page em {
+  color: #777;
 }
