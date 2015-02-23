@@ -36,6 +36,20 @@ gulp.task('clean', function(cb) {
   return rimraf(buildDir, cb);
 });
 
+
+// HOME
+
+gulp.task('index', function() {
+  return gulp
+    .src(src.index)
+    .pipe(concat('index.html'))
+    .pipe(wrap({ src: './templates/layout.html' }))
+    .pipe(gulp.dest(outDir));
+});
+
+
+// PAGES
+
 gulp.task('modules', ['clean'], function() {
   return makePage('modules');
 });
@@ -63,13 +77,6 @@ function makePage(name) {
     .pipe(gulp.dest(outDir));
 }
 
-gulp.task('index', function() {
-  return gulp
-    .src(src.index)
-    .pipe(concat('index.html'))
-    .pipe(wrap({ src: './templates/layout.html' }))
-    .pipe(gulp.dest(outDir));
-});
 
 gulp.task('css', function() {
   return gulp
