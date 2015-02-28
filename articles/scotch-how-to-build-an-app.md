@@ -223,3 +223,6 @@ In the render function, below the `<p>No photos found!</p>` block:
 We're adjusting for the TitleBar height in our app. There are better
 ways we could do this, but for now this is simple and works well**
 
+Boom! If you check your app you should see it just like this:
+
+![]()
