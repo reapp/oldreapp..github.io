@@ -152,8 +152,74 @@ Finally, define handleSearch:
       .get(`${base}&method=flickr.photos.search&text=${searchText}&per_page=10&page=1`, res => {
         if (res.status === 200)
           this.setState({
-            photos: res.body.photos.photo.map(this.flickrPhotoUrl)
+            photos: res.body.photos.photo
           });
       });
   },
 ```
+
+A few notes:
+
+- `this.refs.search.getDOMNode()` returns the value of the Input we put the "search" ref on earlier.
+- `${base}` will grab the URL we put in the constant.
+- `this.setState` will take our response photos and put them into the `this.state.photos` array
+we defined earlier in `getInitialState`.
+
+
+### Displaying Flickr Photos
+
+Now we've fetched our Flickr photos and put them into the state. The last step is to display them.
+You can add this to the first line of your render function to see what Flickr returns:
+
+```js
+render() {
+  console.log(this.state.photos);
+  // ... rest of render
+}
+```
+
+In your console you'll see that Flickr returns an object with some properties. On [this helpful page](https://www.flickr.com/services/api/misc.urls.html)
+I found out how to render the URL's for flickr.
+
+Lets add a new function to the class:
+
+```js
+  getFlickrPhotoUrl(image) {
+    return `https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`;
+  },
+```
+
+This function takes our Flickr object and turns them into the URL we need to display.
+Next, let's edit the handleSearch `setState` call:
+
+```js
+  this.setState({
+    photos: res.body.photos.photo.map(this.getFlickrPhotoUrl)
+  });
+```
+
+The `map` function will loop over those photo objects and pass them to getFlickrPhotoUrl,
+which returns our URL. We're all ready to display them!
+
+Let's import the Gallery component from reapp and use it:
+
+```js
+import Gallery from 'reapp-ui/components/Gallery';
+```
+
+In the render function, below the `<p>No photos found!</p>` block:
+
+```js
+  {photos.length &&
+    <Gallery
+      images={photos}
+      width={window.innerWidth}
+      height={window.innerHeight - 44}
+    />
+  }
+```
+
+***Note: Why `window.innerHeigth - 44`?
+We're adjusting for the TitleBar height in our app. There are better
+ways we could do this, but for now this is simple and works well**
+
