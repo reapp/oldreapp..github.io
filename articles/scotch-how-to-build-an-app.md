@@ -219,10 +219,39 @@ In the render function, below the `<p>No photos found!</p>` block:
   }
 ```
 
+The Gallery widget takes these three properties and outputs fullscreen
+images that you can swipe between. With this in place, we have completed
+the flow of our app. Check out your browser and see it in action.
+
+Here's our video:
+
+![]()
+
 ***Note: Why `window.innerHeigth - 44`?
 We're adjusting for the TitleBar height in our app. There are better
 ways we could do this, but for now this is simple and works well**
 
-Boom! If you check your app you should see it just like this:
+### Next steps
 
-![]()
+We could keep going from here. We could display a list of images before,
+and link them to the gallery. Or we could use Reapp [ViewLists]()
+to add multiple views to sort through galleries.
+
+### Check out the code
+
+If you'd like to see our application you can clone the repo we've put up here.
+It includes everything you need except a Flickr API key, which you'll want to sign
+up for and insert before testing it out.
+
+Steps to get the repo running:
+
+1. Install [Node/npm](http://nodejs.org/), and Reapp: `sudo npm install -g reapp`
+2. Clone the repo: `git clone git@github.com:reapp/flickr-demo`
+3. Install dependencies: `npm install`
+4. Start server: `reapp run`
+5. View it in your browser at [http://localhost:3010](http://localhost:3010)
+
+You'll probably want to explore the [Reapp getting started docs](http://reapp.io/start.html)
+and the individual [UI widgets docs](http://reapp.io/ui.html) to keep you going.
+
+Happy hacking!
