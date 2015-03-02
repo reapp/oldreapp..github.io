@@ -98,7 +98,7 @@ It should look like this:
 ```js
 const key = '__YOUR_KEY_HERE__';
 const base = 'https://api.flickr.com/services/rest/?api_key=${key}&format=rest&format=json&nojsoncallback=1';
-```js
+```
 
 Be sure to put your key instead of "__YOUR_KEY_HERE__".
 
