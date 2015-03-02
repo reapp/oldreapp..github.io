@@ -14,7 +14,7 @@ and displays them in a photo gallery in no time at all.
 
 ### What we'll be building
 
-<img class="gfyitem" data-id="DistortedImpureAmericanwarmblood" />
+<iframe src="http://gfycat.com/ifr/DistortedImpureAmericanwarmblood" frameborder="0" scrolling="no" width="318" height="562" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
 
 ### Starting out
 
