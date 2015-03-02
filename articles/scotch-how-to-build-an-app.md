@@ -14,8 +14,9 @@ and displays them in a photo gallery in no time at all.
 
 ### What we'll be building
 
-http://gfycat.com/ifr/DistortedImpureAmericanwarmblood
 ![](http://giant.gfycat.com/DistortedImpureAmericanwarmblood.gif)
+
+http://gfycat.com/ifr/DistortedImpureAmericanwarmblood
 
 ### Starting out
 
