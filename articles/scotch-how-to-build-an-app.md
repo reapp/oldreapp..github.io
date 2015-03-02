@@ -24,16 +24,16 @@ Once that installs, run `reapp new flickrapp`. Finally, `cd flickrapp` and `reap
 
 You should see this:
 
-![CLI start](/assets/cli.png)
+![CLI start](assets/cli.png)
 
 Browse to [localhost:3010](http://localhost:3010) and you can see the default Reapp app:
 
-![Default app](/assets/first-run.png)
+![Default app](assets/first-run.png)
 
 **Tip: With Chrome's Developer Tools, [enable mobile device emulation](https://developer.chrome.com/devtools/docs/device-mode) to
 view your app as a mobile app**
 
-![Dev tools](/assets/dev-tools.png)
+![Dev tools](assets/dev-tools.png)
 
 Alright! Now we're fully set up with a React stack using Reapp components. Lets check the file
 structure:
@@ -341,7 +341,7 @@ export default React.createClass({
           {!!photos.length &&
             <Gallery
               onClose={() => this.setState({ photos: [] })}
-              images={this.state.photos}
+              images={photos}
               width={window.innerWidth}
               height={window.innerHeight - 44}
             />
