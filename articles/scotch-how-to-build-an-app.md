@@ -102,9 +102,9 @@ const base = 'https://api.flickr.com/services/rest/?api_key=${key}&format=rest&f
 
 Be sure to put your key instead of "__YOUR_KEY_HERE__".
 
-**Note: `const` is a new feature in the next version of JavaScript, called ES6. It's just like
+*Note: `const` is a new feature in the next version of JavaScript, called ES6. It's just like
 a variable, but one that can never be changed once it's set. How can we use this in our app now? Reapp has a [Webpack](webpack.github.io) build system built in
-that gives you all sorts of features, including ES6 support!**
+that gives you all sorts of features, including ES6 support!*
 
 Next, define `getInitialState()` on our React class, so our component can track the photos
 we'll be fetching. We add this as the first property after React.createClass.
@@ -146,6 +146,10 @@ And then change the `render()` function:
     );
   }
 ```
+
+And we get this:
+
+![First step with no photos](assets/no-photos.png)
 
 Pretty easy! There's a few things to note here. First,  notice the `ref` attribute
 on the Input? Ref is short for reference, and lets us track DOM elements in our class.
@@ -245,9 +249,9 @@ The Gallery widget takes these three properties and outputs fullscreen
 images that you can swipe between. With this in place, we have completed
 the flow of our app. Check out your browser and see it in action.
 
-***Note: Why `window.innerHeigth - 44`?
+*Note: Why `window.innerHeigth - 44`?
 We're adjusting for the TitleBar height in our app. There are better
-ways we could do this, but for now this is simple and works well**
+ways we could do this, but for now this is simple and works well*
 
 ### Final touches
 
@@ -270,6 +274,9 @@ Also, our Input looks a little plain as it is. Let's add a border, margin and pl
     }
   }} />
 ```
+
+![Final look 1](assets/finished-1.png)
+![Final look 2](assets/finished-2.png)
 
 Much better!
 
