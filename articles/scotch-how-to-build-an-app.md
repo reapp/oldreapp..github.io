@@ -103,9 +103,7 @@ const base = 'https://api.flickr.com/services/rest/?api_key=${key}&format=rest&f
 Be sure to put your key instead of "__YOUR_KEY_HERE__".
 
 **Note: `const` is a new feature in the next version of JavaScript, called ES6. It's just like
-a variable, but instead we're saying it will *never* be changed.
-
-How can we use this in our app now? Reapp has a [Webpack](webpack.github.io) build system built in
+a variable, but one that can never be changed once it's set. How can we use this in our app now? Reapp has a [Webpack](webpack.github.io) build system built in
 that gives you all sorts of features, including ES6 support!**
 
 Next, define `getInitialState()` on our React class, so our component can track the photos
