@@ -33,7 +33,7 @@ Browse to [localhost:3010](http://localhost:3010) and you can see the default Re
 **Tip: With Chrome's Developer Tools, [enable mobile device emulation](https://developer.chrome.com/devtools/docs/device-mode) to
 view your app as a mobile app**
 
-![Dev tools](assets/dev-tools.png)
+![Dev tools](assets/devtools.png)
 
 Alright! Now we're fully set up with a React stack using Reapp components. Lets check the file
 structure:
