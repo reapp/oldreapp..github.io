@@ -1,4 +1,4 @@
-## Create a Phonegap app with React and Reapp
+## Create a mobile app with React and Reapp
 
 React is enabling frontend developers to build apps like never before. It makes
 them easier to reason about with it's one-way data binding and declarative interface,
