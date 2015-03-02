@@ -15,7 +15,7 @@ and displays them in a photo gallery.
 
 ### What we'll be building
 
-![Video demonstration of the app](http://gfycat.com/DistortedImpureAmericanwarmblood)
+![Video demonstration of the app](http://zippy.gfycat.com/DistortedImpureAmericanwarmblood.gif)
 
 ### Starting out
 
