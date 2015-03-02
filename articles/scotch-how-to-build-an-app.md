@@ -341,7 +341,7 @@ export default React.createClass({
           {!!photos.length &&
             <Gallery
               onClose={() => this.setState({ photos: [] })}
-              images={photos}
+              images={this.state.photos}
               width={window.innerWidth}
               height={window.innerHeight - 44}
             />
