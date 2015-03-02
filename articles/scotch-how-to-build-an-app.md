@@ -1,17 +1,16 @@
-## Creating a Native app with React, Flux and Reapp
+## Create a Phonegap app with React and Reapp
 
 React is enabling frontend developers to build apps like never before. It makes
 them easier to reason about with it's one-way data binding and declarative interface,
 and much faster with it's use of the Virtual DOM. [Reapp](http://reapp.io) is a mobile
-app development kit taht was announced last month to take advantage of the performance
-and productivitiy benefits of React.
+app development kit just announced last month that takes advantage of the performance
+and productivitiy benefits of React to make building apps easier than ever.
 
-But, React is just one piece of building a complete app. It doesn't tell us how to handle
-data, routing, or really anything else but rendering to DOM. Luckily, Reapp will provide us
-with everything we need to do everything.
+Reapp gives us a complete UI kit and a CLI that lets us avoid all the hassle of gluing
+together the app by ourselves.
 
 Today, we're going to create an app using Reapp that pulls pictures from the Flickr API
-and displays them in a photo gallery.
+and displays them in a photo gallery in no time at all.
 
 ### What we'll be building
 
