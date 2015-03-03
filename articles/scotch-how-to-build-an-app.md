@@ -58,7 +58,7 @@ and runs our routes, which are found in `./app/routes.js`.
 ### Start Our View
 
 We have our app generated, but Reapp generates us a full demo app showing nested views,
-and we won't need much more than a single page. Let's simplify things. In `routes.js`
+and we won't need much more than a single page. Lets simplify things. In `routes.js`
 we can swap it out to just look like this:
 
 ```js
@@ -74,7 +74,7 @@ which Reapp's router will automatically look for in `./components/App.jsx`.
 Now we can delete the `Home.jsx` and `home/Sub.jsx` files, since we don't need multiple views.
 You can leave them be as well if you'd like to explore using them later.
 
-In the App.jsx file, lets simplify:
+In the App.jsx file, we can simplify it to:
 
 ```js
 import React from 'react';
@@ -98,12 +98,12 @@ If you refresh, you should see an empty view with your new title "Flickr Search"
 
 ### Fetch Data from Flickr
 
-Let's fill that View with our photos from Flickr.
-First, you'll need to get yourself a Flickr account and API key. Luckily, it's a quick process.
-You can [sign in here to request a key](https://www.flickr.com/services/apps/create/noncommercial/?).
+Now we have an interface with no logic. Before we can link together the Button to the display
+of photos, we need to grab the photos from Flickr using React conventions.
+First, get yourself a Flickr account and API key using their quick [sign up form](https://www.flickr.com/services/apps/create/noncommercial/?).
 
-After filling out their form copy the Public Key they give you and we'll add it as a constant to
-App.jsx. We also need the URL we'll construct, which I found by using their [API explorer](https://www.flickr.com/services/api/explore/flickr.photos.search).
+After filling it out (and signing up if necessary) copy the Public Key they give you and add it as a constant to
+App.jsx. You'll also need the URL that's used for searching for photos, which I found by using their [API explorer](https://www.flickr.com/services/api/explore/flickr.photos.search).
 It should look like this:
 
 ```js
@@ -129,8 +129,8 @@ getInitialState() {
 },
 ```
 
-This will give us access to `this.state.photos` in our render function. We'll also want our UI,
-so lets add a Button and Input to use for searching:
+This will give us access to `this.state.photos` in our render function. In the UI we'll need a
+Button and Input to use for searching:
 
 ```js
 import Button from 'reapp-ui/components/Button';
@@ -174,7 +174,7 @@ given to us by Reapp, that will align things centered on our page.
 
 See the `onTap` property on Button? It's pointing to `this.handleSearch`.
 But, we don't have any handleSearch function. React will expect that function defined on the
-class, so let's wire it up. First, `npm install --save superagent` which gives us the excellent
+class, so lets wire it up. First, `npm install --save superagent` which gives us the excellent
 [Superagent](https://github.com/visionmedia/superagent) request library. Then, import it:
 
 ```js
@@ -219,7 +219,8 @@ render() {
 In your console you'll see that Flickr returns an object with some properties. On [this helpful page](https://www.flickr.com/services/api/misc.urls.html)
 I found out how to render the URL's for flickr.
 
-Lets add a new function to the class:
+Here's how I landed on constructing the URL for a photo, which I put as a simple function on the
+class we're building:
 
 ```js
   getFlickrPhotoUrl(image) {
@@ -228,7 +229,7 @@ Lets add a new function to the class:
 ```
 
 This function takes our Flickr object and turns them into the URL we need to display.
-Next, let's edit the handleSearch `setState` call:
+Next, lets edit the handleSearch `setState` call:
 
 ```js
   this.setState({
@@ -239,7 +240,7 @@ Next, let's edit the handleSearch `setState` call:
 The `map` function will loop over those photo objects and pass them to getFlickrPhotoUrl,
 which returns our URL. We're all ready to display them!
 
-Let's import the Gallery component from reapp and use it:
+Lets import the Gallery component from reapp and use it:
 
 ```js
 import Gallery from 'reapp-ui/components/Gallery';
@@ -267,7 +268,7 @@ ways we could do this, but for now this is simple and works well*
 
 ### Final touches
 
-We're just about good, but there's a couple tweaks we can do. The gallery never let's
+We're just about good, but there's a couple tweaks we can do. The gallery never lets
 us close it as it is now. If we add an onClose property to gallery though, it will let us.
 But, we'll also need to update the state to reflect the gallery being closed. It's actually
 pretty easy. Just add this to Gallery:
@@ -276,7 +277,7 @@ pretty easy. Just add this to Gallery:
   onClose={() => this.setState({ photos: [] })}
 ```
 
-Also, our Input looks a little plain as it is. Let's add a border, margin and placeholder:
+Also, our Input looks a little plain as it is. Lets add a border, margin and placeholder:
 
 ```js
   <Input ref="search" placeholder="Enter your search" styles={{
