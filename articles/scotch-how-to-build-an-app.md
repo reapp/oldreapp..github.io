@@ -162,12 +162,13 @@ And we get this:
 
 ![First step with no photos](assets/no-photos.png)
 
-Pretty easy! There's a few things to note here. First,  notice the `ref` attribute
+Pretty easy! There's a few things to note here. First,  notice the [ref property](http://facebook.github.io/react/docs/more-about-refs.html)
 on the Input? Ref is short for reference, and lets us track DOM elements in our class.
 We'll use that in the future for getting the value of the field.
 
 Also, note `className="verticalCenter"` on the div. Two things: Because we're using JSX
-that compiles to JS objects, we can't use the normal `class` attribute, so instead use use
+that compiles to JS objects ([more reading here](http://facebook.github.io/react/docs/jsx-in-depth.html)),
+we can't use the normal `class` attribute, so instead use use
 the JavaScript convention of `className` to set the class. The `verticalCenter` property is
 given to us by Reapp, that will align things centered on our page.
 
