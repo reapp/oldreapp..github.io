@@ -86,7 +86,7 @@ export default React.createClass({
 
     return (
       <View title="Flickr Search" styles={{ inner: { padding: 20 } }}>
-
+        <p>Hello World</p>
       </View>
     );
   }
