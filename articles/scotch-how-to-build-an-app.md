@@ -51,10 +51,15 @@ structure:
 /assets
 ```
 
+Reapp scaffolded us some demonstration stuff here, which is what you see in `./app/components`.
+The rest is just setting up our app. `./app/app.js` is the entry to our app, it loads Reapp
+and runs our routes, which are found in `./app/routes.js`.
+
 ### Start Our View
 
-Reapp scaffolds out an example app, but we won't need much more than a single page. In `routes.js`
-lets put this:
+We have our app generated, but Reapp generates us a full demo app showing nested views,
+and we won't need much more than a single page. Let's simplify things. In `routes.js`
+we can swap it out to just look like this:
 
 ```js
   module.exports = ({ routes, route }) =>
@@ -63,8 +68,13 @@ lets put this:
     );
 ```
 
-This will wire up the `/app` route to our `./components/App.jsx` file. Since we've changed all the
-routes, lets just change empty the default App.jsx and just put in a View:
+This wires up the base route (at [http://localhost:3010](http://localhost:3010)) to the name `app`,
+which Reapp's router will automatically look for in `./components/App.jsx`.
+
+Now we can delete the `Home.jsx` and `home/Sub.jsx` files, since we don't need multiple views.
+You can leave them be as well if you'd like to explore using them later.
+
+In the App.jsx file, lets simplify:
 
 ```js
 import React from 'react';
