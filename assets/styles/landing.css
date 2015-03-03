@@ -640,16 +640,16 @@ h4 {
   text-indent: 100%;
   white-space: nowrap;
   position: absolute;
-  top: 40px;
+  top: 140px;
   left: 400px;
   overflow: hidden;
-  -webkit-transform: rotateZ(10deg);
-  transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(8deg);
+  transform: rotateZ(8deg);
 }
 
 .toggle {
   position: absolute;
-  top: 180px;
+  top: 260px;
   left: 370px;
   z-index: 10;
 }
@@ -832,4 +832,30 @@ h2 span {
 
 h2 span:hover {
   opacity: 1;
+}
+
+#github {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  z-index: 1000;
+  padding: 0 1em;
+  width: 15em;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  font-size: .7em;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: background-color .2s;
+}
+
+#github:hover {
+  background: rgba(0,0,0,0.5);
 }
