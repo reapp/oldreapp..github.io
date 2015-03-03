@@ -114,6 +114,7 @@ abbr {
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 1.2rem;
 }
 
 table.center td, table.center th {
@@ -123,7 +124,7 @@ table.center td, table.center th {
 td, th {
   border-bottom: 1px solid rgba(255,255,255,0.05);
   border-right: 1px solid rgba(255,255,255,0.05);
-  padding: 6px;
+  padding: 4px;
 }
 
 td:last-child, th:last-child {
