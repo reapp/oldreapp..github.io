@@ -121,7 +121,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row hide-xs">
     <div class="col-xs-12">
       <table class="center">
         <thead>
@@ -156,22 +156,6 @@
             <td class="winner">✓</td>
             <td class="loser">✘</td>
             <td class="winner">✓</td>
-          </tr>
-
-          <tr>
-            <td class="category">Docs</td>
-            <td class="winner">✓</td>
-            <td class="winner">✓</td>
-            <td class="loser">✘</td>
-            <td class="winner">✓</td>
-          </tr>
-
-          <tr>
-            <td class="category">Animations</td>
-            <td class="winner">Interactive JS</td>
-            <td>CSS</td>
-            <td>CSS</td>
-            <td>CSS</td>
           </tr>
 
           <tr>
@@ -212,6 +196,38 @@
             <td>Icon Font</td>
             <td>Icon Font</td>
             <td>Icon Font</td>
+          </tr>
+
+          <tr class="sub-category">
+            <td></td>
+            <td>Animations</td>
+            <td>Animations</td>
+            <td>Animations</td>
+            <td>Animations</td>
+          </tr>
+
+          <tr>
+            <td class="category">Language</td>
+            <td class="winner">JS</td>
+            <td>CSS</td>
+            <td>CSS</td>
+            <td>Obj-C / Java / CSS</td>
+          </tr>
+
+          <tr>
+            <td class="category">Interactive</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+            <td class="winner">✓</td>
+          </tr>
+
+          <tr>
+            <td class="category">Customizable</td>
+            <td class="winner">✓</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
+            <td class="loser">✘</td>
           </tr>
 
           <tr class="sub-category">
@@ -434,6 +450,62 @@ export default React.createClass({
 </div>
 
 <div class="section highlight has-title">
+  <div class="row">
+    <h2 class="section-title bg-red">FAQ</h2>
+    <div class="pad-top col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+      <strong>How does it compare to Ionic?</strong>
+      <p>
+        Reapp runs on React. That means you get much faster performance than Angular, and
+        a much simpler way to code. It also runs on Webpack, giving you new JavaScript features
+        in ES6 that are way easier. Plus, it can live-reload your app as you save your files,
+        without losing state.
+      </p>
+
+      <strong>What about React Native?</strong>
+      <p>
+        React Native will be awesome. But you still need lots of work to make an app for all three
+        stores with it, and you'll need to know Objective-C and Java if you ever go outside
+        of the React Native sandbox.
+      </p>
+
+      <p>Reapp also has all these advantages:</p>
+      <ul>
+        <li>Deploy to all platforms with one codebase</li>
+        <li>Develop without simulators</li>
+        <li>Debug with Chrome, live edit your DOM</li>
+        <li>Use the <em>same</em> codebase for your mobile website</li>
+        <li>Hot reload on save without losing state</li>
+        <li>Works with all of npm, no questions asked</li>
+      </ul>
+
+      <strong>Could I use it with React Native?</strong>
+      <p>Yes. You could get the benefit of both worlds once you're ready to gain extra
+      performance. But in many cases you don't need to!</p>
+
+      <strong>Can I run it on Cordova?</strong>
+      <p>Yep, for now with just an iOS theme. If you run "reapp build ios" you'll have a Cordova-ready
+      app in seconds.</p>
+
+      <strong>Will it run on Android?</strong>
+      <p>Yes. And it's completely themable. Look out for our own Material UI theme coming out too,
+      that you can swap in with one line of code once it's ready.</p>
+
+      <strong>Will it run my mobile website?</strong>
+      <p>Yes. With the same codebase. Just run "reapp build" and you have an entire website
+      in seconds, ready to deploy.</p>
+
+      <strong>Do you have example apps?</strong>
+      <p>
+        Check out our <a href="https://github.com/reapp/hacker-news-app">Hacker News app source code</a>
+        for an example of an app with Flux and Immutable Data. And our
+        <a href="https://github.com/reapp/kitchen-sink">Kitchen Sink source code</a> has examples of
+        using every type of component.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section has-title">
   <div class="row">
     <h2 class="section-title bg-red">Why?</h2>
     <div class="col-xs-12 col-md-6">

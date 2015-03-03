@@ -823,3 +823,13 @@ h4 {
 .page em {
   color: #777;
 }
+
+h2 span {
+  font-size: 50%;
+  opacity: 0.5;
+  transition: all 300ms ease-in;
+}
+
+h2 span:hover {
+  opacity: 1;
+}
