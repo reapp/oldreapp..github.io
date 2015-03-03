@@ -110,6 +110,7 @@ more work than usual to contribute. For the UI, the best setup is to do the foll
 <li>Clone the <a href="https://github.com/reapp/kitchen-sink">kitchen sink</a> repository</li>
 <li>Clone this repository</li>
 <li>Run <code>sudo npm link</code> inside this repository</li>
+<li><strong>Important:</strong> Run <code>npm remove react</code> in reapp-ui and be sure react isn&#39;t in node_modules</li>
 <li>Run <code>sudo npm link reapp-ui</code> inside the kitchen sink repository</li>
 </ol>
 <p>This will link your reapp-ui module into your kitchen sink repo. Now you can:</p>
@@ -122,8 +123,8 @@ more work than usual to contribute. For the UI, the best setup is to do the foll
 runs an <code>npm install</code>, it will often install multiple versions of React into your
 modules folders, causing Webpack to bundle multiple versions of it into your app. This
 can cause a variety of errors. If you see stuff that warns about <code>Mount, Link, Context</code>,
-it is most likely because of this. Try deleting any sub-module react folders and re-running
-Webpack.</p>
+it is most likely because of this. Delete the react folder inside reapp-ui and any other
+sub-modules and re-run Webpack.</p>
 <h3 id="principles">Principles</h3>
 <ul>
 <li>Aim for performance and consistency.</li>

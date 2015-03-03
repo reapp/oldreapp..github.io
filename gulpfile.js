@@ -22,6 +22,7 @@ var packages = [
 ];
 
 var src = {
+  posts: __dirname + '/posts',
   css: 'assets/styles/*.css',
   templates: './templates/*',
   index: './pages/index.html',
@@ -46,6 +47,20 @@ gulp.task('index', function() {
     .pipe(wrap({ src: './templates/layout.html' }))
     .pipe(gulp.dest(outDir));
 });
+
+
+// BLOG
+
+gulp.task('blog', function() {
+  buildPosts();
+});
+
+function buildPosts() {
+  Metalsmith(src.posts)
+    .use(markdown())
+    .destination('./build')
+    .build();
+}
 
 
 // PAGES
@@ -78,6 +93,8 @@ function makePage(name) {
 }
 
 
+// CSS
+
 gulp.task('css', function() {
   return gulp
     .src(src.css)
@@ -87,6 +104,9 @@ gulp.task('css', function() {
     }))
     .pipe(gulp.dest('./assets/styles'));
 });
+
+
+// WATCH
 
 gulp.task('watch', function() {
   gulp.watch(src.index, ['index']);

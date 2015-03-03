@@ -8,16 +8,15 @@
   },
   "author": "Nate Wienert",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "~3.8.10",
-    "rimraf": "~2.2.8",
-    "gulp-rimraf": "~0.1.1",
+    "gulp-autoprefixer": "~2.1.0",
+    "gulp-concat": "~2.4.3",
     "gulp-markdown": "~1.0.0",
     "gulp-rename": "~1.2.0",
+    "gulp-rimraf": "~0.1.1",
     "gulp-wrap": "~0.10.1",
-    "gulp-concat": "~2.4.3",
-    "gulp-autoprefixer": "~2.1.0"
+    "rimraf": "~2.2.8"
   }
 }
