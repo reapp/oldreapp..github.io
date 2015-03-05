@@ -1,4 +1,4 @@
-## Make a mobile app now with React and Reapp
+## Make a Mobile App Now with React and Reapp
 
 ![](assets/reapp.png)
 
