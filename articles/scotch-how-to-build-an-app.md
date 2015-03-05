@@ -1,13 +1,23 @@
 ## Create a mobile app with React and Reapp
 
+![](assets/reapp.png)
+
 React is enabling frontend developers to build apps like never before. It makes
 them easier to reason about with it's one-way data binding and declarative interface,
 and much faster with it's use of the Virtual DOM. [Reapp](http://reapp.io) is a mobile
 app development kit just announced last month that takes advantage of the performance
 and productivitiy benefits of React to make building apps easier than ever.
 
-Reapp gives us a complete UI kit and a CLI that lets us avoid all the hassle of gluing
-together the app by ourselves.
+Reapp gives us a lot of cool things:
+
+- A complete UI kit for building mobile apps with:
+  - A lot of components: buttons, lists, views, forms, modals, popovers, galleries...
+  - Themes
+  - Easy to use animation library
+- A CLI that:
+  - Bootstraps your app in seconds
+  - Includes everything you need: routing, requests, decorators, mixins
+  - A Webpack build system with ES6 support
 
 Today, we're going to create an app using Reapp that pulls pictures from the Flickr API
 and displays them in a photo gallery in no time at all.
