@@ -185,7 +185,7 @@ we can't use the normal `class` attribute, so instead use use
 the JavaScript convention of `className` to set the class. The `verticalCenter` property is
 given to us by Reapp, that will align things centered on our page.
 
-See the `onTap` property on Button? It's pointing to `this.handleSearch`.
+Finally, the `onTap` property on Button? It's pointing to `this.handleSearch`.
 But, we don't have any handleSearch function. React will expect that function defined on the
 class, so lets wire it up. First, `npm install --save superagent` which gives us the excellent
 [Superagent](https://github.com/visionmedia/superagent) request library. Then, import it:
