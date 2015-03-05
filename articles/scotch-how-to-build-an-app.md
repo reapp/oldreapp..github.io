@@ -1,10 +1,10 @@
 ## Make a Mobile App Now with React and Reapp
 
-![](assets/reapp.png)
-
 React is enabling frontend developers to build apps like never before. It makes
 them easier to reason about with it's one-way data binding and declarative interface,
 and much faster the Virtual DOM.
+
+![](assets/reapp.png)
 
 Recently, [Reapp](http://reapp.io) was released. It's is a mobile
 app platform that takes advantage of the performance and productivitiy benefits of
