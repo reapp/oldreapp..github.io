@@ -389,7 +389,7 @@ and the [Hacker News App](http://github.com/reapp/hacker-news-app) they built.
 
 ### Check out the code
 
-If you'd like to see our application you can [clone the repo we've put](https://github.com/reapp/demo-flickr).
+If you'd like to see this application's code you can [clone this repo](https://github.com/reapp/demo-flickr).
 It includes everything you need except a Flickr API key, which you'll want to sign
 up for and insert before testing it out.
 
