@@ -12,13 +12,13 @@ React to make building apps easier and more enjoyable than ever.
 
 Reapp gives us a lot of cool things:
 
-- A complete UI kit for building mobile apps with:
+- A complete UI kit
   - Views, Buttons, Lists, Views, Forms, Modals, Popovers, Galleries...
-  - Easy custom themes
-  - Custom animation library
+- Custom themes
+- Custom animations
 - A CLI that:
-  - Bootstraps your app in seconds
-  - Includes everything you need: routing, requests, decorators, mixins
+  - Bootstraps an app in seconds
+  - Includes everything: routing, requests, decorators and more
   - No-config Webpack builds (ES6 support!)
   - Builds to Cordova
 
