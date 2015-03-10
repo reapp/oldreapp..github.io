@@ -1,4 +1,4 @@
-## Make a Mobile App in 15 minutes with React
+## Make a Mobile App in 30 minutes with React
 
 React is enabling frontend developers to build apps like never before. It makes
 them easier to reason about with it's one-way data binding and declarative interface,
