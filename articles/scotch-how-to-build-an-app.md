@@ -18,7 +18,7 @@ Reapp gives us some nice things out of the box:
 - A CLI to scaffold a working app
 - Local development server
 - ES6 and Live Reloads out of the box
-- Easy theming and animations
+- Theming and animations
 - Routing and requests packages
 - Builds to Cordova
 
