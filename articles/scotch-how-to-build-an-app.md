@@ -1,27 +1,29 @@
 ## Make a Mobile App in 30 minutes with React
 
-React is enabling frontend developers to build apps like never before. It makes
-them easier to reason about with it's one-way data binding and declarative interface,
-and much faster the Virtual DOM.
-
-![](assets/reapp.png)
+React is enabling frontend developers to build apps like never before. It's one-way data
+binding and declarative interface make it easy to reason about your code. And it's
+component-based structure lends itself very well to libraries that give you lots of power.
 
 Recently, a platform on React called [Reapp](http://reapp.io) was released.
 It's designed to help build cross-platform apps quickly, and takes advantage of the
 performance and productivitiy benefits of React to the process both easier and more
-enjoyable than ever.
+enjoyable than ever. What is it? Basically a well-optimized UI kit and a CLI to help
+get us started.
 
-Reapp helps us get started with:
+![](assets/reapp.png)
 
-- A complete UI kit for mobile apps
-- ES6 and Live Reloads out of the box
-- Easy themeing and animations
+Reapp gives us some nice things out of the box:
+
+- A complete UI kit for mobile
 - A CLI to scaffold a working app
+- Local development server
+- ES6 and Live Reloads out of the box
+- Easy theming and animations
 - Routing and requests packages
 - Builds to Cordova
 
-To show off how to use it, we're going to create an app that pulls pictures from the
-Flickr API and displays them in a photo gallery. This tutorial should take you less
+To bring this all together we're going to build an app that lets you search with the
+Flickr API and view the results in a 3D photo gallery. This tutorial should take you less
 than half an hour to follow along with!
 
 ### What we'll be building
